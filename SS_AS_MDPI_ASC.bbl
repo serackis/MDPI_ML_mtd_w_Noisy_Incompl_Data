@@ -1,0 +1,41 @@
+\begin{thebibliography}{-------}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[Marti \em{et~al.}()Marti, Cobos, Aguilera, and
+  Lopez]{martiSpeakerLocalizationDetection2011}
+Marti, A.; Cobos, M.; Aguilera, E.; Lopez, J.J.
+\newblock Speaker {{Localization}} and {{Detection}} in {{Videoconferencing
+  Environments Using}} a {{Modified SRP}}-{{PHAT Algorithm}}.
+\newblock p.~8.
+
+\bibitem[Laufer-Goldshtein \em{et~al.}()Laufer-Goldshtein, Talmon, and
+  Gannot]{laufer-goldshteinSemiSupervisedSoundSource2016}
+Laufer-Goldshtein, B.; Talmon, R.; Gannot, S.
+\newblock Semi-{{Supervised Sound Source Localization Based}} on {{Manifold
+  Regularization}}.
+\newblock {\em 24},~1393--1407.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1109/TASLP.2016.2555085}{\detokenize{10.1109/TASLP.2016.2555085}}}.
+
+\bibitem[He \em{et~al.}({\natexlab{a}})He, Motlicek, and
+  Odobez]{heDeepNeuralNetworks2018b}
+He, W.; Motlicek, P.; Odobez, J.
+\newblock Deep {{Neural Networks}} for {{Multiple Speaker Detection}} and
+  {{Localization}}.
+\newblock  2018 {{IEEE International Conference}} on {{Robotics}} and
+  {{Automation}} ({{ICRA}}), pp. 74--79.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1109/ICRA.2018.8461267}{\detokenize{10.1109/ICRA.2018.8461267}}}.
+
+\bibitem[He \em{et~al.}({\natexlab{b}})He, Motlicek, and
+  Odobez]{heAdaptationMultipleSound2019}
+He, W.; Motlicek, P.; Odobez, J.M.
+\newblock Adaptation of {{Multiple Sound Source Localization Neural Networks}}
+  with {{Weak Supervision}} and {{Domain}}-Adversarial {{Training}}.
+\newblock  {{ICASSP}} 2019 - 2019 {{IEEE International Conference}} on
+  {{Acoustics}}, {{Speech}} and {{Signal Processing}} ({{ICASSP}}). {IEEE}, pp.
+  770--774.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1109/ICASSP.2019.8682655}{\detokenize{10.1109/ICASSP.2019.8682655}}}.
+
+\end{thebibliography}

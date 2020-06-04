@@ -67,7 +67,7 @@
 
 %=================================================================
 % Full title of the paper (Capitalized)
-\Title{Title}
+\Title{Sound Source Localization Using Graph Regularized Neural Network}
 
 % Author Orchid ID: enter ID or remove command
 \newcommand{\orcidauthorA}{0000-0000-000-000X} % Add \orcidA{} behind the author's name
@@ -132,17 +132,47 @@ $^{2}$ \quad Affiliation 2; e-mail@e-mail.com}
 
 %\setcounter{secnumdepth}{4}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{ssdefinitions.tex}
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\setcounter{section}{-1} %% Remove this when starting to work on the template.
-\section{How to Use this Template}
-The template details the sections that can be used in a manuscript. Note that the order and names of article sections may differ from the requirements of the journal (e.g., the positioning of the Materials and Methods section). Please check the instructions for authors page of the journal to verify the correct order and names. For any questions, please contact the editorial office of the journal or support@mdpi.com. For LaTeX related questions please contact latex@mdpi.com. \cite{stasionis2013new}
-%The order of the section titles is: Introduction, Materials and Methods, Results, Discussion, Conclusions for these journals: aerospace,algorithms,antibodies,antioxidants,atmosphere,axioms,biomedicines,carbon,crystals,designs,diagnostics,environments,fermentation,fluids,forests,fractalfract,informatics,information,inventions,jfmk,jrfm,lubricants,neonatalscreening,neuroglia,particles,pharmaceutics,polymers,processes,technologies,viruses,vision
+%\setcounter{section}{-1} %% Remove this when starting to work on the template.
+%\section{How to Use this Template}
+%The template details the sections that can be used in a manuscript. Note that the order and names of article sections may differ from the requirements of the journal (e.g., the positioning of the Materials and Methods section). Please check the instructions for authors page of the journal to verify the correct order and names. For any questions, please contact the editorial office of the journal or support@mdpi.com. For LaTeX related questions please contact latex@mdpi.com. \cite{stasionis2013new}
+%%The order of the section titles is: Introduction, Materials and Methods, Results, Discussion, Conclusions for these journals: aerospace,algorithms,antibodies,antioxidants,atmosphere,axioms,biomedicines,carbon,crystals,designs,diagnostics,environments,fermentation,fluids,forests,fractalfract,informatics,information,inventions,jfmk,jrfm,lubricants,neonatalscreening,neuroglia,particles,pharmaceutics,polymers,processes,technologies,viruses,vision
 
 \section{Introduction}
-The introduction should briefly place the study in a broad context and highlight why it is important. It should define the purpose of the work and its significance. The current state of the research field should be reviewed carefully and key publications cited. Please highlight controversial and diverging hypotheses when necessary. Finally, briefly mention the main aim of the work and highlight the principal conclusions. As far as possible, please keep the introduction comprehensible to scientists outside your particular field of research. Citing a journal paper \cite{ref-journal}. And now citing a book reference \cite{ref-book}. Please use the command \citep{ref-journal} for the following MDPI journals, which use author-date citation: Administrative Sciences, Arts, Econometrics, Economies, Genealogy, Humanities, IJFS, JRFM, Languages, Laws, Religions, Risks, Social Sciences.
+Sound source localization is an increasingly important component in teleconferencing, autonomous driving, security and human-computer interaction systems.
+
+It might be desired to use compact microphone arrays that have as few microphone elements as possible. By ``compact'' we here imply that the dimensions of the microphone array are much smaller than the dimensions of source localization space.
+
+There are plenty of source direction of arrival estimation methods utilizing such compact arrays \cite{}, but only a few methods are offered for 2D or 3D source localization that can estimate both DoA and the distance or the Cartesian coordinates of the sound source.
+
+%\subsubsection*{2D/3D localization instead of just DoA estimation}
+
+Camera aiming can be inaccurate due to the parallax error if the camera and the microphone array are not rotating on the same axis. To accurately steer the camera to a certain point in space in such setup, a complete set of coordinates, either Cartesian or polar, of the target point is needed.
+Thus, knowing only the direction of arrival (\doa{}) of the sound source would not be sufficient. At least two \doa{}s are needed to describe the source position on a plane.
+
+%\subsubsection*{Unsupervised and semi-supervised learning methods for SSSL}
+
+The Steered Response Power - Phase Transform (SRP-PHAT) algorithm has been shown to be one of the most robust sound source localization approaches operating in noisy and reverberant environments. However, its practical implementation is usually based on a costly fine grid-search procedure, making the computational cost of the method a real issue \cite{martiSpeakerLocalizationDetection2011}.  
+
+The performance of SRP-PHAT-based source localization algorithms deteriorate considerable when compact microphone arrays are used \cite{}.
+
+Learning-based sound source localization methods might be further advantageous in such circumstances. 
+
+There are several learning-based source localization approaches, based on either semi-supervised \cite{laufer-goldshteinSemiSupervisedSoundSource2016} or supervised \cite{heDeepNeuralNetworks2018b,heAdaptationMultipleSound2019} learning paradigms. In both of these approaches to work, a set of acoustic features from known sound source positions (the labeled dataset) is needed. 
+
+Labeled feature acquisition is very costly.
+It is relatively easy to obtain a large dataset of unlabeled audio features. 
+%One might wish to employ an unsupervised or semi-supervised learning strategies. 
+Considering our setting, it is relatively easy to collect a large amount of acoustic features without labels, and it is very tedious to provide labels (in our case -- the coordinates of the sound source) for such data. 
+
+%\subsection*{Motivation}
+
+In this article we present a method to localize in two dimensions a sound source using a two compact microphone arrays. 
+
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
@@ -244,11 +274,197 @@ Authors should discuss the results and how they can be interpreted in perspectiv
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Materials and Methods}
 
-Materials and Methods should be described with sufficient details to allow others to replicate and build on published results. Please note that publication of your manuscript implicates that you must make all materials, data, computer code, and protocols associated with the publication available to readers. Please disclose at the submission stage any restrictions on the availability of materials or information. New methods and protocols should be described in detail while well-established methods can be briefly described and appropriately cited.
+In this section, we provide a theoretical background for our investigation.
 
-Research manuscripts reporting large datasets that are deposited in a publicly available database should specify where the data have been deposited and provide the relevant accession numbers. If the accession numbers have not yet been obtained at the time of submission, please state that they will be provided during review. They must be provided prior to publication.
+\ann{}-based sound source localization can be performed using various acoustic features that depend on the sound source, either relative to the microphone array(s) or the acoustic enclosure.
 
-Interventionary studies involving animals or humans, and other studies require ethical approval must list the authority that provided approval and the corresponding ethical approval code. 
+It can be assumed, that acoustic features are spatially smooth, that is, features obtained at spatially close source positions are also close in feature space. The relative distance or affinity of the features can be simply estimated by calculating the Euclidean distance between feature vectors. 
+
+It can be assumed, that high dimensional acoustic features lie on a low-dimensional manifold, embedded in a high-dimensional feature space. 
+Since the acoustic features are only dependent on the coordinates of the sound source, it is expected that the manifold would represent the spatial relations between the nearby acoustic features. 
+We consider that that the affinity matrix of the low-dimensional embeddings of the acoustic manifold represent the \emph{graph} of the acoustic features.
+
+While the obtained embeddings of the acoustic manifold might represent the relative spatial relations between the acoustic features, it is not tied to physical properties and it also might be very non-linear. The translation of embedded space to physical space must be done in a separate step using a nonlinear regression method. 
+
+When \ann{} is utilized to obtain the sound source position via regression using acoustic features, it might be expected that the predictions of the \ann{} would also exhibit spatial smoothness. Feature manifold could be used during the training of the \ann{} to ensure that the \ann{} learns the relation between the acoustic features and the source positions while also retaining the spatial smoothness.
+This spatial smoothness as well as the awareness of the relative spatial positions of the acoustic features is especially important when a semi-supervised learning strategy is involved. Using a training dataset that contains both labeled and unlabeled samples, knowledge of the relative distances between unlabeled and labeled samples might help to train the regressor to predict source locations for the unlabeled samples based on their manifold distance to the labeled features.
+
+
+Our method is comprised of two stages.
+\begin{enumerate}
+	\item The low-dimensional embedding of an acoustic feature manifold is obtained from a combined dataset of labeled and unlabeled samples. This manifold represents relative distances between acoustic feature in a low-dimensional embedded space.
+	\item A neural network is trained on the combined dataset, using a loss function that consist  of a supervised loss (calculated only for labeled samples) and a graph loss (calculated for all samples, considering $ k $ nearest neighbors). Supervised loss ensures that the regressor is able to learn accurate relations between the acoustic features and the source positions. Graph loss ensures that the source position predictions remain spatially smooth.
+\end{enumerate}
+
+Considering that the combined dataset consist of relatively low number of labeled samples and vast amounts of unlabeled samples, the supervised loss acts as a mean to ``straighten'' the manifold while the graph loss is used to infer the labels for the unlabeled samples based on their distance in feature (or embedded) space to the labeled samples.
+
+
+\subsection{Acoustic Features}
+We have considered several types of acoustic features, that are discussed further.
+
+\subsubsection{Time Difference of Arrival}
+Time Difference of Arrival (TDoA) is a trivial acoustic feature, that can be estimated using GCC-PHAT. Knowing the TDoA for several non-colinear (or non-parallel?) microphone pairs, it is possible to estimate the position of the sound source using triangulation (trilateration).
+
+While this would be a simple and straightforward method, the accurate TDoA estimation becomes very tricky in reverberant or noisy environments. Moreover, the TDoA contains only very little information about the distance between the sound source and the microphone pair (just one value per pair). For a microphone array with 4 elements, that's only 6 values. TDoA does not explicitly contain any information about the structure of reflections withing the enclosure, nor the geometry or acoustic properties of the enclosure; it only depends on the relative source position with respect to the microphone array(s).
+
+\subsubsection{Room Impulse Response and Room Transfer Function}
+It is assumed that high-dimensional acoustic features, such as room impulse response (RIR) or room transfer function (RTF) contain a unique fingerprint of sound source and microphone positions within an enclosure. This is because the structure of room reflections is unique for every source position and every microphone position (theoretically, there might be some cases when same RIR is obtained for more than one combination of microphone and sound source positions, but this is probably possible in ideal room, which exhibit point symmetry around the center of the room; in real rooms this is impossible; also the microphones must be also placed symmetrically in the enclosure for this effect to occur).
+
+While the RIRs and RTFs contain enough information to uniquely determine the position of the source within an enclosure, in practice it is impossible to obtain neither RIR nor RTF without knowing the positions of the sound source and the microphone within the room beforehand.
+
+\subsubsection{Steered Response Power}
+Steered Response Power (SRP) and SRP with Phase Transform (\srpphat{}) vectors can be considered the middle ground between the trivial acoustic features like TDoA and ideal features, like RIR or RTF. 
+\srpphat{} are obtainable in real world, are relatively high-dimensional and contain information about sound reflections within the room.
+
+\subsubsection{Properties of acoustic features}
+The most important property of all acoustic features in this investigation is the spatial smoothness of feature space. In other words, acoustic features are similar to each other for sound source positions that are close together.
+
+In our investigation, we use the \srpphat{} spatial vectors as acoustic features.
+
+\subsection{Acoustic feature acquisition}
+Acoustic features were obtained within an acoustic enclosure using a single sound source, $ z $ coordinate was fixed at height \hsrc{}. \Narr{} circular microphone arrays were used for acoustic signal acquisition, each with \Nmic{} microphone elements and radius \rarr{}.
+Planes of the microphone arrays were parallel to the ground (normals of the circles coincided with the $ z $ axis of the enclosure).
+The both arrays were held at a fixed height \harr{}.
+Signals of the microphones are recorded at sampling frequency \fs{} and resolution \resolution{}.
+
+Audio signals obtained from the microphone arrays are split into frames of duration \framedur{} seconds to obtain \Nframes{} frames. For each audio frame $ \frameidx{} \in \Nframes{} $ and for each microphone array $ \arrayidx{} \in \Narr $, a time-frequency representation is calculated with \NFFT{} FFT points and $ \numel_{\mathrm{hop}} $ \todo{kaip tinkamai aprasyti FFT parametrus?} an \srpphat{} spatial spectrum \SRPspectrum{} is obtained. 
+\todo{Describe the \srpphat{} acquisition}
+\srpphat{} spectra of all arrays are then concatenated per frame to obtain the acoustic feature.
+
+If the audio recording has an associated location label (known coordinates), a frame is assigned the position label \sposlabel{}.
+
+It is considered that the sound source might not be active a all times, and that the signal is non-stationary (in case of speech signal\todo{is speech signal stationary or not? how to determine}). Thus, in case of an audio frame where the source is not active, the \doa{} of a sound source can not be determined, and the acoustic feature is considered to contain only noise. Such frames are to be discarded. For the selection of the audio frames in which the acoustic feature is usable, a thresholding algorithm was used. For each of the frame, a metric 
+$ \thrmetric{}_{\arrayidx,\frameidx} $ 
+was calculated for and compared to the scaled mean \todo{scaled mean?} of the metric of all obtained frames 
+$ \coefficient_\thrmetric \sum_{\frameidx\in\Nframes} \thrmetric{}_{\frameidx}  $, 
+where $ \coefficient_\thrmetric $ is the scaling coefficient used to control the threshold value.
+The metric used to evaluate the fitness of the acoustic feature of the particular audio frame are: 
+\begin{enumerate}
+	\item Root-mean-square \todo{maybe that's energy of a frame?} value of the \srpphat{} spectrum, $ \thrmetric_{\rms,\arrayidx,\frameidx} $\todo{kaip prasyti formule SRP spektrui? ten viena dimensija yra kampas - integralas ar suma pagal kampa?}.
+	\item Crest factor of the \srpphat{} spectrum, $ \thrmetric_{\cf,\arrayidx,\frameidx} $.
+\end{enumerate}
+
+
+\subsection{Acoustic manifold embedding learning}
+
+Manifold embedding can be learned using a Nonlinear Dimensionality Reduction (NLDR) algorithm, such as isometric mapping (\isomap{}), t-distributed stochastic neighbor embedding (t-SNE) or localli linear embedding (LLE). 
+
+
+\subsubsection{\isomap{} embedding}
+\srpphat{} features are embedded into \Demb-dimensional embedded space using \isomap{}, with \kemb{} nearest neighbors considered. 
+In the resulting embedding, \srpphat{} features are grouped by similarity, while at the same time preserving the spatial structure of the high-dimensional (?) space
+%\mpar{Is it really the spatial structure of the high-dimensional space?} (see \figurename{}
+
+
+
+\subsection{Graph dataset}
+\subsubsection{Dataset preprocessing}
+In order to train the ANN with graph regularization, the dataset must be preprocessed: for each sample, alongside the main input feature, neighbor input features and their weights must be introduced. This is don by first determining the \gnbrs{} nearest neighbors of a particular sample in the feature embedded space and then appending those features as well as their weight coefficients to the training sample.
+
+\subsubsection{Constitution of the dataset}
+The dataset for training the neural network is comprised of $ N $ source position and \srpphat{} feature vector pairs (see \figurename{} \ref{fig:srpspectra}).
+
+In the embedded space, Euclidean distances are calculated between every point. The distances beteween each data sample constitute the distance matrix, which is in turn used to calculate the affinity matrix.
+
+\subsubsection{Affinity matrix calculation}
+Affinity matrix $ \mathbf{A} $ is calculated by subtracting the distance matrix $ \mathbf{D} $ from 1: $ \mathbf{A} = 1 - \mathbf{D} $. The distance matrix contains the Euclidean distances between each sample in the ISOMAP embedded space:
+
+\begin{align}
+\mathbf{D} &= (d_{ij});\\
+d_{ij} &= \lVert \mathbf{p}_{i}-\mathbf{p}_{j} \rVert _{2}^{2}
+\end{align}
+here $ \mathbf{p}_{i} = (\alpha_i, \beta_i) $ is the point coordinate vector in the embedded space (in case of $ N_{\mathrm{ISO}} = 2 $), $ \alpha $ and $ \beta $ are the Cartesian coordinates in the embedded space.
+
+Neighbor weights are  inversely proportional to the Euclidean distances between the main feature and the neighbor features in the low-dimensional embedded space.
+
+\subsubsection{Neighbor samples and neighbor sample weights}
+For the training of the GRNN, each training sample must contain the main \srpphat{} feature and $ k_g $ neighbor \srpphat{} features (used for calculating the graph loss). Additionally, each neighbor feature is associated with its weight, which is the corresponding element in the affinity matrix.
+To obtain the $ k_g $ neighbors of each sample, each row of the affinity matrix is thresholded so that only the $ k_g $ highest-valued elements remain their value, while other row elements are set to zero.
+The dataset is then expanded so that each sample now has associated neighbor \srpphat{} features (indices of which are the non-zero elements in the rows of the affinity matrix). 
+
+\subsubsection{Training/testing dataset split}
+The preprocessed dataset is split into training and testing subsets so that $ N_{\train} = N - N_{\test} $, and $ N_{\test} = 100 $. $ N_{\train} $ is the size of the training subset, in samples, and $ N_{\test} $ is the size of the testing subset, in samples.
+
+\subsubsection{Labeled/unlabeled sample marking}
+For the training dataset, a flag $ m $ denoting wether the sample is labeled or unlabeled is introduced. This flag holds value of either ``True'' of ``False'' (1 or 0). Content of this field is interpreted by the GRNN during the calculation of the loss function. Effectively, the supervised loss component is multiplied by the flag. In case of an unlabeled sample, the supervised loss is ignored, and only the graph loss is considered. In real-world scenario, GRNN expects all fields, including the target feature (the label, the coordinates of the source) to be passed during training. In case of the unlabeled sample (whether during the training phase or during the prediction phase), the supervised loss is not calculated, the label is ignored, and thus it can be set to random values or to zero. 
+
+\subsubsection{Labeled samples repetition}
+We wish to train the GRNN using as few as possible labeled samples. It was found that the network is trained more effectively when the labeled samples are introduced more times (more often) than the unlabeled samples. It might be called ``dataset balancing'' \cite{}. 
+Labeled samples (those with $ m =  1 $) are repeated $ N_R $ times ($ N_R \in \{1,\dots,199\}$) and appended to the training data subset.
+
+\subsection{Graph-Regularized Neural Network}
+
+In our proposition, a neural network that is trained considering not only the labeled samples, but also neighboring labeled and unlabeled samples.
+
+\subsubsection{Neural network}
+
+Any neural network can be converted to graph-regularized neural network (GRNN) by introducing additional inputs for neighboring features as well as modifying the loss function to accommodate the graph loss.
+
+A general architecture (one of possibilities) of a GRNN is provided in \figurename{} \ref{fig:networktraining}. In this figure, dotted lines encompasses the input vectors. Dahsed lines inside the GRNN block denote prediction (a forward pass). The loss function is given by $ L = m(\hat{y}_0-y) + \sum_{i \in k_g}a_i(\hat{y}_0 - \hat{y}_1) $. The loss function is discussed further in more detail.
+
+%\begin{figure}
+%	%	\centering
+%	%	\includegraphics[width=0.8\linewidth]{img/network_training}
+%	\caption{General architecture of a graph regularized neural network (considering 4 neighbor features). $ x_0 $ is the main input feature, $ x_{1..4} $ are neighbor input features, $ a_{1..4} $ are corresponding neighbor input feature weights, $ y_0 $ is the target feature, $ m $ is the labeled/unlabeled flag, $ \hat{y}_0 $ is the label prediction for main input feature, $ \hat{y}_{1..4} $ are the label predictions for the neighbor input features}
+%	\label{fig:networktraining}
+%\end{figure}
+
+
+\subsubsection{Architecture}
+Apart from the introduction of additional inputs (neighbor features, weights and flags), the actual neural network is just a multilayer perceptron. During prediction phase, only the main input contributes to the prediction.
+
+In this experiment, a simple multilayer perceptron architecture was used. 
+It contained these layers:
+\begin{enumerate}
+	\item A 1080-dimensional input layer (to accept a concatenated \srpphat{} feature using $ N_M = 3 $ microphone arrays, each covering \ang{360} azimuth with \ang{1} resolution).
+	\item A fully-connected layer with 10 units and linear activations.
+	\item A fully-connected layer with 31 units and ReLU activations.
+	\item A 3-dimensional output layer with linear activations.
+\end{enumerate}
+
+This architecture was the found during previously performed hyperparameter optimization.
+
+%Network architectures that were  used for the experimentation are presented in \tablename{} \ref{table:archs}. The first three architectures were determined during a network architecture optimization process. The last two are the variations of the 3rd architecture.
+%
+%\begin{table}\footnotesize\setlength{\tabcolsep}{0.3em}
+%	\caption{Network achitectures used for the experimentation}\label{table:archs}
+%	\begin{tabular}{P{1.4cm}|P{0.6cm}|P{1.4cm}|P{0.6cm}|P{1.4cm}|P{0.6cm}|P{1.4cm}|P{0.6cm}|P{1.4cm}|P{0.6cm}|P{1.4cm}}
+%		\toprule
+%       & \multicolumn{2}{c}{1st layer} & \multicolumn{2}{c}{2nd layer} & \multicolumn{2}{c}{3rd layer} & \multicolumn{2}{c}{4th layer} & \multicolumn{2}{c}{5th layer} \\
+%		\cmidrule(rl){2-3}\cmidrule(rl){4-5}\cmidrule(rl){6-7}\cmidrule(rl){8-9}\cmidrule(rl){10-11}
+%		Arch. & N. of units & Activation      & N. of units & Activation      & N. of units & Activation      & N. of units & Activation      & N. of units & Activation      \\ \midrule
+%		1                                                                                                    & 14          & linear          & 2           & sigmoid         & 24          & tanh            & 33          & sigmoid         & 50          & linear          \\ \midrule
+%		2                                                                                                    & 4           & linear          & 32          & sigmoid         & 23          & tanh            & 54          & sigmoid         & 37          & linear          \\ \midrule
+%		3                                                                                                    & 10          & linear          & 31          & ReLU            &             &                 &             &                 &             &                 \\ \midrule
+%		4                                                                                                    & 10          & linear          & 15          & ReLU            & 15          & ReLU            &             &                 &             &                 \\ \midrule
+%		5                                                                                                    & 10          & linear          & 15          & ReLU            & 15          & ReLU            & 15          & ReLU            & 15          & ReLU            \\ \bottomrule
+%	\end{tabular}
+%\end{table} 
+
+\subsubsection{Loss function}
+%\par \textbf{Consists of two parts}
+%\par \textbf{Supervised Loss}
+%\par \textbf{Is calculated only for labeled samples}
+
+%that have the labeled flag set to 1
+
+%MSE between the ground truth label and the preditction
+%
+%\par \textbf{Graph Loss}
+%\par \textbf{Is calculated for each sample}
+%\par \textbf{MSE of prediction for main input feature and the predictions for each of the neighboring features}
+%\par \textbf{MOTIVATION}
+
+Nearby source positions produce similar acoustic features. Therefore, the predicted source positions for the nearby acoustic features should also be similar
+If they are similar, the graph loss is small. If they are not similar, we need to penalize the predictor with a large graph loss
+
+\paragraph{Loss function} \label{subpg:loss}
+
+The loss function used for the GRNN training is comprised of two parts: the supervised loss (the difference between the ground truth label and the predicted label) and the graph loss (the difference bewteen the main input feature label prediction and the weighted sum of neighbor input features label predictions). It can be expressed as 
+\begin{equation}\label{eq:grnn_loss_function}
+L = \mu m \sum_{i \in N_{b}} (\hat{y}_i - y_i)^2  + (1-\mu m) \sum_{i \in N_{b}} \sum_{j \in k_g} a_{ij} (\hat{y}_i-\hat{y}_j)^2
+\end{equation}
+here $ N_b $ -- number of samples in one training batch, $ k_g $ -- size of the neighborhood, $ a_{ij} $ is the neighbor weight, equal to the corresponding element in the affinity matrix.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}

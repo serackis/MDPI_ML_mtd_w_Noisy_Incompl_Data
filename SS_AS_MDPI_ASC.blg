@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: SS_AS_MDPI_ASC.aux
+The style file: Definitions/mdpi.bst
+Database file #1: SS_AS_MDPI_ASC.bib
+Warning--I didn't find a database entry for ""
+Warning--empty journal in martiSpeakerLocalizationDetection2011
+Warning--empty journal in laufer-goldshteinSemiSupervisedSoundSource2016
+Warning--empty year in heDeepNeuralNetworks2018b
+Warning--empty year in heAdaptationMultipleSound2019
+You've used 4 entries,
+            2865 wiz_defined-function locations,
+            590 strings with 5322 characters,
+and the built_in function-call counts, 1838 in all, are:
+= -- 163
+> -- 90
+< -- 3
++ -- 35
+- -- 26
+* -- 151
+:= -- 280
+add.period$ -- 16
+call.type$ -- 4
+change.case$ -- 4
+chr.to.int$ -- 3
+cite$ -- 8
+duplicate$ -- 89
+empty$ -- 157
+format.name$ -- 30
+if$ -- 402
+int.to.chr$ -- 2
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 27
+num.names$ -- 12
+pop$ -- 42
+preamble$ -- 0
+purify$ -- 4
+quote$ -- 0
+skip$ -- 49
+stack$ -- 0
+substring$ -- 97
+swap$ -- 28
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 28
+warning$ -- 4
+while$ -- 17
+width$ -- 0
+write$ -- 56
+(There were 5 warnings)
