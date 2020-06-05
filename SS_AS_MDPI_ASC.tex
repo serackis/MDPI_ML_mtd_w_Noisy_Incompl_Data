@@ -311,6 +311,17 @@ The metric used to evaluate the fitness of the acoustic feature of the particula
 	\item Crest factor of the \srpphat{} spectrum, $ \thrmetric_{\cf,\arrayidx,\frameidx} $.
 \end{enumerate}
 
+\subsubsection{Unlabeled dataset}
+The unlabeled dataset may be obtained from an array audio recording where the sound source is slowly moving inside the acoustic enclosure. The maximal speed of the sound source movement $ \speed_{\src\max} $ should be lower than the maximum expected localization error distance $ \error_{\max} $ per frame duration $ \framedur $:
+\begin{equation}\label{eq:unlabeled_src_max_speed}
+	\speed_{\src\max}  = \frac{\error_{\max}}{\framedur}
+\end{equation} 
+\subsubsection{Labeled dataset}
+The labeled dataset may be obtained from an array audio recordings where the sound source is stationed at a known position $ \spos_{\sposidx} $ within the acoustic enclosure and is producing signal (speech or noise) for a period of \labeledsourceduration{} seconds. A collection of $ \sposidx \in \numel_{\spos} $ recordings at fixed source positions may be obtained.
+
+\subsubsection{Training/testing dataset split}
+The labeled dataset is split into training and testing subsets by randomly selecting samples from  $ \numel_{\test} $ source positions for training and the rest of the source positions $ \numel_{\train} = \numel_\spos - \numel_\test $ for testing from the entire set of labeled source positions.
+Following operations are performed separately for training ant testing labeled datasets.
 
 \subsection{Acoustic manifold embedding learning}
 
@@ -318,39 +329,33 @@ Manifold embedding can be learned using a Nonlinear Dimensionality Reduction (NL
 
 
 \subsubsection{\isomap{} embedding}
-\srpphat{} features are embedded into \Demb-dimensional embedded space using \isomap{}, with \kemb{} nearest neighbors considered. 
+\srpphat{} features from both labeled and unlabeled training datasets are embedded into \Demb-dimensional embedded space using \isomap{}, with \kemb{} nearest neighbors considered. 
 In the resulting embedding, \srpphat{} features are grouped by similarity, while at the same time preserving the spatial structure of the high-dimensional (?) space
 %\mpar{Is it really the spatial structure of the high-dimensional space?} (see \figurename{}
 
-
-
 \subsection{Graph dataset}
+
 \subsubsection{Dataset preprocessing}
-In order to train the ANN with graph regularization, the dataset must be preprocessed: for each sample, alongside the main input feature, neighbor input features and their weights must be introduced. This is don by first determining the \gnbrs{} nearest neighbors of a particular sample in the feature embedded space and then appending those features as well as their weight coefficients to the training sample.
-
-\subsubsection{Constitution of the dataset}
-The dataset for training the neural network is comprised of $ N $ source position and \srpphat{} feature vector pairs (see \figurename{} \ref{fig:srpspectra}).
-
-In the embedded space, Euclidean distances are calculated between every point. The distances beteween each data sample constitute the distance matrix, which is in turn used to calculate the affinity matrix.
+The combined dataset for training the neural network is comprised of two datasets: $ \numel_{\unlabeled} $ acoustic feature samples without source position labels (the unlabeled dataset) and $ \numel_{\labeled} $ acoustic feature samples with source position labels (the labeled training dataset). Each sample in the combined dataset also has a corresponding \isomap{} embedding.
+In order to train the \grnn{} with graph regularization, the dataset must be preprocessed: for each sample, regardless of whether it is a labeled or an unlabeled sample, alongside the main feature, neighbor features and their weights must be introduced. This is done by first determining the \gnbrs{} nearest neighbors of a particular sample in the embedded feature space and then appending those features as well as their weight coefficients to the training sample.
 
 \subsubsection{Affinity matrix calculation}
-Affinity matrix $ \mathbf{A} $ is calculated by subtracting the distance matrix $ \mathbf{D} $ from 1: $ \mathbf{A} = 1 - \mathbf{D} $. The distance matrix contains the Euclidean distances between each sample in the ISOMAP embedded space:
+In the embedded space, Euclidean distances are calculated between every feature. The distances between each data sample constitute the distance matrix \distancematrix, which is in turn used to calculate the affinity matrix.
+Affinity matrix \affinitymatrix{} is calculated by subtracting \distancematrix{} from 1: $ \affinitymatrix = 1 - \distancematrix $. The distance matrix contains the Euclidean distances between each sample in the low dimensional embedded space:
 
 \begin{align}
-\mathbf{D} &= (d_{ij});\\
-d_{ij} &= \lVert \mathbf{p}_{i}-\mathbf{p}_{j} \rVert _{2}^{2}
+	\mathbf{D} &= (d_{ij});\\
+	d_{ij} &= \lVert \mathbf{p}_{i}-\mathbf{p}_{j} \rVert _{2}^{2}
 \end{align}
 here $ \mathbf{p}_{i} = (\alpha_i, \beta_i) $ is the point coordinate vector in the embedded space (in case of $ N_{\mathrm{ISO}} = 2 $), $ \alpha $ and $ \beta $ are the Cartesian coordinates in the embedded space.
 
-Neighbor weights are  inversely proportional to the Euclidean distances between the main feature and the neighbor features in the low-dimensional embedded space.
+Neighbor weights are inversely proportional to the Euclidean distances between the main feature and the neighbor features in the low-dimensional embedded space.
 
 \subsubsection{Neighbor samples and neighbor sample weights}
-For the training of the GRNN, each training sample must contain the main \srpphat{} feature and $ k_g $ neighbor \srpphat{} features (used for calculating the graph loss). Additionally, each neighbor feature is associated with its weight, which is the corresponding element in the affinity matrix.
-To obtain the $ k_g $ neighbors of each sample, each row of the affinity matrix is thresholded so that only the $ k_g $ highest-valued elements remain their value, while other row elements are set to zero.
+For the training of the GRNN, each training sample must contain the main \srpphat{} feature and \gnbrs{} neighbor \srpphat{} features (used for calculating the graph loss). Additionally, each neighbor feature is associated with its weight \nbrweigth{}, which is the corresponding element in the affinity matrix.
+To obtain the \gnbrs{} neighbors of each sample, each row of the affinity matrix is thresholded so that only the \gnbrs{} highest-valued elements remain their value, while other row elements are set to zero.
 The dataset is then expanded so that each sample now has associated neighbor \srpphat{} features (indices of which are the non-zero elements in the rows of the affinity matrix). 
 
-\subsubsection{Training/testing dataset split}
-The preprocessed dataset is split into training and testing subsets so that $ N_{\train} = N - N_{\test} $, and $ N_{\test} = 100 $. $ N_{\train} $ is the size of the training subset, in samples, and $ N_{\test} $ is the size of the testing subset, in samples.
 
 \subsubsection{Labeled/unlabeled sample marking}
 For the training dataset, a flag $ m $ denoting wether the sample is labeled or unlabeled is introduced. This flag holds value of either ``True'' of ``False'' (1 or 0). Content of this field is interpreted by the GRNN during the calculation of the loss function. Effectively, the supervised loss component is multiplied by the flag. In case of an unlabeled sample, the supervised loss is ignored, and only the graph loss is considered. In real-world scenario, GRNN expects all fields, including the target feature (the label, the coordinates of the source) to be passed during training. In case of the unlabeled sample (whether during the training phase or during the prediction phase), the supervised loss is not calculated, the label is ignored, and thus it can be set to random values or to zero. 
@@ -365,9 +370,9 @@ In our proposition, a neural network that is trained considering not only the la
 
 \subsubsection{Neural network}
 
-Any neural network can be converted to graph-regularized neural network (GRNN) by introducing additional inputs for neighboring features as well as modifying the loss function to accommodate the graph loss.
+Any neural network can be converted to graph-regularized neural network (\grnn) by introducing additional inputs for neighboring features as well as modifying the loss function to accommodate the graph loss.
 
-A general architecture (one of possibilities) of a GRNN is provided in \figurename{} \ref{fig:networktraining}. In this figure, dotted lines encompasses the input vectors. Dahsed lines inside the GRNN block denote prediction (a forward pass). The loss function is given by $ L = m(\hat{y}_0-y) + \sum_{i \in k_g}a_i(\hat{y}_0 - \hat{y}_1) $. The loss function is discussed further in more detail.
+A general architecture (one of possibilities) of a \grnn is provided in \figurename{} \ref{fig:networktraining}. In this figure, dotted lines encompasses the input vectors. Dahsed lines inside the GRNN block denote prediction (a forward pass). The loss function is given by $ L = m(\hat{y}_0-y) + \sum_{i \in k_g}a_i(\hat{y}_0 - \hat{y}_1) $. The loss function is discussed further in more detail.
 
 %\begin{figure}
 %	%	\centering
@@ -429,7 +434,7 @@ If they are similar, the graph loss is small. If they are not similar, we need t
 
 The loss function used for the GRNN training is comprised of two parts: the supervised loss (the difference between the ground truth label and the predicted label) and the graph loss (the difference bewteen the main input feature label prediction and the weighted sum of neighbor input features label predictions). It can be expressed as 
 \begin{equation}\label{eq:grnn_loss_function}
-L = \mu m \sum_{i \in N_{b}} (\hat{y}_i - y_i)^2  + (1-\mu m) \sum_{i \in N_{b}} \sum_{j \in k_g} a_{ij} (\hat{y}_i-\hat{y}_j)^2
+	L = \mu m \sum_{i \in N_{b}} (\hat{y}_i - y_i)^2  + (1-\mu m) \sum_{i \in N_{b}} \sum_{j \in k_g} a_{ij} (\hat{y}_i-\hat{y}_j)^2
 \end{equation}
 here $ N_b $ -- number of samples in one training batch, $ k_g $ -- size of the neighborhood, $ a_{ij} $ is the neighbor weight, equal to the corresponding element in the affinity matrix.
 
