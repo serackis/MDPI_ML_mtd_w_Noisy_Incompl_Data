@@ -143,11 +143,45 @@ In this article we present a method to localize in two dimensions a sound source
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
+\todo[inline]{ar dėti iliustracijas, kai klaidos priklausomybe nuo parametro skaičiuojama iš hyperparameter optimization rezultatų, kai keičiami visi parametrai, ar tik iš eksperimentų rinkinių, kai keičiamas vienas parametras, o kiti laikomi fiksuoti?}
+%This section may be divided by subheadings. It should provide a concise and precise description of the experimental results, their interpretation as well as the experimental conclusions that can be drawn.
+%\begin{quote}
+%This section may be divided by subheadings. It should provide a concise and precise description of the experimental results, their interpretation as well as the experimental conclusions that can be drawn.
+%\end{quote}
 
-This section may be divided by subheadings. It should provide a concise and precise description of the experimental results, their interpretation as well as the experimental conclusions that can be drawn.
-\begin{quote}
-This section may be divided by subheadings. It should provide a concise and precise description of the experimental results, their interpretation as well as the experimental conclusions that can be drawn.
-\end{quote}
+After performing a bayesiean hyperparameter optimization for 169 iterations, source position estimation MSE, MAE and RMSE errors were obtained. 
+
+The relation between the estimated prediction error and the parameters are presented ....
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.4\linewidth]{img/rmse_n_neighbors}
+	\caption{Dependency of source position prediction (using our algorithm and two baseline algorithms) RMSE and the number of nearest neighbors considered for \isomap{} embedding; linear regression model showed in solid line}
+	\label{fig:rmsenneighbors}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.4\linewidth]{img/rmse_gnbrs}
+	\caption{Dependency of source position prediction (using our algorithm and two baseline algorithms) RMSE and the number of nearest neighbors considered during \grnn{} training; linear regression model showed in solid line}
+	\label{fig:rmsegnbrs}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.4\linewidth]{img/RMSE_krep}
+	\caption{Dependency of source position prediction (using our algorithm and two baseline algorithms) RMSE and the rate of labeled training sample reintroduction; linear regression model showed in solid line}
+	\label{fig:rmsekrep}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.4\linewidth]{img/rmse_batch_size}
+	\caption{Dependency of source position prediction (using our algorithm and two baseline algorithms) RMSE and the batch size used in \grnn{} training; linear regression model showed in solid line}
+	\label{fig:rmsebatchsize}
+\end{figure}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Subsection}
@@ -372,14 +406,14 @@ In our proposition, a neural network that is trained considering not only the la
 
 Any neural network can be converted to graph-regularized neural network (\grnn) by introducing additional inputs for neighboring features as well as modifying the loss function to accommodate the graph loss.
 
-A general architecture (one of possibilities) of a \grnn is provided in \figurename{} \ref{fig:networktraining}. In this figure, dotted lines encompasses the input vectors. Dahsed lines inside the GRNN block denote prediction (a forward pass). The loss function is given by $ L = m(\hat{y}_0-y) + \sum_{i \in k_g}a_i(\hat{y}_0 - \hat{y}_1) $. The loss function is discussed further in more detail.
+A general architecture (one of possibilities) of a \grnn model is provided in \figurename{} \ref{fig:networktraining}. In this figure, dotted lines encompasses the input vectors. Dahsed lines inside the GRNN block denote prediction (a forward pass). The loss function is given by $ L = m(\hat{y}_0-y) + \sum_{i \in k_g}a_i(\hat{y}_0 - \hat{y}_1) $. The loss function is discussed further in more detail.
 
-%\begin{figure}
-%	%	\centering
-%	%	\includegraphics[width=0.8\linewidth]{img/network_training}
-%	\caption{General architecture of a graph regularized neural network (considering 4 neighbor features). $ x_0 $ is the main input feature, $ x_{1..4} $ are neighbor input features, $ a_{1..4} $ are corresponding neighbor input feature weights, $ y_0 $ is the target feature, $ m $ is the labeled/unlabeled flag, $ \hat{y}_0 $ is the label prediction for main input feature, $ \hat{y}_{1..4} $ are the label predictions for the neighbor input features}
-%	\label{fig:networktraining}
-%\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\linewidth]{img/network_training}
+	\caption{General architecture of a graph regularized neural network (considering 4 neighbor features). $ x_0 $ is the main input feature, $ x_{1..4} $ are neighbor input features, $ a_{1..4} $ are corresponding neighbor input feature weights, $ y_0 $ is the target feature, $ m $ is the labeled/unlabeled flag, $ \hat{y}_0 $ is the label prediction for main input feature, $ \hat{y}_{1..4} $ are the label predictions for the neighbor input features}
+	\label{fig:networktraining}
+\end{figure}
 
 
 \subsubsection{Architecture}
@@ -438,6 +472,10 @@ The loss function used for the GRNN training is comprised of two parts: the supe
 \end{equation}
 here $ N_b $ -- number of samples in one training batch, $ k_g $ -- size of the neighborhood, $ a_{ij} $ is the neighbor weight, equal to the corresponding element in the affinity matrix.
 
+
+\subsection{Experimental setup}
+We have performed the experimentation using real-world speech source using 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
 
@@ -476,10 +514,10 @@ This section is not mandatory, but may be added if there are patents resulting f
 
 \noindent 
 \begin{tabular}{@{}ll}
-MDPI & Multidisciplinary Digital Publishing Institute\\
-DOAJ & Directory of open access journals\\
-TLA & Three letter acronym\\
-LD & linear dichroism
+GRNN & graph regulzarized neural network \\
+SRP & steered response power  \\
+PHAT & phase transform \\
+
 \end{tabular}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
