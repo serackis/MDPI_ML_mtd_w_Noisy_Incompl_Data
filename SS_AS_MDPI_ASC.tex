@@ -334,7 +334,7 @@ Audio signals obtained from the microphone arrays are split into frames of durat
 
 If the audio recording has an associated location label (known coordinates), a frame is assigned the position label \sposlabel{}.
 
-It is considered that the sound source might not be active a all times, and that the signal is non-stationary (in case of speech signal\todo{is speech signal stationary or not? how to determine}). Thus, in case of an audio frame where the source is not active, the \doa{} of a sound source can not be determined, and the acoustic feature is considered to contain only noise. Such frames are to be discarded. For the selection of the audio frames in which the acoustic feature is usable, a thresholding algorithm was used. For each of the frame, a metric 
+It is considered that the sound source might not be active a all times, and that the signal is non-stationary (in case of speech signal, it might be considered quasi-stationary for frames that contain only one phoneme or a part of a phoneme\todo{cite}). Thus, in case of an audio frame where the source is not active, the \doa{} of a sound source can not be determined, and the acoustic feature is considered to contain only noise. Such frames are to be discarded. For the selection of the audio frames in which the acoustic feature is usable, a thresholding algorithm was used. For each of the frame, a metric 
 $ \thrmetric{}_{\arrayidx,\frameidx} $ 
 was calculated for and compared to the scaled mean \todo{scaled mean?} of the metric of all obtained frames 
 $ \coefficient_\thrmetric \sum_{\frameidx\in\Nframes} \thrmetric{}_{\frameidx}  $, 
@@ -474,7 +474,41 @@ here $ N_b $ -- number of samples in one training batch, $ k_g $ -- size of the 
 
 
 \subsection{Experimental setup}
-We have performed the experimentation using real-world speech source using 
+We have evaluated the performance of our proposed method using a \realworld{} microphone array audio dataset with speech signal as the sound source, which was recorded in a particular acoustic enclosure.
+
+\subsection{Enclosure}
+All audio data used for the experimentation was collected in an irregular shaped room with the side dimensions of \SI{4.902}{\m} in $ x $ axis, \SI{5.361}{\m} in $ y $ axis and \SI{3.75}{\m} in $ z $ axis. The geometry of the enclosure is presented in \figurename{} \ref{fig:room_src_pos}. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.7]{img/room_src_pos.pdf}
+	\caption{The geometry of the acoustic enclosure used for \realworld{} dataset collection and the positions of labeled sound source positions}\label{fig:room_src_pos}
+\end{figure}
+
+\subsection{Sound source}
+\subsubsection{Source signal}
+The signal of the sound source was a \SI{1}{\minute} excerpt from the AMI Corpus \cite{carlettaAMIMeetingCorpus2006}, the mix of close-talking microphone signals, containing male and female speech samples.
+
+Sound source signal was reproduced using a compact battery powered loudspeaker that was mounted on an adjustable height stand.
+
+\subsubsection{Source positions}
+A set of 34 array audio recordings were obtained with the sound source held stationary for \SI{1}{\minute} in one of 34 positions within the enclosure. The coordinates of the sound source were measured using a handheld laser distance measurement tool. The locations of the known source positions are presented in \figurename{} \ref{fig:room_src_pos} as colored circles. The values of the red, green and blue components of each circle color are proportional to the $ x $, $ y $ and $ z $ coordinates of the sound source position.
+
+The vertical coordinate, $ z = \SI{1.9}{\m} $, was constant for all source positions.
+
+\subsection{Microphone arrays}
+In our experimentation we have used $ \numel_{\arr} = 2 $ radial microphone arrays with radius $ \radius_{\arr} = \SI{0.045}{\m} $, each consisting of $ \numel_{\mic} = 4 $ microphone elements spaced at equal angles $ \phi_{\mic} = \ang{90} $. The centers of the microphone arrays were placed at coordinates $ \mathbf{M}_{C,1}^{(x,y,z)} = [2.913, 3.699, 1.313]~\si{\m} $\todo{kaip tinkamai uzrasyti koordinaciu rinkini?} and $ \mathbf{M}_{C,2}^{(x,y,z)} = [2.960, 2.512, 1.309]~\si{\m} $.
+%    mac = np.array([[2.913, 3.699, 1.313],
+%[2.960, 2.512, 1.309]])
+
+First element of each array was oriented towards the positive $ x $ axis with respect to the microphone array center (the rotation of the elements of the microphone array relative to the $ x $ axis was \ang{0}). 
+
+\subsection{Acoustic feature acquisition}
+
+Audio signals obtained from the microphone arrays were split into frames with the duration of \SI{0.05}{\s}. This frame duration was chosen so that every audio frame would contain only one speech phoneme.
+
+For each audio frame and for each array, a \srpphat{} spatial spectrum with 360 elements, covering \doa{} of \ang{360} (1 degree resolution) was calculated using \pra{} \python{} implementation \cite{scheiblerr.etal.PyroomacousticsPythonPackage2017} of a method presented in \cite{dibiaseHighaccuracyLowlatencyTechnique2000}. During \srpphat{} spectra calculation, $ \NFFT{} = 512 $ FFT points were used, with \SI{50}{\percent} overlap, for the STFT snapshot calculation. For each frame, \srpphat{} spectra were concatenated to produce a single 720-dimensional acoustic feature.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
@@ -517,7 +551,13 @@ This section is not mandatory, but may be added if there are patents resulting f
 GRNN & graph regulzarized neural network \\
 SRP & steered response power  \\
 PHAT & phase transform \\
+\doa{} & direction of arrival \\
+RMS & root mean square\\
+MSE  & mean squared error \\
+MAE   & mean average error \\
+RMSE & root mean squared error \\
 
+     
 \end{tabular}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
