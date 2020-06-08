@@ -55,4 +55,14 @@ Scheibler, R.e.a.
 \newblock  \href{http://xxx.lanl.gov/abs/1710.04196}{{\normalfont [arXiv:cs,
   eess/1710.04196]}}.
 
+\bibitem[Pedregosa \em{et~al.}()Pedregosa, Varoquaux, Gramfort, Michel,
+  Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos,
+  Cournapeau, Brucher, Perrot, and
+  Duchesnay]{pedregosaScikitlearnMachineLearning2011}
+Pedregosa, F.; Varoquaux, G.; Gramfort, A.; Michel, V.; Thirion, B.; Grisel,
+  O.; Blondel, M.; Prettenhofer, P.; Weiss, R.; Dubourg, V.; Vanderplas, J.;
+  Passos, A.; Cournapeau, D.; Brucher, M.; Perrot, M.; Duchesnay, E.
+\newblock Scikit-Learn: {{Machine Learning}} in {{Python}}.
+\newblock {\em 12},~2825--2830.
+
 \end{thebibliography}

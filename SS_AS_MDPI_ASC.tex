@@ -328,11 +328,24 @@ Planes of the microphone arrays were parallel to the ground (normals of the circ
 The both arrays were held at a fixed height \harr{}.
 Signals of the microphones are recorded at sampling frequency \fs{} and resolution \resolution{}.
 
+
+\subsubsection{Unlabeled dataset}
+The unlabeled dataset may be obtained from an array audio recording where the sound source is slowly moving inside the acoustic enclosure. The maximal speed of the sound source movement $ \speed_{\src\max} $ should be lower than the maximum expected localization error distance $ \error_{\max} $ per frame duration $ \framedur $:
+\begin{equation}\label{eq:unlabeled_src_max_speed}
+\speed_{\src\max}  = \frac{\error_{\max}}{\framedur}
+\end{equation} 
+\subsubsection{Labeled dataset}
+The labeled dataset may be obtained from an array audio recordings where the sound source is stationed at a known position $ \spos_{\sposidx} $ within the acoustic enclosure and is producing signal (speech or noise) for a period of \labeledsourceduration{} seconds. A collection of $ \sposidx \in \numel_{\spos} $ recordings at fixed source positions may be obtained.
+
+\subsection{Audio signal framing}
+
 Audio signals obtained from the microphone arrays are split into frames of duration \framedur{} seconds to obtain \Nframes{} frames. For each audio frame $ \frameidx{} \in \Nframes{} $ and for each microphone array $ \arrayidx{} \in \Narr $, a time-frequency representation is calculated with \NFFT{} FFT points and $ \numel_{\mathrm{hop}} $ \todo{kaip tinkamai aprasyti FFT parametrus?} an \srpphat{} spatial spectrum \SRPspectrum{} is obtained. 
 \todo{Describe the \srpphat{} acquisition}
 \srpphat{} spectra of all arrays are then concatenated per frame to obtain the acoustic feature.
 
 If the audio recording has an associated location label (known coordinates), a frame is assigned the position label \sposlabel{}.
+
+\subsection{Acoustic features selection (thresholding)}
 
 It is considered that the sound source might not be active a all times, and that the signal is non-stationary (in case of speech signal, it might be considered quasi-stationary for frames that contain only one phoneme or a part of a phoneme\todo{cite}). Thus, in case of an audio frame where the source is not active, the \doa{} of a sound source can not be determined, and the acoustic feature is considered to contain only noise. Such frames are to be discarded. For the selection of the audio frames in which the acoustic feature is usable, a thresholding algorithm was used. For each of the frame, a metric 
 $ \thrmetric{}_{\arrayidx,\frameidx} $ 
@@ -345,13 +358,6 @@ The metric used to evaluate the fitness of the acoustic feature of the particula
 	\item Crest factor of the \srpphat{} spectrum, $ \thrmetric_{\cf,\arrayidx,\frameidx} $.
 \end{enumerate}
 
-\subsubsection{Unlabeled dataset}
-The unlabeled dataset may be obtained from an array audio recording where the sound source is slowly moving inside the acoustic enclosure. The maximal speed of the sound source movement $ \speed_{\src\max} $ should be lower than the maximum expected localization error distance $ \error_{\max} $ per frame duration $ \framedur $:
-\begin{equation}\label{eq:unlabeled_src_max_speed}
-	\speed_{\src\max}  = \frac{\error_{\max}}{\framedur}
-\end{equation} 
-\subsubsection{Labeled dataset}
-The labeled dataset may be obtained from an array audio recordings where the sound source is stationed at a known position $ \spos_{\sposidx} $ within the acoustic enclosure and is producing signal (speech or noise) for a period of \labeledsourceduration{} seconds. A collection of $ \sposidx \in \numel_{\spos} $ recordings at fixed source positions may be obtained.
 
 \subsubsection{Training/testing dataset split}
 The labeled dataset is split into training and testing subsets by randomly selecting samples from  $ \numel_{\test} $ source positions for training and the rest of the source positions $ \numel_{\train} = \numel_\spos - \numel_\test $ for testing from the entire set of labeled source positions.
@@ -448,23 +454,9 @@ This architecture was the found during previously performed hyperparameter optim
 %\end{table} 
 
 \subsubsection{Loss function}
-%\par \textbf{Consists of two parts}
-%\par \textbf{Supervised Loss}
-%\par \textbf{Is calculated only for labeled samples}
-
-%that have the labeled flag set to 1
-
-%MSE between the ground truth label and the preditction
-%
-%\par \textbf{Graph Loss}
-%\par \textbf{Is calculated for each sample}
-%\par \textbf{MSE of prediction for main input feature and the predictions for each of the neighboring features}
-%\par \textbf{MOTIVATION}
 
 Nearby source positions produce similar acoustic features. Therefore, the predicted source positions for the nearby acoustic features should also be similar
 If they are similar, the graph loss is small. If they are not similar, we need to penalize the predictor with a large graph loss
-
-\paragraph{Loss function} \label{subpg:loss}
 
 The loss function used for the GRNN training is comprised of two parts: the supervised loss (the difference between the ground truth label and the predicted label) and the graph loss (the difference bewteen the main input feature label prediction and the weighted sum of neighbor input features label predictions). It can be expressed as 
 \begin{equation}\label{eq:grnn_loss_function}
@@ -476,38 +468,60 @@ here $ N_b $ -- number of samples in one training batch, $ k_g $ -- size of the 
 \subsection{Experimental setup}
 We have evaluated the performance of our proposed method using a \realworld{} microphone array audio dataset with speech signal as the sound source, which was recorded in a particular acoustic enclosure.
 
-\subsection{Enclosure}
+\subsubsection{Enclosure}
 All audio data used for the experimentation was collected in an irregular shaped room with the side dimensions of \SI{4.902}{\m} in $ x $ axis, \SI{5.361}{\m} in $ y $ axis and \SI{3.75}{\m} in $ z $ axis. The geometry of the enclosure is presented in \figurename{} \ref{fig:room_src_pos}. 
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.7]{img/room_src_pos.pdf}
-	\caption{The geometry of the acoustic enclosure used for \realworld{} dataset collection and the positions of labeled sound source positions}\label{fig:room_src_pos}
+	\caption{The geometry of the acoustic enclosure used for \realworld{} dataset collection and labeled sound source positions; height of the enclosure was \SI{3.75}{\m}}\label{fig:room_src_pos}
 \end{figure}
 
-\subsection{Sound source}
-\subsubsection{Source signal}
+\subsubsection{Sound source}
+\paragraph{Source signal}
 The signal of the sound source was a \SI{1}{\minute} excerpt from the AMI Corpus \cite{carlettaAMIMeetingCorpus2006}, the mix of close-talking microphone signals, containing male and female speech samples.
 
 Sound source signal was reproduced using a compact battery powered loudspeaker that was mounted on an adjustable height stand.
 
-\subsubsection{Source positions}
-A set of 34 array audio recordings were obtained with the sound source held stationary for \SI{1}{\minute} in one of 34 positions within the enclosure. The coordinates of the sound source were measured using a handheld laser distance measurement tool. The locations of the known source positions are presented in \figurename{} \ref{fig:room_src_pos} as colored circles. The values of the red, green and blue components of each circle color are proportional to the $ x $, $ y $ and $ z $ coordinates of the sound source position.
+\paragraph{Source positions}
+A set of 34 array audio recordings was obtained with the sound source held stationary for \SI{1}{\minute} in one of 34 positions within the enclosure. The coordinates of the sound source were measured using a handheld laser distance measurement tool with accuracy of \SI{1}{\mm}. The locations of the known source positions are presented in \figurename{} \ref{fig:room_src_pos} as colored circles. The values of the red, green and blue components of each circle color are proportional to the $ x_{\src} $, $ y_{\src} $ and $ z_{\src} $ coordinates of the sound source position.
+The vertical coordinate, $ z_{\src} = \SI{1.9}{\m} $, was constant for all source positions.
 
-The vertical coordinate, $ z = \SI{1.9}{\m} $, was constant for all source positions.
+\subsubsection{Unlabeled audio dataset}
+The unlabeled audio dataset was collected using the same microphone array setup and the same audio source and signal. The loudspeaker was moved manually at a reasonably constant speed of approximately \SI{0.1}{\m\per\s}, scanning the entire floor area of the enclosure \todo[inline]{by moving along $ y $ axis and then along $ y $ axis -- kaip aprašyti?}. The vertical coordinate of the sound source, $ z = \SI{1.9}{\m} $, was held constant during the entire collection of the unlabeled dataset. 
+The total duration of the recording was \SI{511}{\s} \todo{SMF3; SMF4 was 40 minutes long; unused}.
 
-\subsection{Microphone arrays}
+\subsubsection{Microphone arrays}
 In our experimentation we have used $ \numel_{\arr} = 2 $ radial microphone arrays with radius $ \radius_{\arr} = \SI{0.045}{\m} $, each consisting of $ \numel_{\mic} = 4 $ microphone elements spaced at equal angles $ \phi_{\mic} = \ang{90} $. The centers of the microphone arrays were placed at coordinates $ \mathbf{M}_{C,1}^{(x,y,z)} = [2.913, 3.699, 1.313]~\si{\m} $\todo{kaip tinkamai uzrasyti koordinaciu rinkini?} and $ \mathbf{M}_{C,2}^{(x,y,z)} = [2.960, 2.512, 1.309]~\si{\m} $.
 %    mac = np.array([[2.913, 3.699, 1.313],
 %[2.960, 2.512, 1.309]])
 
 First element of each array was oriented towards the positive $ x $ axis with respect to the microphone array center (the rotation of the elements of the microphone array relative to the $ x $ axis was \ang{0}). 
 
-\subsection{Acoustic feature acquisition}
+\subsubsection{Acoustic feature acquisition}
 
 Audio signals obtained from the microphone arrays were split into frames with the duration of \SI{0.05}{\s}. This frame duration was chosen so that every audio frame would contain only one speech phoneme.
 
 For each audio frame and for each array, a \srpphat{} spatial spectrum with 360 elements, covering \doa{} of \ang{360} (1 degree resolution) was calculated using \pra{} \python{} implementation \cite{scheiblerr.etal.PyroomacousticsPythonPackage2017} of a method presented in \cite{dibiaseHighaccuracyLowlatencyTechnique2000}. During \srpphat{} spectra calculation, $ \NFFT{} = 512 $ FFT points were used, with \SI{50}{\percent} overlap, for the STFT snapshot calculation. For each frame, \srpphat{} spectra were concatenated to produce a single 720-dimensional acoustic feature.
+
+\subsubsection{Acoustic feature selection}
+To select 
+
+\subsubsection{Acoustic feature manifold learning}
+Acoustic feature manifold embeddings were found using \isomap{} NLDR algorithm, implemented in \cite{pedregosaScikitlearnMachineLearning2011}.
+We have chosen to embed the manifold into 2-dimensional embedded space, since in our experimentation, the only the $ x $ and $ y $ coordinate of the sound source was changing, thus, the acoustic feature are expected to rely only on two variables.
+The number of nearest neighbors considered for each sample was selected in the range $ \nneighbors = 2^n; n \in [0,1,\dots,6] $.
+The same settings were used for both unlabeled and labeled audio dataset. The acoustic manifold was first learned on unlabeled dataset and then the labeled dataset was transformed into low-dimensional embedded space using the already learned manifold.\todo{patikrinti, ar cia logiskai parastya}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\linewidth]{example-image-a}
+	\caption{\isomap{} embeddings of acoustic features for unlabeled audio signal, obtained using $ \framedur = \SI{0.05}{\s} $}
+	\label{fig:example-image-a}
+\end{figure}
+
+\subsubsection{Dataset construction}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -548,7 +562,7 @@ This section is not mandatory, but may be added if there are patents resulting f
 
 \noindent 
 \begin{tabular}{@{}ll}
-GRNN & graph regulzarized neural network \\
+\grnn{} & graph regulzarized neural network \\
 SRP & steered response power  \\
 PHAT & phase transform \\
 \doa{} & direction of arrival \\
@@ -556,8 +570,8 @@ RMS & root mean square\\
 MSE  & mean squared error \\
 MAE   & mean average error \\
 RMSE & root mean squared error \\
-
-     
+\isomap{}  & isometric mapping \\
+NLDR  & non-linear dimensionality reduction \\
 \end{tabular}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
