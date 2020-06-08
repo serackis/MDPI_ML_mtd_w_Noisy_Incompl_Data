@@ -373,7 +373,7 @@ Manifold embedding can be learned using a Nonlinear Dimensionality Reduction (NL
 In the resulting embedding, \srpphat{} features are grouped by similarity, while at the same time preserving the spatial structure of the high-dimensional (?) space
 %\mpar{Is it really the spatial structure of the high-dimensional space?} (see \figurename{}
 
-\subsection{Graph dataset}
+\subsection{Graph dataset} \label{subsec:graphdataset}
 
 \subsubsection{Dataset preprocessing}
 The combined dataset for training the neural network is comprised of two datasets: $ \numel_{\unlabeled} $ acoustic feature samples without source position labels (the unlabeled dataset) and $ \numel_{\labeled} $ acoustic feature samples with source position labels (the labeled training dataset). Each sample in the combined dataset also has a corresponding \isomap{} embedding.
@@ -505,7 +505,8 @@ Audio signals obtained from the microphone arrays were split into frames with th
 For each audio frame and for each array, a \srpphat{} spatial spectrum with 360 elements, covering \doa{} of \ang{360} (1 degree resolution) was calculated using \pra{} \python{} implementation \cite{scheiblerr.etal.PyroomacousticsPythonPackage2017} of a method presented in \cite{dibiaseHighaccuracyLowlatencyTechnique2000}. During \srpphat{} spectra calculation, $ \NFFT{} = 512 $ FFT points were used, with \SI{50}{\percent} overlap, for the STFT snapshot calculation. For each frame, \srpphat{} spectra were concatenated to produce a single 720-dimensional acoustic feature.
 
 \subsubsection{Acoustic feature selection}
-To select 
+Acoustic features for further processing were selected based on the \rms{} or \cf{} metrics of the feature vector, thresholded by the scaled mean of the corresponding metrics of the entire dataset.
+Thresholding scaling coefficient \thrmeanlvl{} was selected from the range $ \thrmeanlvl \in [1.0, 1.1, \dots, 1.5] $ for both \rms{} and \cf{} based methods.
 
 \subsubsection{Acoustic feature manifold learning}
 Acoustic feature manifold embeddings were found using \isomap{} NLDR algorithm, implemented in \cite{pedregosaScikitlearnMachineLearning2011}.
@@ -521,8 +522,12 @@ The same settings were used for both unlabeled and labeled audio dataset. The ac
 \end{figure}
 
 \subsubsection{Dataset construction}
+The training and testing datasets were constructed as described in Section \ref{subsec:graphdataset}. Number of nearest graph neighbors considered for each sample \gnbrs{} was selected from a set $ \gnbrs{} \in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20] $. 
+
+\subsubsection{\grnn{} architecture}
 
 
+\subsubsection{\grnn{} training}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
