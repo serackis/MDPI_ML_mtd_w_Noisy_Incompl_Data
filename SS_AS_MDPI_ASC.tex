@@ -425,14 +425,35 @@ A general architecture (one of possibilities) of a \grnn model is provided in \f
 \subsubsection{Architecture}
 Apart from the introduction of additional inputs (neighbor features, weights and flags), the actual neural network is just a multilayer perceptron. During prediction phase, only the main input contributes to the prediction.
 
-In this experiment, a simple multilayer perceptron architecture was used. 
-It contained these layers:
-\begin{enumerate}
-	\item A 1080-dimensional input layer (to accept a concatenated \srpphat{} feature using $ N_M = 3 $ microphone arrays, each covering \ang{360} azimuth with \ang{1} resolution).
-	\item A fully-connected layer with 10 units and linear activations.
-	\item A fully-connected layer with 31 units and ReLU activations.
-	\item A 3-dimensional output layer with linear activations.
-\end{enumerate}
+In this experiment, a several multilayer perceptron architectures were used. The summary of the architectures are presented in \tablename 
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[]
+	\caption{Table of neural network architectures used in for the experimentation}
+	\centering
+	\small\setlength{\tabcolsep}{2pt}
+	\begin{tabular}{cc|cc|cc|cc|cc|cc|cc}
+		\toprule
+		&   & \multicolumn{12}{c}{Architecture}                                                                                                                                                       \\ \cmidrule{3-14} 
+		&   & \multicolumn{2}{c|}{1} & \multicolumn{2}{c|}{2} & \multicolumn{2}{c|}{3} & \multicolumn{2}{c|}{4} & \multicolumn{2}{c|}{5} & \multicolumn{2}{c}{6}                                      \\ \midrule
+		Layer                   &   & Activation    & Size   & Activation    & Size   & Activation    & Size   & Activation    & Size   & Activation    & Size   & Activation                                           & Size \\ \midrule
+		input                   &   & linear        & 720    & linear        & 720    & linear        & 720    & linear        & 720    & linear        & 720    & linear                                               & 720  \\ \midrule
+		\multirow{5}{*}{hidden} & 1 & linear        & 14     & linear        & 4      & linear        & 10     & linear        & 10     & linear        & 10     & \begin{tabular}[c]{@{}c@{}}Leaky\\ ReLU\end{tabular} & 10   \\
+		& 2 & sigmoid       & 2      & sigmoid       & 32     & relu          & 31     & ReLU          & 15     & ReLU          & 15     & \begin{tabular}[c]{@{}c@{}}Leaky\\ ReLU\end{tabular} & 15   \\
+		& 3 & tanh          & 24     & tanh          & 23     &               &        & ReLU          & 15     & ReLU          & 15     & \begin{tabular}[c]{@{}c@{}}Leaky\\ ReLU\end{tabular} & 15   \\
+		& 4 & sigmoid       & 33     & sigmoid       & 54     &               &        &               &        & ReLU          & 15     & \begin{tabular}[c]{@{}c@{}}Leaky\\ ReLU\end{tabular} & 15   \\
+		& 5 & linear        & 50     & linear        & 37     &               &        &               &        & ReLU          & 15     & \begin{tabular}[c]{@{}c@{}}Leaky\\ ReLU\end{tabular} & 15   \\ \midrule
+		output                  &   &      linear         & 2      &       linear        & 2      &       linear        & 2      &       linear        & 2      &          linear     & 2      &             linear             & 2    \\ \bottomrule
+	\end{tabular}
+\end{table}
+%It contained these layers:
+%\begin{enumerate}
+%	\item A 1080-dimensional input layer (to accept a concatenated \srpphat{} feature using $ N_M = 3 $ microphone arrays, each covering \ang{360} azimuth with \ang{1} resolution).
+%	\item A fully-connected layer with 10 units and linear activations.
+%	\item A fully-connected layer with 31 units and ReLU activations.
+%	\item A 3-dimensional output layer with linear activations.
+%\end{enumerate}
 
 This architecture was the found during previously performed hyperparameter optimization.
 

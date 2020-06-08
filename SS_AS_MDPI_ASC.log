@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.17)  8 JUN 2020 13:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.17)  8 JUN 2020 16:03
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1568,7 +1568,7 @@ Package epstopdf Info: Source file: <Definitions/logo-mdpi.eps>
 onverted-to.pdf Definitions/logo-mdpi.eps>
 (epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
-<Definitions/logo-mdpi-eps-converted-to.pdf, id=228, 88.33pt x 58.2175pt>
+<Definitions/logo-mdpi-eps-converted-to.pdf, id=236, 88.33pt x 58.2175pt>
 File: Definitions/logo-mdpi-eps-converted-to.pdf Graphic file (type pdf)
 <use Definitions/logo-mdpi-eps-converted-to.pdf>
 Package pdftex.def Info: Definitions/logo-mdpi-eps-converted-to.pdf  used on in
@@ -1633,7 +1633,7 @@ f>
 converted-to.pdf Definitions/logo-orcid.eps>
 (epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
-<Definitions/logo-orcid-eps-converted-to.pdf, id=230, 102.3825pt x 102.3825pt>
+<Definitions/logo-orcid-eps-converted-to.pdf, id=238, 102.3825pt x 102.3825pt>
 File: Definitions/logo-orcid-eps-converted-to.pdf Graphic file (type pdf)
 <use Definitions/logo-orcid-eps-converted-to.pdf>
 Package pdftex.def Info: Definitions/logo-orcid-eps-converted-to.pdf  used on i
@@ -1650,7 +1650,7 @@ Package epstopdf Info: Source file: <Definitions/logo-homepage.eps>
 ps-converted-to.pdf Definitions/logo-homepage.eps>
 (epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
-<Definitions/logo-homepage-eps-converted-to.pdf, id=232, 55.20625pt x 50.1875pt
+<Definitions/logo-homepage-eps-converted-to.pdf, id=240, 55.20625pt x 50.1875pt
 >
 File: Definitions/logo-homepage-eps-converted-to.pdf Graphic file (type pdf)
 <use Definitions/logo-homepage-eps-converted-to.pdf>
@@ -1696,17 +1696,17 @@ ogo-mdpi-eps-converted-to.pdf> <./Definitions/logo-orcid-eps-converted-to.pdf>
 <./Definitions/logo-homepage-eps-converted-to.pdf>]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 146.
-<img/rmse_n_neighbors.png, id=264, 462.528pt x 345.4506pt>
+<img/rmse_n_neighbors.png, id=272, 462.528pt x 345.4506pt>
 File: img/rmse_n_neighbors.png Graphic file (type png)
 <use img/rmse_n_neighbors.png>
 Package pdftex.def Info: img/rmse_n_neighbors.png  used on input line 158.
 (pdftex.def)             Requested size: 177.54256pt x 132.6009pt.
-<img/rmse_gnbrs.png, id=266, 462.528pt x 346.896pt>
+<img/rmse_gnbrs.png, id=274, 462.528pt x 346.896pt>
 File: img/rmse_gnbrs.png Graphic file (type png)
 <use img/rmse_gnbrs.png>
 Package pdftex.def Info: img/rmse_gnbrs.png  used on input line 165.
 (pdftex.def)             Requested size: 177.54256pt x 133.15573pt.
-<img/RMSE_krep.png, id=267, 462.528pt x 345.4506pt>
+<img/RMSE_krep.png, id=275, 462.528pt x 345.4506pt>
 File: img/RMSE_krep.png Graphic file (type png)
 <use img/RMSE_krep.png>
 Package pdftex.def Info: img/RMSE_krep.png  used on input line 172.
@@ -1715,7 +1715,7 @@ Package pdftex.def Info: img/RMSE_krep.png  used on input line 172.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<img/rmse_batch_size.png, id=268, 462.528pt x 346.896pt>
+<img/rmse_batch_size.png, id=276, 462.528pt x 346.896pt>
 File: img/rmse_batch_size.png Graphic file (type png)
 <use img/rmse_batch_size.png>
 Package pdftex.def Info: img/rmse_batch_size.png  used on input line 179.
@@ -1757,20 +1757,25 @@ LaTeX Warning: Marginpar on page 6 moved.
 LaTeX Warning: Marginpar on page 7 moved.
 
 [7]
-<img/network_training.pdf, id=329, 529.8734pt x 282.48615pt>
+<img/network_training.pdf, id=337, 529.8734pt x 282.48615pt>
 File: img/network_training.pdf Graphic file (type pdf)
 <use img/network_training.pdf>
 Package pdftex.def Info: img/network_training.pdf  used on input line 419.
 (pdftex.def)             Requested size: 221.9316pt x 118.31577pt.
- [8] [9 <./img/network_training.pdf>]
-<img/room_src_pos.pdf, id=351, 462.52798pt x 345.4506pt>
+ [8]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 432.
+
+[9 <./img/network_training.pdf>]
+<img/room_src_pos.pdf, id=356, 462.52798pt x 345.4506pt>
 File: img/room_src_pos.pdf Graphic file (type pdf)
 <use img/room_src_pos.pdf>
-Package pdftex.def Info: img/room_src_pos.pdf  used on input line 476.
+Package pdftex.def Info: img/room_src_pos.pdf  used on input line 497.
 (pdftex.def)             Requested size: 323.76736pt x 241.81377pt.
  [10 <./img/room_src_pos.pdf>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
-05.
+26.
 
 (c:/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1782,54 +1787,54 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 Package natbib Warning: Citation `dibiaseHighaccuracyLowlatencyTechnique2000' o
-n page 11 undefined on input line 505.
+n page 11 undefined on input line 526.
 
 
-Underfull \hbox (badness 2351) in paragraph at lines 505--506
+Underfull \hbox (badness 2351) in paragraph at lines 526--527
 \T1/ppl/m/n/10 (+20) cov-er-ing $[]$ of [][] (1 de-gree res-o-lu-tion) was cal-
 cu-lated us-ing \T1/cmtt/m/n/10 pyroomaoustics \T1/ppl/m/it/10 (+20) Python
  []
 
 
-Underfull \hbox (badness 3138) in paragraph at lines 512--516
+Underfull \hbox (badness 3138) in paragraph at lines 533--537
 []\T1/ppl/m/n/10 (+20) Acoustic fea-ture man-i-fold em-bed-dings were found us-
 ing $[]$ NLDR al-go-rithm,
  []
 
-<example-image-a.pdf, id=402, 321.2pt x 240.9pt>
+<example-image-a.pdf, id=406, 321.2pt x 240.9pt>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 519.
+Package pdftex.def Info: example-image-a.pdf  used on input line 540.
 (pdftex.def)             Requested size: 221.9316pt x 166.45274pt.
 
-Underfull \hbox (badness 1117) in paragraph at lines 525--526
+Underfull \hbox (badness 1117) in paragraph at lines 546--547
 \T1/ppl/m/n/10 (+20) of near-est graph neigh-bors con-sid-ered for each sam-ple
  $\OT1/ppl/m/n/10 (+20) k[]$ \T1/ppl/m/n/10 (+20) was se-lected from a set $\OT
 1/ppl/m/n/10 (+20) k[][] \OMS/zplm/m/n/10 2
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
 
  []
 
 [12 <c:/texlive/2019/texmf-dist/tex/latex/mwe/example-image-a.pdf>]
 (./SS_AS_MDPI_ASC.bbl)
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 631.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 656.
  
 AED: lastpage setting LastPage
 [13]
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 631.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 631.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 656.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 656.
 (./SS_AS_MDPI_ASC.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 631.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 631.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 656.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 656.
 Package rerunfilecheck Info: File `SS_AS_MDPI_ASC.out' has not changed.
-(rerunfilecheck)             Checksum: 2DB6F422A86B881E875A39C3AA7E10DB;7597.
+(rerunfilecheck)             Checksum: 07ECBCBF9E981F0FD6BE9DE5956D4E82;7888.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1837,13 +1842,13 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 46655 strings out of 492167
- 902693 string characters out of 6129158
- 1042060 words of memory out of 5000000
- 49978 multiletter control sequences out of 15000+600000
+ 46656 strings out of 492167
+ 902765 string characters out of 6129158
+ 1043372 words of memory out of 5000000
+ 49980 multiletter control sequences out of 15000+600000
  607735 words of font info for 326 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,13n,105p,903b,1228s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,16n,105p,888b,1228s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
 ive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2019/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
@@ -1856,10 +1861,10 @@ cmsy9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><c:
 lic/cm-super/sftt1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/palatino/
 uplb8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/
 texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on SS_AS_MDPI_ASC.pdf (13 pages, 512450 bytes).
+Output written on SS_AS_MDPI_ASC.pdf (13 pages, 513305 bytes).
 PDF statistics:
- 503 PDF objects out of 1000 (max. 8388607)
- 396 compressed objects within 4 object streams
- 105 named destinations out of 1000 (max. 500000)
- 61503 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 509 PDF objects out of 1000 (max. 8388607)
+ 401 compressed objects within 5 object streams
+ 104 named destinations out of 1000 (max. 500000)
+ 61519 words of extra memory for PDF output out of 61914 (max. 10000000)
 
