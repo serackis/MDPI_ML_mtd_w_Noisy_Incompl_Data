@@ -68,10 +68,14 @@ $^{2}$ \quad Affiliation 2; e-mail@e-mail.com}
 %\conference{} % An extended version of a conference paper
 
 % Abstract (Do not insert blank lines, i.e. \\) 
-\abstract{A single paragraph of about 200 words maximum. For research articles, abstracts should give a pertinent overview of the work. We strongly encourage authors to use the following style of structured abstracts, but without headings: (1) Background: Place the question addressed in a broad context and highlight the purpose of the study; (2) Methods: Describe briefly the main methods or treatments applied; (3) Results: Summarize the article's main findings; and (4) Conclusion: Indicate the main conclusions or interpretations. The abstract should be an objective representation of the article, it must not contain results which are not presented and substantiated in the main text and should not exaggerate the main conclusions.}
+\abstract{
+%	A single paragraph of about 200 words maximum. For research articles, abstracts should give a pertinent overview of the work. We strongly encourage authors to use the following style of structured abstracts, but without headings: (1) Background: Place the question addressed in a broad context and highlight the purpose of the study; (2) Methods: Describe briefly the main methods or treatments applied; (3) Results: Summarize the article's main findings; and (4) Conclusion: Indicate the main conclusions or interpretations. The abstract should be an objective representation of the article, it must not contain results which are not presented and substantiated in the main text and should not exaggerate the main conclusions.
+}
 
 % Keywords
-\keyword{keyword 1; keyword 2; keyword 3 (list three to ten pertinent keywords specific to the article, yet reasonably common within the subject discipline.)}
+\keyword{
+%	keyword 1; keyword 2; keyword 3 (list three to ten pertinent keywords specific to the article, yet reasonably common within the subject discipline.)
+}
 
 % The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
 %\PACS{J0101}
@@ -138,12 +142,12 @@ Considering our setting, it is relatively easy to collect a large amount of acou
 
 %\subsection*{Motivation}
 
-In this article we present a method to localize in two dimensions a sound source using a two compact microphone arrays. 
+In this article we present a method to localize a sound source in two dimensions using a two compact microphone arrays. 
 
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Results}
-\todo[inline]{ar dėti iliustracijas, kai klaidos priklausomybe nuo parametro skaičiuojama iš hyperparameter optimization rezultatų, kai keičiami visi parametrai, ar tik iš eksperimentų rinkinių, kai keičiamas vienas parametras, o kiti laikomi fiksuoti?}
+%\todo[inline]{ar dėti iliustracijas, kai klaidos priklausomybe nuo parametro skaičiuojama iš hyperparameter optimization rezultatų, kai keičiami visi parametrai, ar tik iš eksperimentų rinkinių, kai keičiamas vienas parametras, o kiti laikomi fiksuoti?}
 %This section may be divided by subheadings. It should provide a concise and precise description of the experimental results, their interpretation as well as the experimental conclusions that can be drawn.
 %\begin{quote}
 %This section may be divided by subheadings. It should provide a concise and precise description of the experimental results, their interpretation as well as the experimental conclusions that can be drawn.
@@ -153,124 +157,41 @@ After performing a bayesiean hyperparameter optimization for 169 iterations, sou
 
 The relation between the estimated prediction error and the parameters are presented ....
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.4\linewidth]{img/rmse_n_neighbors}
-	\caption{Dependency of source position prediction (using our algorithm and two baseline algorithms) RMSE and the number of nearest neighbors considered for \isomap{} embedding; linear regression model showed in solid line}
-	\label{fig:rmsenneighbors}
-\end{figure}
+\todo{TODO}
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.4\linewidth]{img/rmse_gnbrs}
-	\caption{Dependency of source position prediction (using our algorithm and two baseline algorithms) RMSE and the number of nearest neighbors considered during \grnn{} training; linear regression model showed in solid line}
-	\label{fig:rmsegnbrs}
-\end{figure}
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.4\linewidth]{img/rmse_n_neighbors}
+%	\caption{Dependency of source position prediction (using our algorithm and two baseline algorithms) RMSE and the number of nearest neighbors considered for \isomap{} embedding; linear regression model showed in solid line}
+%	\label{fig:rmsenneighbors}
+%\end{figure}
+%
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.4\linewidth]{img/rmse_gnbrs}
+%	\caption{Dependency of source position prediction (using our algorithm and two baseline algorithms) RMSE and the number of nearest neighbors considered during \grnn{} training; linear regression model showed in solid line}
+%	\label{fig:rmsegnbrs}
+%\end{figure}
+%
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.4\linewidth]{img/RMSE_krep}
+%	\caption{Dependency of source position prediction (using our algorithm and two baseline algorithms) RMSE and the rate of labeled training sample reintroduction; linear regression model showed in solid line}
+%	\label{fig:rmsekrep}
+%\end{figure}
+%
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.4\linewidth]{img/rmse_batch_size}
+%	\caption{Dependency of source position prediction (using our algorithm and two baseline algorithms) RMSE and the batch size used in \grnn{} training; linear regression model showed in solid line}
+%	\label{fig:rmsebatchsize}
+%\end{figure}
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.4\linewidth]{img/RMSE_krep}
-	\caption{Dependency of source position prediction (using our algorithm and two baseline algorithms) RMSE and the rate of labeled training sample reintroduction; linear regression model showed in solid line}
-	\label{fig:rmsekrep}
-\end{figure}
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.4\linewidth]{img/rmse_batch_size}
-	\caption{Dependency of source position prediction (using our algorithm and two baseline algorithms) RMSE and the batch size used in \grnn{} training; linear regression model showed in solid line}
-	\label{fig:rmsebatchsize}
-\end{figure}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Subsection}
-\unskip
-\subsubsection{Subsubsection}
-
-Bulleted lists look like this:
-\begin{itemize}[leftmargin=*,labelsep=5.8mm]
-\item	First bullet
-\item	Second bullet
-\item	Third bullet
-\end{itemize}
-
-Numbered lists can be added as follows:
-\begin{enumerate}[leftmargin=*,labelsep=4.9mm]
-\item	First item 
-\item	Second item
-\item	Third item
-\end{enumerate}
-
-The text continues here.
-
-\subsection{Figures, Tables and Schemes}
-
-All figures and tables should be cited in the main text as Figure 1, Table 1, etc.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=2 cm]{Definitions/logo-mdpi}
-\caption{This is a figure, Schemes follow the same formatting. If there are multiple panels, they should be listed as: (\textbf{a}) Description of what is contained in the first panel. (\textbf{b}) Description of what is contained in the second panel. Figures should be placed in the main text near to the first time they are cited. A caption on a single line should be centered.}
-\end{figure}   
- 
-Text
-
-Text
-
-\begin{table}[H]
-\caption{This is a table caption. Tables should be placed in the main text near to the first time they are cited.}
-\centering
-%% \tablesize{} %% You can specify the fontsize here, e.g., \tablesize{\footnotesize}. If commented out \small will be used.
-\begin{tabular}{ccc}
-\toprule
-\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}\\
-\midrule
-entry 1		& data			& data\\
-entry 2		& data			& data\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-Text
-
-Text
-
-%\begin{listing}[H]
-%\caption{Title of the listing}
-%\rule{\textwidth}{1pt}
-%\raggedright Text of the listing. In font size footnotesize, small, or normalsize. Preferred format: left aligned and single spaced. Preferred border format: top border line and bottom border line.
-%\rule{\textwidth}{1pt}
-%\end{listing}
-
-
-\subsection{Formatting of Mathematical Components}
-
-This is an example of an equation:
-
-\begin{equation}
-a + b = c
-\end{equation}
-%% If the documentclass option "submit" is chosen, please insert a blank line before and after any math environment (equation and eqnarray environments). This ensures correct linenumbering. The blank line should be removed when the documentclass option is changed to "accept" because the text following an equation should not be a new paragraph. 
-
-Please punctuate equations as regular text. Theorem-type environments (including propositions, lemmas, corollaries etc.) can be formatted as follows:
-%% Example of a theorem:
-\begin{Theorem}
-Example text of a theorem.
-\end{Theorem}
-
-The text continues here. Proofs must be formatted as follows:
-
-%% Example of a proof:
-\begin{proof}[Proof of Theorem 1]
-Text of the proof. Note that the phrase `of Theorem 1' is optional if it is clear which theorem is being referred to.
-\end{proof}
-The text continues here.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
 
-Authors should discuss the results and how they can be interpreted in perspective of previous studies and of the working hypotheses. The findings and their implications should be discussed in the broadest context possible. Future research directions may also be highlighted.
+%Authors should discuss the results and how they can be interpreted in perspective of previous studies and of the working hypotheses. The findings and their implications should be discussed in the broadest context possible. Future research directions may also be highlighted.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Materials and Methods}
@@ -311,23 +232,22 @@ While this would be a simple and straightforward method, the accurate TDoA estim
 \subsubsection{Room Impulse Response and Room Transfer Function}
 It is assumed that high-dimensional acoustic features, such as room impulse response (RIR) or room transfer function (RTF) contain a unique fingerprint of sound source and microphone positions within an enclosure. This is because the structure of room reflections is unique for every source position and every microphone position (theoretically, there might be some cases when same RIR is obtained for more than one combination of microphone and sound source positions, but this is probably possible in ideal room, which exhibit point symmetry around the center of the room; in real rooms this is impossible; also the microphones must be also placed symmetrically in the enclosure for this effect to occur).
 
-While the RIRs and RTFs contain enough information to uniquely determine the position of the source within an enclosure, in practice it is impossible to obtain neither RIR nor RTF without knowing the positions of the sound source and the microphone within the room beforehand.
+While the RIRs and RTFs contain enough information to uniquely determine the position of the source within an enclosure, in practice it is impossible to obtain RIR without knowing the positions of the sound source and the microphone within the room beforehand. RTFs, on the other hand, is a viable option.
 
 \subsubsection{Steered Response Power}
 Steered Response Power (SRP) and SRP with Phase Transform (\srpphat{}) vectors can be considered the middle ground between the trivial acoustic features like TDoA and ideal features, like RIR or RTF. 
-\srpphat{} are obtainable in real world, are relatively high-dimensional and contain information about sound reflections within the room.
+\srpphat{} features are obtainable in real world, are relatively high-dimensional and contain information about sound reflections within the room.
 
 \subsubsection{Properties of acoustic features}
 The most important property of all acoustic features in this investigation is the spatial smoothness of feature space. In other words, acoustic features are similar to each other for sound source positions that are close together.
 
-In our investigation, we use the \srpphat{} spatial vectors as acoustic features.
+In our investigation, we use the \srpphat{} spatial spectra as acoustic features \cite{dibiaseHighaccuracyLowlatencyTechnique2000,scheiblerPyroomacousticsPythonPackage2018a}. 
 
 \subsection{Acoustic feature acquisition}
 Acoustic features were obtained within an acoustic enclosure using a single sound source, $ z $ coordinate was fixed at height \hsrc{}. \Narr{} circular microphone arrays were used for acoustic signal acquisition, each with \Nmic{} microphone elements and radius \rarr{}.
-Planes of the microphone arrays were parallel to the ground (normals of the circles coincided with the $ z $ axis of the enclosure).
-The both arrays were held at a fixed height \harr{}.
-Signals of the microphones are recorded at sampling frequency \fs{} and resolution \resolution{}.
-
+Planes of the microphone arrays were parallel to the ground.
+Both arrays were held at a fixed height \harr{}.
+Signals of the microphones are recorded at a fixed sampling frequency \fs{} and a fixed resolution \resolution{}.
 
 \subsubsection{Unlabeled dataset}
 The unlabeled dataset may be obtained from an array audio recording where the sound source is slowly moving inside the acoustic enclosure. The maximal speed of the sound source movement $ \speed_{\src\max} $ should be lower than the maximum expected localization error distance $ \error_{\max} $ per frame duration $ \framedur $:
@@ -335,28 +255,36 @@ The unlabeled dataset may be obtained from an array audio recording where the so
 \speed_{\src\max}  = \frac{\error_{\max}}{\framedur}
 \end{equation} 
 \subsubsection{Labeled dataset}
-The labeled dataset may be obtained from an array audio recordings where the sound source is stationed at a known position $ \spos_{\sposidx} $ within the acoustic enclosure and is producing signal (speech or noise) for a period of \labeledsourceduration{} seconds. A collection of $ \sposidx \in \numel_{\spos} $ recordings at fixed source positions may be obtained.
+The labeled dataset may be obtained from an array audio recordings where the sound source is stationed at a known position \sposlabel{}, described by coordinates $ (x,y,z) $ in Cartesian coordinate system within the acoustic enclosure and is producing signal (speech or noise) for a period of \labeledsourceduration{} seconds. A collection of $ \sposidx \in \numel_{\spos} $ recordings at fixed source positions may be obtained.
 
 \subsection{Audio signal framing}
+Audio signals obtained from the microphone arrays are split into frames of duration \framedur{} seconds to obtain \Nframes{} frames. 
 
-Audio signals obtained from the microphone arrays are split into frames of duration \framedur{} seconds to obtain \Nframes{} frames. For each audio frame $ \frameidx{} \in \Nframes{} $ and for each microphone array $ \arrayidx{} \in \Narr $, a time-frequency representation is calculated with \NFFT{} FFT points and $ \numel_{\mathrm{hop}} $ \todo{kaip tinkamai aprasyti FFT parametrus?} an \srpphat{} spatial spectrum \SRPspectrum{} is obtained. 
-\todo{Describe the \srpphat{} acquisition}
-\srpphat{} spectra of all arrays are then concatenated per frame to obtain the acoustic feature.
+\subsection{\srpphat{} feature acquisition}
+For each audio frame $ \frameidx{} \in \Nframes{} $ and for each microphone array $ \arrayidx{} \in \Narr $, a set of time-frequency representations of the microphone signals is calculated with \NFFT{} FFT points, without frame overlap and no windowing function. 
+
+A \srpphat{} spatial spectrum \SRPspectrum{} is obtained for each frame and for each array. 
+\SRPspectrum{} is a vector with $ \numel_{\SRP} $ elements, representing the WHAT\todo{??????} at a particular \doa{} and covering an azimuth angle $ \azimuth_{\arr} \in [\ang{0};\ang{360}] $.
+\srpphat{} spectra of all arrays are then concatenated per frame to obtain the acoustic feature \SRPfeature{} of $ \numel_{\arr} \cdot \numel_{\SRP} $ elements.
 
 If the audio recording has an associated location label (known coordinates), a frame is assigned the position label \sposlabel{}.
 
 \subsection{Acoustic features selection (thresholding)}
 
-It is considered that the sound source might not be active a all times, and that the signal is non-stationary (in case of speech signal, it might be considered quasi-stationary for frames that contain only one phoneme or a part of a phoneme\todo{cite}). Thus, in case of an audio frame where the source is not active, the \doa{} of a sound source can not be determined, and the acoustic feature is considered to contain only noise. Such frames are to be discarded. For the selection of the audio frames in which the acoustic feature is usable, a thresholding algorithm was used. For each of the frame, a metric 
-$ \thrmetric{}_{\arrayidx,\frameidx} $ 
-was calculated for and compared to the scaled mean \todo{scaled mean?} of the metric of all obtained frames 
-$ \coefficient_\thrmetric \sum_{\frameidx\in\Nframes} \thrmetric{}_{\frameidx}  $, 
+It is considered that the sound source might not be active a all times, and that the signal is non-stationary (in case of speech signal, it might be considered quasi-stationary for frames that contain only one phoneme or a part of a phoneme\todo{cite}). Thus, in case of an audio frame where the source is not active, the \doa{} of a sound source can not be determined, and the acoustic feature is considered to contain only noise. Such frames are to be discarded. For the selection of the audio frames in which the acoustic feature is usable, a thresholding algorithm was used. 
+A metric 
+$ \thrmetric{}_{\arrayidx,\frameidx} = f(\SRPspectrum) $ 
+is calculated for and compared to the threshold level \thrlevel{} which is the scaled mean \todo{scaled mean? is this a good term?} of the metric of all obtained frames 
+$ \thrlevel = \coefficient_\thrmetric \frac{1}{\Nframes}\sum_{\frameidx\in\Nframes} \thrmetric{}_{\frameidx}  $, 
 where $ \coefficient_\thrmetric $ is the scaling coefficient used to control the threshold value.
-The metric used to evaluate the fitness of the acoustic feature of the particular audio frame are: 
+Metric $ \thrmetric{}_{\arrayidx,\frameidx} $ is calculated per array to address a fact that the arrays might be not identical in terms of audio signal gain, the signal-to-noise ratio and frequency response.
+The metrics used to evaluate the fitness of the acoustic feature of the particular audio frame are: 
 \begin{enumerate}
-	\item Root-mean-square \todo{maybe that's energy of a frame?} value of the \srpphat{} spectrum, $ \thrmetric_{\rms,\arrayidx,\frameidx} $\todo{kaip prasyti formule SRP spektrui? ten viena dimensija yra kampas - integralas ar suma pagal kampa?}.
-	\item Crest factor of the \srpphat{} spectrum, $ \thrmetric_{\cf,\arrayidx,\frameidx} $.
+	\item Root-mean-square \todo{maybe that's energy of a frame?} value of the \srpphat{} spectrum, $ \thrmetric^{\rms,}_{\arrayidx,\frameidx}(\SRPspectrum) = \sqrt{ \mean{\SRP^2} } $. 
+	\item Crest factor of the \srpphat{} spectrum, $ \thrmetric^{\cf}_{\arrayidx,\frameidx}(\SRPspectrum) = \frac{\abs{\max(\SRPspectrum)}}{\thrmetric^{\rms,}_{\arrayidx,\frameidx}(\SRPspectrum)} $.
 \end{enumerate}
+
+After determining $ \thrmetric{}_{\arrayidx,\frameidx} $ of the \SRPspectrum{} per array per frame, feature vectors \SRPfeature{} are selected of those frames $ j $ for which $ \thrmetric{}_{\arrayidx,\frameidx} > \thrlevel $ for all microphone arrays $ i \in \numel_{\arr} $.
 
 
 \subsubsection{Training/testing dataset split}
@@ -365,19 +293,22 @@ Following operations are performed separately for training ant testing labeled d
 
 \subsection{Acoustic manifold embedding learning}
 
-Manifold embedding can be learned using a Nonlinear Dimensionality Reduction (NLDR) algorithm, such as isometric mapping (\isomap{}), t-distributed stochastic neighbor embedding (t-SNE) or localli linear embedding (LLE). 
-
+Manifold embedding can be learned using a Nonlinear Dimensionality Reduction (NLDR) algorithm, such as isometric mapping (\isomap{}), t-distributed stochastic neighbor embedding (t-SNE) or localli linear embedding (LLE), among others. 
+We have employed \isomap{} NLRD algorithm to obtain the high-dimensional feature embeddings in low-dimensional space, that is, learn the acoustic feature manifold.
 
 \subsubsection{\isomap{} embedding}
+One of the earliest approaches to manifold learning is the \isomap{} algorithm. Isomap can be viewed as an extension of Multi-dimensional Scaling (MDS) or Kernel Principal Component Analysis (PCA). Isomap seeks a lower-dimensional embedding which maintains geodesic distances between all points~\cite{pedregosaScikitlearnMachineLearning2011}.
+
 \srpphat{} features from both labeled and unlabeled training datasets are embedded into \Demb-dimensional embedded space using \isomap{}, with \kemb{} nearest neighbors considered. 
-In the resulting embedding, \srpphat{} features are grouped by similarity, while at the same time preserving the spatial structure of the high-dimensional (?) space
+For each \SRPfeature{} feature, an embedding $ \ISOembedding{} = [z_{d_1}, z_{d_2}, \dots, z_{d_{\Demb}}] $. This way, a low-dimensional representations of the high-dimensional acoustic features is obtained. Moreover, the learned manifold corresponds to the spatial structure of the acoustic feature space. Thus, the relative distances in the embedded space of unlabeled features to labeled features is known. 
+
 %\mpar{Is it really the spatial structure of the high-dimensional space?} (see \figurename{}
 
 \subsection{Graph dataset} \label{subsec:graphdataset}
 
 \subsubsection{Dataset preprocessing}
-The combined dataset for training the neural network is comprised of two datasets: $ \numel_{\unlabeled} $ acoustic feature samples without source position labels (the unlabeled dataset) and $ \numel_{\labeled} $ acoustic feature samples with source position labels (the labeled training dataset). Each sample in the combined dataset also has a corresponding \isomap{} embedding.
-In order to train the \grnn{} with graph regularization, the dataset must be preprocessed: for each sample, regardless of whether it is a labeled or an unlabeled sample, alongside the main feature, neighbor features and their weights must be introduced. This is done by first determining the \gnbrs{} nearest neighbors of a particular sample in the embedded feature space and then appending those features as well as their weight coefficients to the training sample.
+The combined dataset for training the neural network is comprised of two datasets: $ \numel_{\unlabeled} $ acoustic feature samples without source position labels (the unlabeled dataset) and $ \numel_{\labeled} $ acoustic feature samples with source position labels (the labeled training dataset). Each sample feature $ \SRPfeature^{\unlabeled,\labeled} $ in the combined dataset also has a corresponding \isomap{} embedding $ \ISOembedding^{\unlabeled,\labeled} $.
+In order to train the \grnn{} with graph regularization, the dataset must be preprocessed: for each sample, regardless of whether it is a labeled or an unlabeled sample, alongside the main feature, neighbor features $ \SRPfeature^{\nbr} $ and their weights $ \nbrweigth^{\nbr} $ where $ \nbr \in \nbrhood $ must be introduced. \nbrhood{} denotes the neighborhood of the sample feature in the embedded space. This is done by first determining the \gnbrs{} nearest neighbors of a particular sample in the embedded feature space and then appending those features as well as their weight coefficients to the training sample.
 
 \subsubsection{Affinity matrix calculation}
 In the embedded space, Euclidean distances are calculated between every feature. The distances between each data sample constitute the distance matrix \distancematrix, which is in turn used to calculate the affinity matrix.
@@ -387,7 +318,7 @@ Affinity matrix \affinitymatrix{} is calculated by subtracting \distancematrix{}
 	\mathbf{D} &= (d_{ij});\\
 	d_{ij} &= \lVert \mathbf{p}_{i}-\mathbf{p}_{j} \rVert _{2}^{2}
 \end{align}
-here $ \mathbf{p}_{i} = (\alpha_i, \beta_i) $ is the point coordinate vector in the embedded space (in case of $ N_{\mathrm{ISO}} = 2 $), $ \alpha $ and $ \beta $ are the Cartesian coordinates in the embedded space.
+here $ \mathbf{p}_{i} = (\alpha_i, \beta_i) $ is the point coordinate vector in the embedded space (in case of $ N_{\mathrm{ISO}} = 2 $), $ \alpha $ and $ \beta $ are the Cartesian coordinates in the embedded space. \todo{change here to \Demb{} -dimensional represetation, not constant 2}
 
 Neighbor weights are inversely proportional to the Euclidean distances between the main feature and the neighbor features in the low-dimensional embedded space.
 
@@ -523,7 +454,7 @@ First element of each array was oriented towards the positive $ x $ axis with re
 
 Audio signals obtained from the microphone arrays were split into frames with the duration of \SI{0.05}{\s}. This frame duration was chosen so that every audio frame would contain only one speech phoneme.
 
-For each audio frame and for each array, a \srpphat{} spatial spectrum with 360 elements, covering \doa{} of \ang{360} (1 degree resolution) was calculated using \pra{} \python{} implementation \cite{scheiblerr.etal.PyroomacousticsPythonPackage2017} of a method presented in \cite{dibiaseHighaccuracyLowlatencyTechnique2000}. During \srpphat{} spectra calculation, $ \NFFT{} = 512 $ FFT points were used, with \SI{50}{\percent} overlap, for the STFT snapshot calculation. For each frame, \srpphat{} spectra were concatenated to produce a single 720-dimensional acoustic feature.
+For each audio frame and for each array, a \srpphat{} spatial spectrum with 360 elements, covering \doa{} of \ang{360} (1 degree resolution) was calculated using \pra{} \python{} implementation \cite{scheiblerPyroomacousticsPythonPackage2018a} of a method presented in \cite{dibiaseHighaccuracyLowlatencyTechnique2000}. During \srpphat{} spectra calculation, $ \NFFT{} = 512 $ FFT points were used, with \SI{50}{\percent} overlap, for the STFT snapshot calculation. For each frame, \srpphat{} spectra were concatenated to produce a single 720-dimensional acoustic feature.
 
 \subsubsection{Acoustic feature selection}
 Acoustic features for further processing were selected based on the \rms{} or \cf{} metrics of the feature vector, thresholded by the scaled mean of the corresponding metrics of the entire dataset.
@@ -555,32 +486,32 @@ The training and testing datasets were constructed as described in Section \ref{
 
 This section is not mandatory, but can be added to the manuscript if the discussion is unusually long or complex.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Patents}
-This section is not mandatory, but may be added if there are patents resulting from the work reported in this manuscript.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Patents}
+%This section is not mandatory, but may be added if there are patents resulting from the work reported in this manuscript.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{6pt} 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{6pt} 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% optional
-%\supplementary{The following are available online at \linksupplementary{s1}, Figure S1: title, Table S1: title, Video S1: title.}
-
-% Only for the journal Methods and Protocols:
-% If you wish to submit a video article, please do so with any other supplementary material.
-% \supplementary{The following are available at \linksupplementary{s1}, Figure S1: title, Table S1: title, Video S1: title. A supporting video article is available at doi: link.}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\authorcontributions{For research articles with several authors, a short paragraph specifying their individual contributions must be provided. The following statements should be used ``Conceptualization, X.X. and Y.Y.; methodology, X.X.; software, X.X.; validation, X.X., Y.Y. and Z.Z.; formal analysis, X.X.; investigation, X.X.; resources, X.X.; data curation, X.X.; writing--original draft preparation, X.X.; writing--review and editing, X.X.; visualization, X.X.; supervision, X.X.; project administration, X.X.; funding acquisition, Y.Y. All authors have read and agreed to the published version of the manuscript.'', please turn to the  \href{http://img.mdpi.org/data/contributor-role-instruction.pdf}{CRediT taxonomy} for the term explanation. Authorship must be limited to those who have contributed substantially to the work reported.}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\funding{Please add: ``This research received no external funding'' or ``This research was funded by NAME OF FUNDER grant number XXX.'' and  and ``The APC was funded by XXX''. Check carefully that the details given are accurate and use the standard spelling of funding agency names at \url{https://search.crossref.org/funding}, any errors may affect your future funding.}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\acknowledgments{In this section you can acknowledge any support given which is not covered by the author contribution or funding sections. This may include administrative and technical support, or donations in kind (e.g., materials used for experiments).}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\conflictsofinterest{Declare conflicts of interest or state ``The authors declare no conflict of interest.'' Authors must identify and declare any personal circumstances or interest that may be perceived as inappropriately influencing the representation or interpretation of reported research results. Any role of the funders in the design of the study; in the collection, analyses or interpretation of data; in the writing of the manuscript, or in the decision to publish the results must be declared in this section. If there is no role, please state ``The funders had no role in the design of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript, or in the decision to publish the results''.} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% optional
+%%\supplementary{The following are available online at \linksupplementary{s1}, Figure S1: title, Table S1: title, Video S1: title.}
+%
+%% Only for the journal Methods and Protocols:
+%% If you wish to submit a video article, please do so with any other supplementary material.
+%% \supplementary{The following are available at \linksupplementary{s1}, Figure S1: title, Table S1: title, Video S1: title. A supporting video article is available at doi: link.}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\authorcontributions{For research articles with several authors, a short paragraph specifying their individual contributions must be provided. The following statements should be used ``Conceptualization, X.X. and Y.Y.; methodology, X.X.; software, X.X.; validation, X.X., Y.Y. and Z.Z.; formal analysis, X.X.; investigation, X.X.; resources, X.X.; data curation, X.X.; writing--original draft preparation, X.X.; writing--review and editing, X.X.; visualization, X.X.; supervision, X.X.; project administration, X.X.; funding acquisition, Y.Y. All authors have read and agreed to the published version of the manuscript.'', please turn to the  \href{http://img.mdpi.org/data/contributor-role-instruction.pdf}{CRediT taxonomy} for the term explanation. Authorship must be limited to those who have contributed substantially to the work reported.}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\funding{Please add: ``This research received no external funding'' or ``This research was funded by NAME OF FUNDER grant number XXX.'' and  and ``The APC was funded by XXX''. Check carefully that the details given are accurate and use the standard spelling of funding agency names at \url{https://search.crossref.org/funding}, any errors may affect your future funding.}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\acknowledgments{In this section you can acknowledge any support given which is not covered by the author contribution or funding sections. This may include administrative and technical support, or donations in kind (e.g., materials used for experiments).}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\conflictsofinterest{Declare conflicts of interest or state ``The authors declare no conflict of interest.'' Authors must identify and declare any personal circumstances or interest that may be perceived as inappropriately influencing the representation or interpretation of reported research results. Any role of the funders in the design of the study; in the collection, analyses or interpretation of data; in the writing of the manuscript, or in the decision to publish the results must be declared in this section. If there is no role, please state ``The funders had no role in the design of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript, or in the decision to publish the results''.} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% optional
@@ -641,16 +572,16 @@ All appendix sections must be cited in the main text. In the appendixes, Figures
 % To cite two works by the same author with specific pages: \citeauthor{ref-journal-3a} (\citeyear{ref-journal-3a}, p. 328; \citeyear{ref-journal-3b}, p.475). This produces: Wong (1999, p. 328; 2000, p. 475)
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% optional
-\sampleavailability{Samples of the compounds ...... are available from the authors.}
-
-%% for journal Sci
-%\reviewreports{\\
-%Reviewer 1 comments and authors’ response\\
-%Reviewer 2 comments and authors’ response\\
-%Reviewer 3 comments and authors’ response
-%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% optional
+%\sampleavailability{Samples of the compounds ...... are available from the authors.}
+%
+%%% for journal Sci
+%%\reviewreports{\\
+%%Reviewer 1 comments and authors’ response\\
+%%Reviewer 2 comments and authors’ response\\
+%%Reviewer 3 comments and authors’ response
+%%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

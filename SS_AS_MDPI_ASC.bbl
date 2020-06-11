@@ -38,22 +38,15 @@ He, W.; Motlicek, P.; Odobez, J.M.
 \newblock
   doi:{\changeurlcolor{black}\href{https://doi.org/10.1109/ICASSP.2019.8682655}{\detokenize{10.1109/ICASSP.2019.8682655}}}.
 
-\bibitem[Carletta \em{et~al.}()Carletta, , and
-  {others}]{carlettaAMIMeetingCorpus2006}
-Carletta, J.; .; {others}.
-\newblock The {{AMI Meeting Corpus}}: {{A Pre}}-Announcement.
-\newblock  Proceedings of the {{Second International Conference}} on {{Machine
-  Learning}} for {{Multimodal Interaction}}. {Springer-Verlag}, {{MLMI}}'05,
-  pp. 28--39.
+\bibitem[Scheibler \em{et~al.}()Scheibler, Bezzam, and
+  Dokmanić]{scheiblerPyroomacousticsPythonPackage2018a}
+Scheibler, R.; Bezzam, E.; Dokmanić, I.
+\newblock Pyroomacoustics: {{A Python Package}} for {{Audio Room Simulation}}
+  and {{Array Processing Algorithms}}.
+\newblock  2018 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}}
+  and {{Signal Processing}} ({{ICASSP}}), pp. 351--355.
 \newblock
-  doi:{\changeurlcolor{black}\href{https://doi.org/10.1007/11677482_3}{\detokenize{10.1007/11677482_3}}}.
-
-\bibitem[Scheibler()]{scheiblerr.etal.PyroomacousticsPythonPackage2017}
-Scheibler, R.e.a.
-\newblock Pyroomacoustics: {{A Python}} Package for Audio Room Simulations and
-  Array Processing Algorithms.
-\newblock  \href{http://xxx.lanl.gov/abs/1710.04196}{{\normalfont [arXiv:cs,
-  eess/1710.04196]}}.
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1109/ICASSP.2018.8461310}{\detokenize{10.1109/ICASSP.2018.8461310}}}.
 
 \bibitem[Pedregosa \em{et~al.}()Pedregosa, Varoquaux, Gramfort, Michel,
   Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos,
@@ -64,5 +57,15 @@ Pedregosa, F.; Varoquaux, G.; Gramfort, A.; Michel, V.; Thirion, B.; Grisel,
   Passos, A.; Cournapeau, D.; Brucher, M.; Perrot, M.; Duchesnay, E.
 \newblock Scikit-Learn: {{Machine Learning}} in {{Python}}.
 \newblock {\em 12},~2825--2830.
+
+\bibitem[Carletta \em{et~al.}()Carletta, , and
+  {others}]{carlettaAMIMeetingCorpus2006}
+Carletta, J.; .; {others}.
+\newblock The {{AMI Meeting Corpus}}: {{A Pre}}-Announcement.
+\newblock  Proceedings of the {{Second International Conference}} on {{Machine
+  Learning}} for {{Multimodal Interaction}}. {Springer-Verlag}, {{MLMI}}'05,
+  pp. 28--39.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1007/11677482_3}{\detokenize{10.1007/11677482_3}}}.
 
 \end{thebibliography}

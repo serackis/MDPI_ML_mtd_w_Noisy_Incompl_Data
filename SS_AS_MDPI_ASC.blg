@@ -10,48 +10,48 @@ Warning--empty journal in martiSpeakerLocalizationDetection2011
 Warning--empty journal in laufer-goldshteinSemiSupervisedSoundSource2016
 Warning--empty year in heDeepNeuralNetworks2018b
 Warning--empty year in heAdaptationMultipleSound2019
-Warning--empty year in carlettaAMIMeetingCorpus2006
-Warning--empty journal in scheiblerr.etal.PyroomacousticsPythonPackage2017
+Warning--empty year in scheiblerPyroomacousticsPythonPackage2018a
 Warning--empty journal in pedregosaScikitlearnMachineLearning2011
+Warning--empty year in carlettaAMIMeetingCorpus2006
 You've used 8 entries,
             2865 wiz_defined-function locations,
-            624 strings with 6685 characters,
-and the built_in function-call counts, 3421 in all, are:
-= -- 278
-> -- 218
+            623 strings with 6800 characters,
+and the built_in function-call counts, 3682 in all, are:
+= -- 306
+> -- 232
 < -- 6
-+ -- 83
-- -- 66
-* -- 308
-:= -- 546
-add.period$ -- 27
++ -- 87
+- -- 70
+* -- 323
+:= -- 577
+add.period$ -- 28
 call.type$ -- 8
 change.case$ -- 8
 chr.to.int$ -- 7
 cite$ -- 14
-duplicate$ -- 151
-empty$ -- 269
-format.name$ -- 74
-if$ -- 722
+duplicate$ -- 162
+empty$ -- 289
+format.name$ -- 78
+if$ -- 789
 int.to.chr$ -- 2
 int.to.str$ -- 8
 missing$ -- 7
-newline$ -- 43
+newline$ -- 44
 num.names$ -- 22
 pop$ -- 72
 preamble$ -- 0
 purify$ -- 8
 quote$ -- 0
-skip$ -- 87
+skip$ -- 99
 stack$ -- 0
-substring$ -- 160
-swap$ -- 41
-text.length$ -- 4
+substring$ -- 192
+swap$ -- 51
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 53
 warning$ -- 7
-while$ -- 28
+while$ -- 31
 width$ -- 0
-write$ -- 94
+write$ -- 97
 (There were 9 warnings)

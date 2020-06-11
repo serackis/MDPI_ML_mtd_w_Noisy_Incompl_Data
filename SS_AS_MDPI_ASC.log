@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.17)  8 JUN 2020 16:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.17)  11 JUN 2020 12:40
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1362,24 +1362,24 @@ Package: nth 2002/02/27
 )) (./SS_AS_MDPI_ASC.aux)
 \openout1 = `SS_AS_MDPI_ASC.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
 LaTeX Font Info:    Trying to load font information for T1+ppl on input line 10
-3.
+7.
  (c:/texlive/2019/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
@@ -1399,15 +1399,15 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 103.
-LaTeX Info: Redefining \microtypecontext on input line 103.
+(lastpage)             ! on input line 107.
+LaTeX Info: Redefining \microtypecontext on input line 107.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 103.
+LaTeX Info: Redefining \showhyphens on input line 107.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1416,7 +1416,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box94
-Package hyperref Info: Link coloring ON on input line 103.
+Package hyperref Info: Link coloring ON on input line 107.
 
 (c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1426,9 +1426,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count394
 )
-LaTeX Info: Redefining \ref on input line 103.
-LaTeX Info: Redefining \pageref on input line 103.
-LaTeX Info: Redefining \nameref on input line 103.
+LaTeX Info: Redefining \ref on input line 107.
+LaTeX Info: Redefining \pageref on input line 107.
+LaTeX Info: Redefining \nameref on input line 107.
 
 (./SS_AS_MDPI_ASC.out) (./SS_AS_MDPI_ASC.out)
 \@outlinefile=\write8
@@ -1566,42 +1566,42 @@ Package epstopdf Info: Source file: <Definitions/logo-mdpi.eps>
 (epstopdf)                    size: 43952 bytes
 (epstopdf)             Command: <epstopdf --outfile=Definitions/logo-mdpi-eps-c
 onverted-to.pdf Definitions/logo-mdpi.eps>
-(epstopdf)             \includegraphics on input line 103.
+(epstopdf)             \includegraphics on input line 107.
 Package epstopdf Info: Output file is already uptodate.
-<Definitions/logo-mdpi-eps-converted-to.pdf, id=236, 88.33pt x 58.2175pt>
+<Definitions/logo-mdpi-eps-converted-to.pdf, id=220, 88.33pt x 58.2175pt>
 File: Definitions/logo-mdpi-eps-converted-to.pdf Graphic file (type pdf)
 <use Definitions/logo-mdpi-eps-converted-to.pdf>
 Package pdftex.def Info: Definitions/logo-mdpi-eps-converted-to.pdf  used on in
-put line 103.
+put line 107.
 (pdftex.def)             Requested size: 43.16885pt x 28.45274pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <18> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 103.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 107.
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
-03.
+07.
 
 (c:/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-103.
+107.
 
 (c:/texlive/2019/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-103.
+107.
 
 (c:/texlive/2019/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-103.
+107.
 
 (c:/texlive/2019/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-103.
+107.
 
 (c:/texlive/2019/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -1611,17 +1611,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 103.
+(Font)              scaled to size 10.42007pt on input line 107.
 
 (c:/texlive/2019/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 103.
+(Font)              scaled to size 7.91925pt on input line 107.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 103.
+(Font)              scaled to size 6.25204pt on input line 107.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 103.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 107.
 Package epstopdf Info: Source file: <Definitions/logo-orcid.eps>
 (epstopdf)                    date: 2020-06-04 12:11:51
 (epstopdf)                    size: 284378 bytes
@@ -1631,13 +1631,13 @@ f>
 (epstopdf)                    size: 12397 bytes
 (epstopdf)             Command: <epstopdf --outfile=Definitions/logo-orcid-eps-
 converted-to.pdf Definitions/logo-orcid.eps>
-(epstopdf)             \includegraphics on input line 103.
+(epstopdf)             \includegraphics on input line 107.
 Package epstopdf Info: Output file is already uptodate.
-<Definitions/logo-orcid-eps-converted-to.pdf, id=238, 102.3825pt x 102.3825pt>
+<Definitions/logo-orcid-eps-converted-to.pdf, id=222, 102.3825pt x 102.3825pt>
 File: Definitions/logo-orcid-eps-converted-to.pdf Graphic file (type pdf)
 <use Definitions/logo-orcid-eps-converted-to.pdf>
 Package pdftex.def Info: Definitions/logo-orcid-eps-converted-to.pdf  used on i
-nput line 103.
+nput line 107.
 (pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
 Package epstopdf Info: Source file: <Definitions/logo-homepage.eps>
 (epstopdf)                    date: 2020-06-04 12:11:51
@@ -1648,25 +1648,25 @@ Package epstopdf Info: Source file: <Definitions/logo-homepage.eps>
 (epstopdf)                    size: 14004 bytes
 (epstopdf)             Command: <epstopdf --outfile=Definitions/logo-homepage-e
 ps-converted-to.pdf Definitions/logo-homepage.eps>
-(epstopdf)             \includegraphics on input line 103.
+(epstopdf)             \includegraphics on input line 107.
 Package epstopdf Info: Output file is already uptodate.
-<Definitions/logo-homepage-eps-converted-to.pdf, id=240, 55.20625pt x 50.1875pt
+<Definitions/logo-homepage-eps-converted-to.pdf, id=224, 55.20625pt x 50.1875pt
 >
 File: Definitions/logo-homepage-eps-converted-to.pdf Graphic file (type pdf)
 <use Definitions/logo-homepage-eps-converted-to.pdf>
 Package pdftex.def Info: Definitions/logo-homepage-eps-converted-to.pdf  used o
-n input line 103.
+n input line 107.
 (pdftex.def)             Requested size: 9.10509pt x 8.27675pt.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 103.
+(Font)              scaled to size 9.37807pt on input line 107.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 103.
+(Font)              scaled to size 7.29405pt on input line 107.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 103.
+(Font)              scaled to size 5.21004pt on input line 107.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 103.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 107.
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-03.
+07.
 
 (c:/texlive/2019/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1684,7 +1684,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 1831) in paragraph at lines 113--114
+Underfull \hbox (badness 1831) in paragraph at lines 117--118
 []\T1/ppl/m/n/10 (+20) Sound source lo-cal-iza-tion is an in-creas-ingly im-por
 -tant com-po-nent in tele-con-fer-enc-ing,
  []
@@ -1695,87 +1695,32 @@ Underfull \hbox (badness 1831) in paragraph at lines 113--114
 ogo-mdpi-eps-converted-to.pdf> <./Definitions/logo-orcid-eps-converted-to.pdf> 
 <./Definitions/logo-homepage-eps-converted-to.pdf>]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 146.
-<img/rmse_n_neighbors.png, id=272, 462.528pt x 345.4506pt>
-File: img/rmse_n_neighbors.png Graphic file (type png)
-<use img/rmse_n_neighbors.png>
-Package pdftex.def Info: img/rmse_n_neighbors.png  used on input line 158.
-(pdftex.def)             Requested size: 177.54256pt x 132.6009pt.
-<img/rmse_gnbrs.png, id=274, 462.528pt x 346.896pt>
-File: img/rmse_gnbrs.png Graphic file (type png)
-<use img/rmse_gnbrs.png>
-Package pdftex.def Info: img/rmse_gnbrs.png  used on input line 165.
-(pdftex.def)             Requested size: 177.54256pt x 133.15573pt.
-<img/RMSE_krep.png, id=275, 462.528pt x 345.4506pt>
-File: img/RMSE_krep.png Graphic file (type png)
-<use img/RMSE_krep.png>
-Package pdftex.def Info: img/RMSE_krep.png  used on input line 172.
-(pdftex.def)             Requested size: 177.54256pt x 132.6009pt.
+ine 160.
+ [2]
 
+Package natbib Warning: Citation `dibiaseHighaccuracyLowlatencyTechnique2000' o
+n page 3 undefined on input line 244.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<img/rmse_batch_size.png, id=276, 462.528pt x 346.896pt>
-File: img/rmse_batch_size.png Graphic file (type png)
-<use img/rmse_batch_size.png>
-Package pdftex.def Info: img/rmse_batch_size.png  used on input line 179.
-(pdftex.def)             Requested size: 177.54256pt x 133.15573pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2 <./img/RMSE_n_neighbors.png> <./img/RMSE_gnbrs.png>]
-LaTeX Font Info:    Trying to load font information for OMS+ppl on input line 1
-92.
-
-(c:/texlive/2019/texmf-dist/tex/latex/psnfss/omsppl.fd
-File: omsppl.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 192.
-Package epstopdf Info: Source file: <Definitions/logo-mdpi.eps>
-(epstopdf)                    date: 2020-06-04 12:11:51
-(epstopdf)                    size: 736802 bytes
-(epstopdf)             Output file: <Definitions/logo-mdpi-eps-converted-to.pdf
->
-(epstopdf)                    date: 2020-06-04 12:16:32
-(epstopdf)                    size: 43952 bytes
-(epstopdf)             Command: <epstopdf --outfile=Definitions/logo-mdpi-eps-c
-onverted-to.pdf Definitions/logo-mdpi.eps>
-(epstopdf)             \includegraphics on input line 213.
-Package epstopdf Info: Output file is already uptodate.
-File: Definitions/logo-mdpi-eps-converted-to.pdf Graphic file (type pdf)
-<use Definitions/logo-mdpi-eps-converted-to.pdf>
-Package pdftex.def Info: Definitions/logo-mdpi-eps-converted-to.pdf  used on in
-put line 213.
-(pdftex.def)             Requested size: 56.9055pt x 37.50601pt.
- [3 <./img/RMSE_krep.png> <./img/rmse_batch_size.png>] [4] [5]
-
-LaTeX Warning: Marginpar on page 6 moved.
-
-[6]
-
-LaTeX Warning: Marginpar on page 7 moved.
-
-[7]
-<img/network_training.pdf, id=337, 529.8734pt x 282.48615pt>
+[3] [4] [5]
+<img/network_training.pdf, id=298, 529.8734pt x 282.48615pt>
 File: img/network_training.pdf Graphic file (type pdf)
 <use img/network_training.pdf>
-Package pdftex.def Info: img/network_training.pdf  used on input line 419.
+Package pdftex.def Info: img/network_training.pdf  used on input line 350.
 (pdftex.def)             Requested size: 221.9316pt x 118.31577pt.
- [8]
+
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 432.
+               Default added (so using `tbp') on input line 363.
 
-[9 <./img/network_training.pdf>]
-<img/room_src_pos.pdf, id=356, 462.52798pt x 345.4506pt>
+[6] [7 <./img/network_training.pdf>]
+<img/room_src_pos.pdf, id=314, 462.52798pt x 345.4506pt>
 File: img/room_src_pos.pdf Graphic file (type pdf)
 <use img/room_src_pos.pdf>
-Package pdftex.def Info: img/room_src_pos.pdf  used on input line 497.
+Package pdftex.def Info: img/room_src_pos.pdf  used on input line 428.
 (pdftex.def)             Requested size: 323.76736pt x 241.81377pt.
- [10 <./img/room_src_pos.pdf>]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
-26.
+ [8 <./img/room_src_pos.pdf>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
+57.
 
 (c:/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1787,54 +1732,60 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 Package natbib Warning: Citation `dibiaseHighaccuracyLowlatencyTechnique2000' o
-n page 11 undefined on input line 526.
+n page 9 undefined on input line 457.
 
 
-Underfull \hbox (badness 2351) in paragraph at lines 526--527
+Underfull \hbox (badness 2351) in paragraph at lines 457--458
 \T1/ppl/m/n/10 (+20) cov-er-ing $[]$ of [][] (1 de-gree res-o-lu-tion) was cal-
 cu-lated us-ing \T1/cmtt/m/n/10 pyroomaoustics \T1/ppl/m/it/10 (+20) Python
  []
 
-
-Underfull \hbox (badness 3138) in paragraph at lines 533--537
+[9]
+Underfull \hbox (badness 3138) in paragraph at lines 464--468
 []\T1/ppl/m/n/10 (+20) Acoustic fea-ture man-i-fold em-bed-dings were found us-
 ing $[]$ NLDR al-go-rithm,
  []
 
-<example-image-a.pdf, id=406, 321.2pt x 240.9pt>
+<example-image-a.pdf, id=374, 321.2pt x 240.9pt>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 540.
+Package pdftex.def Info: example-image-a.pdf  used on input line 471.
 (pdftex.def)             Requested size: 221.9316pt x 166.45274pt.
 
-Underfull \hbox (badness 1117) in paragraph at lines 546--547
+Underfull \hbox (badness 1117) in paragraph at lines 477--478
 \T1/ppl/m/n/10 (+20) of near-est graph neigh-bors con-sid-ered for each sam-ple
  $\OT1/ppl/m/n/10 (+20) k[]$ \T1/ppl/m/n/10 (+20) was se-lected from a set $\OT
 1/ppl/m/n/10 (+20) k[][] \OMS/zplm/m/n/10 2
  []
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 601--601
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--532
 
  []
 
-[12 <c:/texlive/2019/texmf-dist/tex/latex/mwe/example-image-a.pdf>]
+[10 <c:/texlive/2019/texmf-dist/tex/latex/mwe/example-image-a.pdf>]
 (./SS_AS_MDPI_ASC.bbl)
+LaTeX Font Info:    Trying to load font information for OMS+ppl on input line 5
+87.
+ (c:/texlive/2019/texmf-dist/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 656.
- 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 587.
+
+
 AED: lastpage setting LastPage
-[13]
+[11]
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 656.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 656.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 587.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 587.
 (./SS_AS_MDPI_ASC.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 656.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 656.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 587.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 587.
 Package rerunfilecheck Info: File `SS_AS_MDPI_ASC.out' has not changed.
-(rerunfilecheck)             Checksum: 07ECBCBF9E981F0FD6BE9DE5956D4E82;7888.
+(rerunfilecheck)             Checksum: 54F6E545BD697692F919546A7F9E4776;7322.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1842,29 +1793,30 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 46656 strings out of 492167
- 902765 string characters out of 6129158
- 1043372 words of memory out of 5000000
- 49980 multiletter control sequences out of 15000+600000
- 607735 words of font info for 326 fonts, out of 8000000 for 9000
+ 46555 strings out of 492167
+ 900988 string characters out of 6129158
+ 1035911 words of memory out of 5000000
+ 49932 multiletter control sequences out of 15000+600000
+ 608947 words of font info for 316 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,16n,105p,888b,1228s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,16n,105p,866b,1228s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
 ive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2019/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><c:
-/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb><c:/texlive/201
-9/texmf-dist/fonts/type1/public/lm/lmss17.pfb><c:/texlive/2019/texmf-dist/fonts
-/type1/public/cm-super/sfss0500.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pub
-lic/cm-super/sftt1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/palatino/
-uplb8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/
-texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on SS_AS_MDPI_ASC.pdf (13 pages, 513305 bytes).
+ts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
+><c:/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><c:/texlive/
+2019/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb><c:/texlive/2019/texmf-d
+ist/fonts/type1/public/lm/lmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pu
+blic/cm-super/sfss0500.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-su
+per/sftt1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pf
+b><c:/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2
+019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on SS_AS_MDPI_ASC.pdf (11 pages, 339727 bytes).
 PDF statistics:
- 509 PDF objects out of 1000 (max. 8388607)
- 401 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
- 61519 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 463 PDF objects out of 1000 (max. 8388607)
+ 365 compressed objects within 4 object streams
+ 86 named destinations out of 1000 (max. 500000)
+ 62491 words of extra memory for PDF output out of 74296 (max. 10000000)
 

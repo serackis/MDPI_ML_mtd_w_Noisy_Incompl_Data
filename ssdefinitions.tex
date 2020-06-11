@@ -296,8 +296,12 @@
 
 \def\arrayidx{\ensuremath{i}}
 \def\frameidx{\ensuremath{j}}
-\def\SRPspectrum{\ensuremath{\mathbf{S}_{\srpphat(\frameidx,\arrayidx,(x,y,z))}}}
-\def\sposlabel{\ensuremath{\vec{s}_{\arrayidx,(x,y,z)}^{(x,y,z)}}}
+\def\SRP{\mathbf{X}}
+\def\SRPspectrum{\ensuremath{\SRP_{\srpphat(\frameidx,\arrayidx)}}}
+
+\def\SRPfeature{\ensuremath{\SRP_{\frameidx}}}
+
+
 \def\thrmetric{\ensuremath{p}}
 \def\rms{\ensuremath{\mathrm{RMS}}}
 \def\cf{\ensuremath{\mathrm{CF}}}
@@ -311,10 +315,23 @@
 \def\grnn{\ensuremath{\mathrm{GRNN}}}
 \def\affinitymatrix{\ensuremath{\mathbf{A}}}
 \def\distancematrix{\ensuremath{\mathbf{D}}}
-\def\nbrweigth{\ensuremath{w}}
+\def\nbrweigth{\ensuremath{a}}
+\def\nbr{\ensuremath{n}}
+\def\nbrhood{\ensuremath{\mathbf{n}}}
 
 \def\error{\ensuremath{e}}
 \def\speed{\ensuremath{v}}
 \def\labeledsourceduration{\ensuremath{T_{\spos}}}
 \def\spos{\ensuremath{\mathbf{s}}}
 \def\sposidx{\ensuremath{n}}
+\def\sposlabel{\ensuremath{\spos_{(x,y,z)}}}
+
+\newcommand{\mean}[1]{\ensuremath{\langle #1 \rangle}}
+\newcommand{\abs}[1]{\ensuremath{| #1 |}}
+
+
+\def\threhsold{\ensuremath{\mathrm{thr.}}}
+\def\level{\ensuremath{L}}
+\def\thrlevel{\ensuremath{\level_\threhsold}}
+
+\def\ISOembedding{\ensuremath{\mathbf{Z}_{\frameidx}}}
