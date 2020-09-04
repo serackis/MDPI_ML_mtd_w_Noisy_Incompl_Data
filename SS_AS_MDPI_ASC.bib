@@ -1,4 +1,78 @@
 
+@inproceedings{4959563,
+  title = {Multidimensional Localization of Multiple Sound Sources Using Averaged Directivity Patterns of {{Blind Source Separation}} Systems},
+  booktitle = {2009 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}}},
+  author = {Lombard, A. and Rosenkranz, T. and Buchner, H. and Kellermann, W.},
+  date = {2009-04},
+  pages = {233--236},
+  issn = {1520-6149},
+  doi = {10.1109/ICASSP.2009.4959563},
+  abstract = {In this paper, we propose a versatile acoustic source localization framework exploiting the self-steering capability of Blind Source Separation (BSS) algorithms. We provide a way to produce an acoustical map of the scene by computing the averaged directivity pattern of BSS demixing systems. Since BSS explicitly accounts for multiple sources in its signal propagation model, several simultaneously active sound sources can be located using this method. Moreover, the framework is suitable to any microphone array geometry, which allows application for multiple dimensions, in the near field as well as in the far field. Experiments demonstrate the efficiency of the proposed scheme in a reverberant environment for the localization of speech sources.},
+  keywords = {acoustic radiators,Acoustic sensors,Acoustic source localization,acoustic source localization framework,averaged directivity patterns,blind source separation,Blind source separation,blind source separation systems,Finite impulse response filter,Frequency,Information filtering,Information filters,microphone arrays,Microphone arrays,multidimensional localization,multidimensional signal processing,Multidimensional systems,multiple sound sources,Sensor arrays,Source separation}
+}
+
+@inproceedings{5463319,
+  title = {Analysis of Room Reverberation Effects in Source Localization Using Small Microphone Arrays},
+  booktitle = {2010 4th {{International Symposium}} on {{Communications}}, {{Control}} and {{Signal Processing}} ({{ISCCSP}})},
+  author = {Cobos, M. and Lopez, J. J. and Spors, S.},
+  date = {2010-03},
+  pages = {1--4},
+  doi = {10.1109/ISCCSP.2010.5463319},
+  abstract = {Small microphone arrays provide many advantages for real-world audio applications. Together with digital signal processing, their enhanced acoustic properties can be exploited in many speech processing systems, such as hands-free devices, videoconferencing or hearing aids. Among their classical applications is source localization, which is usually based on the estimation of Time-Differences-Of-Arrival (TDOA). The accuracy of these methods depends on the degree of reverberation, due to the increased variance found in TDOA estimates. In this paper, we characterize reverberation in a room by means of a small three-microphone array. Our experiments show that the directional distribution of time-frequency estimates is highly correlated with the room's reverberation. This correlation results in a model that can be very useful for both estimating reverberation time and setting the resolution achievable in source localization tasks.},
+  keywords = {acoustic radiators,Acoustic signal processing,architectural acoustics,Direction of arrival estimation,directional distribution,Frequency,Geometry,microphone arrays,Microphone arrays,Process control,reverberation,Reverberation,room reverberation effects,Signal processing algorithms,Signal resolution,source localization,Speech processing,time-differences-of-arrival estimation,time-frequency estimation}
+}
+
+@article{adavanneDirectionArrivalEstimation2017,
+  title = {Direction of Arrival Estimation for Multiple Sound Sources Using Convolutional Recurrent Neural Network},
+  author = {Adavanne, Sharath and Politis, Archontis and Virtanen, Tuomas},
+  date = {2017-10-27},
+  url = {http://arxiv.org/abs/1710.10059},
+  urldate = {2019-08-07},
+  abstract = {This paper proposes a deep neural network for estimating the directions of arrival (DOA) of multiple sound sources. The proposed stacked convolutional and recurrent neural network (DOAnet) generates a spatial pseudo-spectrum (SPS) along with the DOA estimates in both azimuth and elevation. We avoid any explicit feature extraction step by using the magnitudes and phases of the spectrograms of all the channels as input to the network. The proposed DOAnet is evaluated by estimating the DOAs of multiple concurrently present sources in anechoic, matched and unmatched reverberant conditions. The results show that the proposed DOAnet is capable of estimating the number of sources and their respective DOAs with good precision and generate SPS with high signal-to-noise ratio.},
+  archivePrefix = {arXiv},
+  eprint = {1710.10059},
+  eprinttype = {arxiv},
+  file = {C\:\\Users\\sauli\\Zotero\\storage\\27546JQX\\Adavanne et al. - 2017 - Direction of arrival estimation for multiple sound.pdf},
+  keywords = {*****,Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing,MUST READ},
+  langid = {english},
+  primaryClass = {cs, eess}
+}
+
+@article{awad-allaTwostageApproachPassive2020,
+  title = {A Two-Stage Approach for Passive Sound Source Localization Based on the {{SRP}}-{{PHAT}} Algorithm},
+  author = {Awad-Alla, M. A. and Hamdy, Ahmed and Tolbah, Farid A. and Shahin, Moatasem A. and Abdelaziz, M. A.},
+  year = {2020/ed},
+  journaltitle = {APSIPA Transactions on Signal and Information Processing},
+  volume = {9},
+  publisher = {{Cambridge University Press}},
+  issn = {2048-7703},
+  doi = {10.1017/ATSIP.2020.6},
+  url = {https://www.cambridge.org/core/journals/apsipa-transactions-on-signal-and-information-processing/article/twostage-approach-for-passive-sound-source-localization-based-on-the-srpphat-algorithm/4EC64A19B1360ACF176373194BB8D16A},
+  urldate = {2020-05-14},
+  abstract = {This paper presents a different approach to tackle the Sound Source Localization (SSL) problem apply on a compact microphone array that can be mounted on top of a small moving robot in an indoor environment. Sound source localization approaches can be categorized into the three main categories; Time Difference of Arrival (TDOA), high-resolution subspace-based methods, and steered beamformer-based methods. Each method has its limitations according to the search or application requirements. Steered beamformer-based method will be used in this paper because it has proven to be robust to ambient noise and reverberation to a certain extent. The most successful and used algorithm of this method is the SRP-PHAT algorithm. The main limitation of SRP-PHAT algorithm is the computational burden resulting from the search process, this limitation comes from searching among all possible candidate locations in the searching space for the location that maximizes a certain function. The aim of this paper is to develop a computationally viable approach to find the coordinate location of a sound source with acceptable accuracy. The proposed approach comprises two stages: the first stage contracts the search space by estimating the Direction of Arrival (DoA) vector from the time difference of arrival with an addition of reasonable error coefficient around the vector to make sure that the sound source locates inside the estimated region, the second stage is to apply the SRP-PHAT algorithm to search only in this contracted region for the source location. The AV16.3 corpus was used to evaluate the proposed approach, extensive experiments have been carried out to verify the reliability of the approach. The results showed that the proposed approach was successful in obtaining good results compared to the conventional SRP-PHAT algorithm.},
+  file = {C\:\\Users\\sauli\\Zotero\\storage\\GTYYXZSZ\\Awad-Alla et al. - 2020 - A two-stage approach for passive sound source loca.pdf;C\:\\Users\\sauli\\Zotero\\storage\\5MT3NSSQ\\4EC64A19B1360ACF176373194BB8D16A.html},
+  keywords = {Circular microphone array,Passive acoustic localization,Region contraction,Sound source localization,SRP-PHAT},
+  langid = {english}
+}
+
+@inproceedings{bruttiComparisonDifferentSound2008,
+  title = {Comparison {{Between Different Sound Source Localization Techniques Based}} on a {{Real Data Collection}}},
+  booktitle = {2008 {{Hands}}-{{Free Speech Communication}} and {{Microphone Arrays}}},
+  author = {Brutti, Alessio and Omologo, Maurizio and Svaizer, Piergiorgio},
+  date = {2008-05},
+  pages = {69--72},
+  publisher = {{IEEE}},
+  location = {{Trento, Italy}},
+  doi = {10.1109/HSCMA.2008.4538690},
+  url = {http://ieeexplore.ieee.org/document/4538690/},
+  urldate = {2019-08-12},
+  abstract = {Comparing the different sound source localization techniques, proposed in the literature during the last decade, represents a relevant topic in order to establish advantages and disadvantages of a given approach in a real-time implementation. Traditionally, algorithms for sound source localization rely on an estimation of Time Difference of Arrival (TDOA) at microphone pairs through GCC-PHAT. When several microphone pairs are available the source position can be estimated as the point in space that best fits the set of TDOA measurements by applying Global Coherence Field (GCF), also known as SRP-PHAT, or Oriented Global Coherence Field (OGCF). A first interesting analysis compares the performance of GCF and OGCF to a suboptimal LS search method. In a second step, Adaptive Eigenvalue Decomposition is implemented as an alternative to GCC-PHAT in TDOA estimation. Comparative experiments are conducted on signals acquired by a linear array during WOZ experiments in an interactive-TV scenario. Changes in performance according to different SNR levels are reported.},
+  eventtitle = {2008 {{Hands}}-{{Free Speech Communication}} and {{Microphone Arrays}} ({{HSCMA}} 2008)},
+  file = {C\:\\Users\\sauli\\Zotero\\storage\\8V3ZBICJ\\Brutti et al. - 2008 - Comparison Between Different Sound Source Localiza.pdf},
+  isbn = {978-1-4244-2337-8},
+  langid = {english}
+}
+
 @inproceedings{carlettaAMIMeetingCorpus2006,
   title = {The {{AMI Meeting Corpus}}: {{A Pre}}-Announcement},
   shorttitle = {The {{AMI Meeting Corpus}}},
@@ -80,6 +154,22 @@ realistic rooms with reverberation times of 200 and 400 milliseconds,
 using 25-millisecond data segments.}
 }
 
+@article{grondinSVDPHATFastSound2019,
+  title = {{{SVD}}-{{PHAT}}: {{A Fast Sound Source Localization Method}}},
+  shorttitle = {{{SVD}}-{{PHAT}}},
+  author = {Grondin, Francois and Glass, James},
+  date = {2019-02-11},
+  url = {http://arxiv.org/abs/1811.11785},
+  urldate = {2020-06-14},
+  abstract = {This paper introduces a new localization method called SVD-PHAT. The SVD-PHAT method relies on Singular Value Decomposition of the SRP-PHAT projection matrix. A k-d tree is also proposed to speed up the search for the most likely direction of arrival of sound. We show that this method performs as accurately as SRP-PHAT, while reducing significantly the amount of computation required.},
+  archivePrefix = {arXiv},
+  eprint = {1811.11785},
+  eprinttype = {arxiv},
+  file = {C\:\\Users\\sauli\\Zotero\\storage\\JIE6BMVN\\Grondin and Glass - 2019 - SVD-PHAT A Fast Sound Source Localization Method.pdf;C\:\\Users\\sauli\\Zotero\\storage\\XHFISCKL\\1811.html},
+  keywords = {Computer Science - Sound,Electrical Engineering and Systems Science - Audio and Speech Processing,Electrical Engineering and Systems Science - Signal Processing},
+  primaryClass = {cs, eess}
+}
+
 @inproceedings{heAdaptationMultipleSound2019,
   title = {Adaptation of {{Multiple Sound Source Localization Neural Networks}} with {{Weak Supervision}} and {{Domain}}-Adversarial {{Training}}},
   booktitle = {{{ICASSP}} 2019 - 2019 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}} ({{ICASSP}})},
@@ -129,6 +219,24 @@ using 25-millisecond data segments.}
   number = {8}
 }
 
+@article{lopatka_detection_2016,
+  title = {Detection, Classification and Localization of Acoustic Events in the Presence of Background Noise for Acoustic Surveillance of Hazardous Situations},
+  author = {Lopatka, K. and Kotus, J. and Czyzewski, A.},
+  date = {2016-09-01},
+  journaltitle = {Multimedia Tools and Applications},
+  shortjournal = {Multimed Tools Appl},
+  volume = {75},
+  pages = {10407--10439},
+  issn = {1380-7501, 1573-7721},
+  doi = {10.1007/s11042-015-3105-4},
+  url = {http://link.springer.com/article/10.1007/s11042-015-3105-4},
+  urldate = {2017-01-10},
+  abstract = {Evaluation of sound event detection, classification and localization of hazardous acoustic events in the presence of background noise of different types and changing intensities is presented. The methods for discerning between the events being in focus and the acoustic background are introduced. The classifier, based on a Support Vector Machine algorithm, is described. The set of features and samples used for the training of the classifier are introduced. The sound source localization algorithm based on the analysis of multichannel signals from the Acoustic Vector Sensor is presented. The methods are evaluated in an experiment conducted in the anechoic chamber, in which the representative events are played together with noise of differing intensity. The results of detection, classification and localization accuracy with respect to the Signal to Noise Ratio are discussed. The results show that the recognition and localization accuracy are strongly dependent on the acoustic conditions. We also found that the engineered algorithms provide a sufficient robustness in moderately intense noise in order to be applied to practical audio-visual surveillance systems.},
+  file = {C\:\\Users\\sauli\\Zotero\\storage\\JU9RPBB4\\Lopatka et al. - 2016 - Detection, classification and localization of acou.pdf;C\:\\Users\\sauli\\Zotero\\storage\\IIKGK5H6\\10.html},
+  langid = {english},
+  number = {17}
+}
+
 @article{martiSpeakerLocalizationDetection2011,
   title = {Speaker {{Localization}} and {{Detection}} in {{Videoconferencing Environments Using}} a {{Modified SRP}}-{{PHAT Algorithm}}},
   author = {Marti, A and Cobos, M and Aguilera, E and Lopez, J J},
@@ -137,6 +245,20 @@ using 25-millisecond data segments.}
   abstract = {The Steered Response Power - Phase Transform (SRP-PHAT) algorithm has been shown to be one of the most robust sound source localization approaches operating in noisy and reverberant environments. However, its practical implementation is usually based on a costly fine grid-search procedure, making the computational cost of the method a real issue. In this paper, we introduce an effective strategy which performs a full exploration of the sampled space rather than computing the SRP at discrete spatial positions, increasing its robustness and allowing for a coarser spatial grid that reduces the computational cost required in a practical implementation. The modified SRP-PHAT functional has been successfully implemented in a real time speaker localization system for multiparticipant videoconferencing environments. Moreover, a localization-based speech-non speech frame discriminator is presented.},
   file = {C\:\\Users\\sauli\\Zotero\\storage\\G73BAHMI\\Marti et al. - 2011 - Speaker Localization and Detection in Videoconfere.pdf},
   langid = {english}
+}
+
+@inproceedings{moingLearningMultipleSound2019,
+  title = {Learning {{Multiple Sound Source 2D Localization}}},
+  booktitle = {2019 {{IEEE}} 21st {{International Workshop}} on {{Multimedia Signal Processing}} ({{MMSP}})},
+  author = {Moing, Guillaume Le and Vinayavekhin, Phongtharin and Inoue, Tadanobu and Vongkulbhisal, Jayakorn and Munawar, Asim and Tachibana, Ryuki and Agravante, Don Joven},
+  date = {2019-09},
+  pages = {1--6},
+  issn = {2473-3628},
+  doi = {10.1109/MMSP.2019.8901685},
+  abstract = {In this paper, we propose novel deep learning based algorithms for multiple sound source localization. Specifically, we aim to find the 2D Cartesian coordinates of multiple sound sources in an enclosed environment by using multiple microphone arrays. To this end, we use an encoding-decoding architecture and propose two improvements on it to accomplish the task. In addition, we also propose two novel localization representations which increase the accuracy. Lastly, new metrics are developed relying on resolution-based multiple source association which enables us to evaluate and compare different localization approaches. We tested our method on both synthetic and real world data. The results show that our method improves upon the previous baseline approach for this problem.},
+  eventtitle = {2019 {{IEEE}} 21st {{International Workshop}} on {{Multimedia Signal Processing}} ({{MMSP}})},
+  file = {C\:\\Users\\sauli\\Zotero\\storage\\JLG7SKN9\\Moing et al. - 2019 - Learning Multiple Sound Source 2D Localization.pdf;C\:\\Users\\sauli\\Zotero\\storage\\UHR6UJQF\\authors.html},
+  keywords = {2D Sound Localization,Deep Learning,Microphone Arrays,Multiple Sound Sources,Spatial Audio Analysis}
 }
 
 @article{pedregosaScikitlearnMachineLearning2011,
@@ -167,6 +289,92 @@ using 25-millisecond data segments.}
   eventtitle = {2018 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}} ({{ICASSP}})},
   file = {C\:\\Users\\sauli\\Zotero\\storage\\MQ2BHPVI\\8461310.html},
   keywords = {acoustic signal processing,adaptive filters,architectural acoustics,array signal processing,Array signal processing,audio array processing algorithms,audio room simulation,audio signal processing,fast C implementation,general polyhedral rooms,Generators,image source model,Mathematical model,microphone arrays,Microphones,multiple sound sources,Object oriented modeling,object-oriented programming,pyroomacoustics,Python,Python object-oriented interface,Python package,rapid prototyping,reference implementations,reproducibility,RIR,room impulse responses,simulation,software package,software packages,Three-dimensional displays,transient response}
+}
+
+@article{silvermanPerformanceRealtimeSourcelocation2005a,
+  title = {Performance of Real-Time Source-Location Estimators for a Large-Aperture Microphone Array},
+  author = {Silverman, H. F. and Yu, Ying and Sachar, J. M. and Patterson, W. R.},
+  date = {2005-07},
+  journaltitle = {IEEE Transactions on Speech and Audio Processing},
+  volume = {13},
+  pages = {593--606},
+  issn = {1063-6676},
+  doi = {10.1109/TSA.2005.848875},
+  abstract = {A large array of microphones is being studied as a possible means of acquiring data in offices, conference rooms, and auditoria without requiring close-talking microphones. An array that surrounds all possible sources has a large aperture and such arrays have attractive properties for accurate spatial resolution and significant signal-to-noise enhancement. For the first time, this paper presents all the details of a real-time, source-location algorithm (LEMSalg) based on time-of-arrival delays derived from a phase transform applied to the generalized cross-power spectrum. It is being used successfully in a representative environment where microphone SNRs are below 0 dB. We have found that many small features are required to make a useful location estimating algorithm work and work well in real-time. We present an experimental evaluation of the current algorithm's performance using data taken with the Huge Microphone Array (HMA) system, which has 448 microphones in a noisy, reverberant environment. Using off-line computation, we also compared the LEMSalg to two alternative methods. The first of these adds local beamforming to the preprocessing of the base algorithm, increasing performance significantly at modest additional computational cost. The second algorithm maximizes the total steered-response power in the same phase transform. While able to derive good position estimates from shorter data runs, this method is two orders of magnitude more computationally expensive and is not yet suitable for real-time use.},
+  file = {C\:\\Users\\sauli\\Zotero\\storage\\JWQJBCSA\\1453602.html},
+  keywords = {; acoustic location,Acoustic noise,Apertures,Array processing,array signal processing,audio signal processing,Computational efficiency,data acquisition,Delay effects,generalized cross correlation,large-aperture microphone array,microphone arrays,phase transform,Phased arrays,Real time systems,real-time source-location estimators,real-time systems,signal-to-noise enhancement,spatial resolution,steered-response power,time-of-arrival delays,Working environment noise},
+  number = {4}
+}
+
+@article{valinLocalizationSimultaneousMoving2004,
+  title = {Localization of {{Simultaneous Moving Sound Sources}} for {{Mobile Robot Using}} a {{Frequency}}-{{Domain Steered Beamformer Approach}}},
+  author = {Valin, Jean-Marc and Michaud, François and Hadjou, Brahim and Rouat, Jean},
+  date = {2004},
+  journaltitle = {IEEE International Conference on Robotics and Automation, 2004. Proceedings. ICRA '04. 2004},
+  pages = {1033-1038 Vol.1},
+  doi = {10.1109/ROBOT.2004.1307286},
+  url = {http://arxiv.org/abs/1602.08629},
+  urldate = {2020-04-11},
+  abstract = {Mobile robots in real-life settings would benefit from being able to localize sound sources. Such a capability can nicely complement vision to help localize a person or an interesting event in the environment, and also to provide enhanced processing for other capabilities such as speech recognition. In this paper we present a robust sound source localization method in three-dimensional space using an array of 8 microphones. The method is based on a frequency-domain implementation of a steered beamformer along with a probabilistic post-processor. Results show that a mobile robot can localize in real time multiple moving sources of different types over a range of 5 meters with a response time of 200 ms.},
+  archivePrefix = {arXiv},
+  eprint = {1602.08629},
+  eprinttype = {arxiv},
+  file = {C\:\\Users\\sauli\\Zotero\\storage\\PNBMP5NC\\Valin et al. - 2004 - Localization of Simultaneous Moving Sound Sources .pdf;C\:\\Users\\sauli\\Zotero\\storage\\63UII9U4\\1602.html},
+  keywords = {Computer Science - Robotics,Computer Science - Sound}
+}
+
+@inproceedings{valinRobust3DLocalization2006,
+  title = {Robust {{3D Localization}} and {{Tracking}} of {{Sound Sources Using Beamforming}} and {{Particle Filtering}}},
+  booktitle = {2006 {{IEEE International Conference}} on {{Acoustics Speech}} and {{Signal Processing Proceedings}}},
+  author = {Valin, J.-M. and Michaud, F. and Rouat, J.},
+  date = {2006-05},
+  volume = {4},
+  pages = {IV-IV},
+  issn = {2379-190X},
+  doi = {10.1109/ICASSP.2006.1661100},
+  abstract = {In this paper we present a new robust sound source localization and tracking method using an array of eight microphones (US patent pending). The method uses a steered beamformer based on the reliability-weighted phase transform (RWPHAT) along with a particle filter-based tracking algorithm. The proposed system is able to estimate both the direction and the distance of the sources. In a videoconferencing context, the direction was estimated with an accuracy better than one degree while the distance was accurate within 10\% RMS. Tracking of up to three simultaneous moving speakers is demonstrated in a noisy environment},
+  eventtitle = {2006 {{IEEE International Conference}} on {{Acoustics Speech}} and {{Signal Processing Proceedings}}},
+  file = {C\:\\Users\\sauli\\Zotero\\storage\\PL47CV7Z\\Valin et al. - 2006 - Robust 3D Localization and Tracking of Sound Sourc.pdf;C\:\\Users\\sauli\\Zotero\\storage\\ZYT69CZJ\\1661100.html},
+  keywords = {3D sound source localization,3D sound source tracking,Array signal processing,audio signal processing,beamforming,Cameras,Delay,Filtering,Frequency domain analysis,microphone array,microphone arrays,Microphone arrays,particle filtering,particle filtering (numerical methods),Particle filters,Particle tracking,reliability-weighted phase transform,Robustness,steered beamformer,teleconferencing,Teleconferencing,transforms,videoconferencing}
+}
+
+@article{valinRobustLocalizationTracking2007,
+  title = {Robust {{Localization}} and {{Tracking}} of {{Simultaneous Moving Sound Sources Using Beamforming}} and {{Particle Filtering}}},
+  author = {Valin, Jean-Marc and Michaud, François and Rouat, Jean},
+  date = {2007-03},
+  journaltitle = {Robotics and Autonomous Systems},
+  shortjournal = {Robotics and Autonomous Systems},
+  volume = {55},
+  pages = {216--228},
+  issn = {09218890},
+  doi = {10.1016/j.robot.2006.08.004},
+  url = {http://arxiv.org/abs/1602.08139},
+  urldate = {2019-08-16},
+  abstract = {Mobile robots in real-life settings would benefit from being able to localize and track sound sources. Such a capability can help localizing a person or an interesting event in the environment, and also provides enhanced processing for other capabilities such as speech recognition. To give this capability to a robot, the challenge is not only to localize simultaneous sound sources, but to track them over time. In this paper we propose a robust sound source localization and tracking method using an array of eight microphones. The method is based on a frequency-domain implementation of a steered beamformer along with a particle filter-based tracking algorithm. Results show that a mobile robot can localize and track in real-time multiple moving sources of different types over a range of 7 meters. These new capabilities allow a mobile robot to interact using more natural means with people in real life settings.},
+  archivePrefix = {arXiv},
+  eprint = {1602.08139},
+  eprinttype = {arxiv},
+  file = {C\:\\Users\\sauli\\Zotero\\storage\\25BXRDBZ\\Valin et al_2007_Robust Localization and Tracking of Simultaneous Moving Sound Sources Using.pdf;C\:\\Users\\sauli\\Zotero\\storage\\NYK5WEAG\\1602.html},
+  keywords = {Computer Science - Robotics,Computer Science - Sound},
+  number = {3}
+}
+
+@article{wengThreedimensionalSoundLocalization2001,
+  title = {Three-Dimensional Sound Localization from a Compact Non-Coplanar Array of Microphones Using Tree-Based Learning},
+  author = {Weng, J. and Guentchev, K. Y.},
+  date = {2001-07},
+  journaltitle = {The Journal of the Acoustical Society of America},
+  shortjournal = {J. Acoust. Soc. Am.},
+  volume = {110},
+  pages = {310--323},
+  issn = {0001-4966},
+  doi = {10.1121/1.1377290},
+  abstract = {One of the various human sensory capabilities is to identify the direction of perceived sounds. The goal of this work is to study sound source localization in three dimensions using some of the most important cues the human uses. In an attempt to satisfy the requirements of portability and miniaturization in robotics, this approach employs a compact sensor structure that can be placed on a mobile platform. The objective is to estimate the relative sound source position in three-dimensional space without imposing excessive restrictions on its spatio-temporal characteristics and the environment structure. Two types of features are considered, interaural time and level differences. Their relative effectiveness for localization is studied, as well as a practical way of using these complementary parameters. A two-stage procedure was used. In the training stage, sound samples are produced from points with known coordinates and then are stored. In the recognition stage, unknown sounds are processed by the trained system to estimate the 3D location of the sound source. Results from the experiments showed under +/-3 degrees in average angular error and less than +/-20\% in average radial distance error.},
+  eprint = {11508957},
+  eprinttype = {pmid},
+  keywords = {Computer Systems,Equipment Design,Humans,Numerical Analysis; Computer-Assisted,Psychoacoustics,Robotics,Signal Processing; Computer-Assisted,Sound Localization,Speech Perception},
+  langid = {english},
+  number = {1}
 }
 
 

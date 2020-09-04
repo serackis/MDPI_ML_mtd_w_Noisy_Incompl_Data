@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.17)  11 JUN 2020 12:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.10.17)  17 JUN 2020 11:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -852,140 +852,160 @@ Package caption Info: hyperref package is loaded.
 \@justcentbox=\box47
 \wideitemsep=\skip74
 )
+(c:/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip75
+\subfigcapskip=\skip76
+\subfigcaptopadj=\dimen275
+\subfigbottomskip=\skip77
+\subfigcapmargin=\dimen276
+\subfiglabelskip=\skip78
+\c@subfigure=\count178
+\c@lofdepth=\count179
+\c@subtable=\count180
+\c@lotdepth=\count181
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(c:/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip79
+\subfig@bottom=\skip80
+)
 (./ssdefinitions.tex (c:/texlive/2019/texmf-dist/tex/latex/siunitx/siunitx.sty
 (c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2019-10-14 L3 programming layer (loader) 
 
 (c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2019-10-14 L3 programming layer (code)
-\c_max_int=\count178
-\l_tmpa_int=\count179
-\l_tmpb_int=\count180
-\g_tmpa_int=\count181
-\g_tmpb_int=\count182
-\l__seq_internal_a_int=\count183
-\l__seq_internal_b_int=\count184
-\g__kernel_prg_map_int=\count185
-\c__ior_term_noprompt_ior=\count186
-\c_log_iow=\count187
-\l_iow_line_count_int=\count188
-\l__iow_line_target_int=\count189
-\l__iow_one_indent_int=\count190
-\l__iow_indent_int=\count191
-\c_zero_dim=\dimen275
-\c_max_dim=\dimen276
-\l_tmpa_dim=\dimen277
-\l_tmpb_dim=\dimen278
-\g_tmpa_dim=\dimen279
-\g_tmpb_dim=\dimen280
-\c_zero_skip=\skip75
-\c_max_skip=\skip76
-\l_tmpa_skip=\skip77
-\l_tmpb_skip=\skip78
-\g_tmpa_skip=\skip79
-\g_tmpb_skip=\skip80
+\c_max_int=\count182
+\l_tmpa_int=\count183
+\l_tmpb_int=\count184
+\g_tmpa_int=\count185
+\g_tmpb_int=\count186
+\l__seq_internal_a_int=\count187
+\l__seq_internal_b_int=\count188
+\g__kernel_prg_map_int=\count189
+\c__ior_term_noprompt_ior=\count190
+\c_log_iow=\count191
+\l_iow_line_count_int=\count192
+\l__iow_line_target_int=\count193
+\l__iow_one_indent_int=\count194
+\l__iow_indent_int=\count195
+\c_zero_dim=\dimen277
+\c_max_dim=\dimen278
+\l_tmpa_dim=\dimen279
+\l_tmpb_dim=\dimen280
+\g_tmpa_dim=\dimen281
+\g_tmpb_dim=\dimen282
+\c_zero_skip=\skip81
+\c_max_skip=\skip82
+\l_tmpa_skip=\skip83
+\l_tmpb_skip=\skip84
+\g_tmpa_skip=\skip85
+\g_tmpb_skip=\skip86
 \c_zero_muskip=\muskip12
 \c_max_muskip=\muskip13
 \l_tmpa_muskip=\muskip14
 \l_tmpb_muskip=\muskip15
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
-\l_keys_choice_int=\count192
-\l__intarray_loop_int=\count193
-\c__intarray_sp_dim=\dimen281
-\g__intarray_font_int=\count194
-\c__fp_leading_shift_int=\count195
-\c__fp_middle_shift_int=\count196
-\c__fp_trailing_shift_int=\count197
-\c__fp_big_leading_shift_int=\count198
-\c__fp_big_middle_shift_int=\count199
-\c__fp_big_trailing_shift_int=\count266
-\c__fp_Bigg_leading_shift_int=\count267
-\c__fp_Bigg_middle_shift_int=\count268
-\c__fp_Bigg_trailing_shift_int=\count269
-\c__kernel_randint_max_int=\count270
-\g__fp_array_int=\count271
-\l__fp_array_loop_int=\count272
-\l__sort_length_int=\count273
-\l__sort_min_int=\count274
-\l__sort_top_int=\count275
-\l__sort_max_int=\count276
-\l__sort_true_max_int=\count277
-\l__sort_block_int=\count278
-\l__sort_begin_int=\count279
-\l__sort_end_int=\count280
-\l__sort_A_int=\count281
-\l__sort_B_int=\count282
-\l__sort_C_int=\count283
-\l__str_internal_int=\count284
-\c__str_replacement_char_int=\count285
-\l__tl_analysis_normal_int=\count286
-\l__tl_analysis_index_int=\count287
-\l__tl_analysis_nesting_int=\count288
-\l__tl_analysis_type_int=\count289
-\l__regex_internal_a_int=\count290
-\l__regex_internal_b_int=\count291
-\l__regex_internal_c_int=\count292
-\l__regex_balance_int=\count293
-\l__regex_group_level_int=\count294
-\l__regex_mode_int=\count295
-\c__regex_cs_in_class_mode_int=\count296
-\c__regex_cs_mode_int=\count297
-\l__regex_catcodes_int=\count298
-\l__regex_default_catcodes_int=\count299
-\c__regex_catcode_D_int=\count300
-\c__regex_catcode_S_int=\count301
-\c__regex_catcode_L_int=\count302
-\c__regex_catcode_O_int=\count303
-\c__regex_catcode_A_int=\count304
-\c__regex_all_catcodes_int=\count305
-\l__regex_show_lines_int=\count306
-\l__regex_min_state_int=\count307
-\l__regex_max_state_int=\count308
-\l__regex_left_state_int=\count309
-\l__regex_right_state_int=\count310
-\l__regex_capturing_group_int=\count311
-\l__regex_min_pos_int=\count312
-\l__regex_max_pos_int=\count313
-\l__regex_curr_pos_int=\count314
-\l__regex_start_pos_int=\count315
-\l__regex_success_pos_int=\count316
-\l__regex_curr_char_int=\count317
-\l__regex_curr_catcode_int=\count318
-\l__regex_last_char_int=\count319
-\l__regex_case_changed_char_int=\count320
-\l__regex_curr_state_int=\count321
-\l__regex_step_int=\count322
-\l__regex_min_active_int=\count323
-\l__regex_max_active_int=\count324
-\l__regex_replacement_csnames_int=\count325
-\l__regex_match_count_int=\count326
-\l__regex_min_submatch_int=\count327
-\l__regex_submatch_int=\count328
-\l__regex_zeroth_submatch_int=\count329
-\g__regex_trace_regex_int=\count330
+\l_keys_choice_int=\count196
+\l__intarray_loop_int=\count197
+\c__intarray_sp_dim=\dimen283
+\g__intarray_font_int=\count198
+\c__fp_leading_shift_int=\count199
+\c__fp_middle_shift_int=\count266
+\c__fp_trailing_shift_int=\count267
+\c__fp_big_leading_shift_int=\count268
+\c__fp_big_middle_shift_int=\count269
+\c__fp_big_trailing_shift_int=\count270
+\c__fp_Bigg_leading_shift_int=\count271
+\c__fp_Bigg_middle_shift_int=\count272
+\c__fp_Bigg_trailing_shift_int=\count273
+\c__kernel_randint_max_int=\count274
+\g__fp_array_int=\count275
+\l__fp_array_loop_int=\count276
+\l__sort_length_int=\count277
+\l__sort_min_int=\count278
+\l__sort_top_int=\count279
+\l__sort_max_int=\count280
+\l__sort_true_max_int=\count281
+\l__sort_block_int=\count282
+\l__sort_begin_int=\count283
+\l__sort_end_int=\count284
+\l__sort_A_int=\count285
+\l__sort_B_int=\count286
+\l__sort_C_int=\count287
+\l__str_internal_int=\count288
+\c__str_replacement_char_int=\count289
+\l__tl_analysis_normal_int=\count290
+\l__tl_analysis_index_int=\count291
+\l__tl_analysis_nesting_int=\count292
+\l__tl_analysis_type_int=\count293
+\l__regex_internal_a_int=\count294
+\l__regex_internal_b_int=\count295
+\l__regex_internal_c_int=\count296
+\l__regex_balance_int=\count297
+\l__regex_group_level_int=\count298
+\l__regex_mode_int=\count299
+\c__regex_cs_in_class_mode_int=\count300
+\c__regex_cs_mode_int=\count301
+\l__regex_catcodes_int=\count302
+\l__regex_default_catcodes_int=\count303
+\c__regex_catcode_D_int=\count304
+\c__regex_catcode_S_int=\count305
+\c__regex_catcode_L_int=\count306
+\c__regex_catcode_O_int=\count307
+\c__regex_catcode_A_int=\count308
+\c__regex_all_catcodes_int=\count309
+\l__regex_show_lines_int=\count310
+\l__regex_min_state_int=\count311
+\l__regex_max_state_int=\count312
+\l__regex_left_state_int=\count313
+\l__regex_right_state_int=\count314
+\l__regex_capturing_group_int=\count315
+\l__regex_min_pos_int=\count316
+\l__regex_max_pos_int=\count317
+\l__regex_curr_pos_int=\count318
+\l__regex_start_pos_int=\count319
+\l__regex_success_pos_int=\count320
+\l__regex_curr_char_int=\count321
+\l__regex_curr_catcode_int=\count322
+\l__regex_last_char_int=\count323
+\l__regex_case_changed_char_int=\count324
+\l__regex_curr_state_int=\count325
+\l__regex_step_int=\count326
+\l__regex_min_active_int=\count327
+\l__regex_max_active_int=\count328
+\l__regex_replacement_csnames_int=\count329
+\l__regex_match_count_int=\count330
+\l__regex_min_submatch_int=\count331
+\l__regex_submatch_int=\count332
+\l__regex_zeroth_submatch_int=\count333
+\g__regex_trace_regex_int=\count334
 \c_empty_box=\box48
 \l_tmpa_box=\box49
 \l_tmpb_box=\box50
 \g_tmpa_box=\box51
 \g_tmpb_box=\box52
-\l__box_top_dim=\dimen282
-\l__box_bottom_dim=\dimen283
-\l__box_left_dim=\dimen284
-\l__box_right_dim=\dimen285
-\l__box_top_new_dim=\dimen286
-\l__box_bottom_new_dim=\dimen287
-\l__box_left_new_dim=\dimen288
-\l__box_right_new_dim=\dimen289
+\l__box_top_dim=\dimen284
+\l__box_bottom_dim=\dimen285
+\l__box_left_dim=\dimen286
+\l__box_right_dim=\dimen287
+\l__box_top_new_dim=\dimen288
+\l__box_bottom_new_dim=\dimen289
+\l__box_left_new_dim=\dimen290
+\l__box_right_new_dim=\dimen291
 \l__box_internal_box=\box53
 \l__coffin_internal_box=\box54
-\l__coffin_internal_dim=\dimen290
-\l__coffin_offset_x_dim=\dimen291
-\l__coffin_offset_y_dim=\dimen292
-\l__coffin_x_dim=\dimen293
-\l__coffin_y_dim=\dimen294
-\l__coffin_x_prime_dim=\dimen295
-\l__coffin_y_prime_dim=\dimen296
+\l__coffin_internal_dim=\dimen292
+\l__coffin_offset_x_dim=\dimen293
+\l__coffin_offset_y_dim=\dimen294
+\l__coffin_x_dim=\dimen295
+\l__coffin_y_dim=\dimen296
+\l__coffin_x_prime_dim=\dimen297
+\l__coffin_y_prime_dim=\dimen298
 \c_empty_coffin=\box55
 \l__coffin_aligned_coffin=\box56
 \l__coffin_aligned_internal_coffin=\box57
@@ -993,20 +1013,20 @@ Package: expl3 2019-10-14 L3 programming layer (code)
 \l_tmpb_coffin=\box59
 \g_tmpa_coffin=\box60
 \g_tmpb_coffin=\box61
-\l__coffin_bounding_shift_dim=\dimen297
-\l__coffin_left_corner_dim=\dimen298
-\l__coffin_right_corner_dim=\dimen299
-\l__coffin_bottom_corner_dim=\dimen300
-\l__coffin_top_corner_dim=\dimen301
-\l__coffin_scaled_total_height_dim=\dimen302
-\l__coffin_scaled_width_dim=\dimen303
+\l__coffin_bounding_shift_dim=\dimen299
+\l__coffin_left_corner_dim=\dimen300
+\l__coffin_right_corner_dim=\dimen301
+\l__coffin_bottom_corner_dim=\dimen302
+\l__coffin_top_corner_dim=\dimen303
+\l__coffin_scaled_total_height_dim=\dimen304
+\l__coffin_scaled_width_dim=\dimen305
 \c__coffin_empty_coffin=\box62
 \l__coffin_display_coffin=\box63
 \l__coffin_display_coord_coffin=\box64
 \l__coffin_display_pole_coffin=\box65
-\l__coffin_display_offset_dim=\dimen304
-\l__coffin_display_x_dim=\dimen305
-\l__coffin_display_y_dim=\dimen306
+\l__coffin_display_offset_dim=\dimen306
+\l__coffin_display_x_dim=\dimen307
+\l__coffin_display_y_dim=\dimen308
 \g__char_data_ior=\read2
 
 (c:/texlive/2019/texmf-dist/tex/latex/l3kernel/l3deprecation.def
@@ -1014,15 +1034,15 @@ File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
 ))
 (c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2019-04-06 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count331
+\l__kernel_color_stack_int=\count335
 \l__pdf_internal_box=\box66
 ))
 (c:/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2019-10-11 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count332
-\g__xparse_grabber_int=\count333
-\l__xparse_m_args_int=\count334
-\l__xparse_v_nesting_int=\count335
+\l__xparse_current_arg_int=\count336
+\g__xparse_grabber_int=\count337
+\l__xparse_m_args_int=\count338
+\l__xparse_v_nesting_int=\count339
 )
 Package: siunitx 2019/10/10 v2.7t A comprehensive (SI) units package
 
@@ -1030,74 +1050,74 @@ Package: siunitx 2019/10/10 v2.7t A comprehensive (SI) units package
 Package: l3keys2e 2019-10-11 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box67
-\l__siunitx_tmp_dim=\dimen307
-\l__siunitx_tmp_int=\count336
-\l__siunitx_number_mantissa_length_int=\count337
-\l__siunitx_number_uncert_length_int=\count338
-\l__siunitx_round_int=\count339
-\l__siunitx_process_decimal_int=\count340
-\l__siunitx_process_uncertainty_int=\count341
-\l__siunitx_process_fixed_int=\count342
-\l__siunitx_process_integer_min_int=\count343
-\l__siunitx_process_precision_int=\count344
-\l__siunitx_group_min_int=\count345
+\l__siunitx_tmp_dim=\dimen309
+\l__siunitx_tmp_int=\count340
+\l__siunitx_number_mantissa_length_int=\count341
+\l__siunitx_number_uncert_length_int=\count342
+\l__siunitx_round_int=\count343
+\l__siunitx_process_decimal_int=\count344
+\l__siunitx_process_uncertainty_int=\count345
+\l__siunitx_process_fixed_int=\count346
+\l__siunitx_process_integer_min_int=\count347
+\l__siunitx_process_precision_int=\count348
+\l__siunitx_group_min_int=\count349
 \l__siunitx_angle_marker_box=\box68
 \l__siunitx_angle_unit_box=\box69
-\l__siunitx_angle_marker_dim=\dimen308
-\l__siunitx_angle_unit_dim=\dimen309
-\l__siunitx_unit_int=\count346
-\l__siunitx_unit_denominator_int=\count347
-\l__siunitx_unit_numerator_int=\count348
-\l__siunitx_unit_prefix_int=\count349
-\l__siunitx_unit_prefix_base_int=\count350
-\l__siunitx_unit_prefix_gram_int=\count351
-\l__siunitx_number_product_int=\count352
-\c__siunitx_one_fill_skip=\skip81
-\l__siunitx_table_unit_align_skip=\skip82
-\l__siunitx_table_exponent_dim=\dimen310
-\l__siunitx_table_integer_dim=\dimen311
-\l__siunitx_table_mantissa_dim=\dimen312
-\l__siunitx_table_marker_dim=\dimen313
-\l__siunitx_table_result_dim=\dimen314
-\l__siunitx_table_uncert_dim=\dimen315
-\l__siunitx_table_fill_pre_dim=\dimen316
-\l__siunitx_table_fill_post_dim=\dimen317
-\l__siunitx_table_fill_mid_dim=\dimen318
+\l__siunitx_angle_marker_dim=\dimen310
+\l__siunitx_angle_unit_dim=\dimen311
+\l__siunitx_unit_int=\count350
+\l__siunitx_unit_denominator_int=\count351
+\l__siunitx_unit_numerator_int=\count352
+\l__siunitx_unit_prefix_int=\count353
+\l__siunitx_unit_prefix_base_int=\count354
+\l__siunitx_unit_prefix_gram_int=\count355
+\l__siunitx_number_product_int=\count356
+\c__siunitx_one_fill_skip=\skip87
+\l__siunitx_table_unit_align_skip=\skip88
+\l__siunitx_table_exponent_dim=\dimen312
+\l__siunitx_table_integer_dim=\dimen313
+\l__siunitx_table_mantissa_dim=\dimen314
+\l__siunitx_table_marker_dim=\dimen315
+\l__siunitx_table_result_dim=\dimen316
+\l__siunitx_table_uncert_dim=\dimen317
+\l__siunitx_table_fill_pre_dim=\dimen318
+\l__siunitx_table_fill_post_dim=\dimen319
+\l__siunitx_table_fill_mid_dim=\dimen320
 \l__siunitx_table_pre_box=\box70
 \l__siunitx_table_post_box=\box71
 \l__siunitx_table_mantissa_box=\box72
 \l__siunitx_table_result_box=\box73
-\l__siunitx_table_number_align_skip=\skip83
-\l__siunitx_table_text_align_skip=\skip84
+\l__siunitx_table_number_align_skip=\skip89
+\l__siunitx_table_text_align_skip=\skip90
 
 (c:/texlive/2019/texmf-dist/tex/latex/translator/translator.sty
 Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
 ))
 (c:/texlive/2019/texmf-dist/tex/latex/changebar/changebar.sty
 Package: changebar 2018/03/09 v3.6c Indicate changes with marginal bars
-\cb@nextpoint=\count353
-\cb@topleft=\count354
-\cb@topright=\count355
-\cb@botleft=\count356
-\cb@botright=\count357
-\cb@cnta=\count358
-\cb@cntb=\count359
-\cb@dima=\dimen319
-\cb@curbarwd=\dimen320
-\cb@page=\count360
-\cb@pagecount=\count361
-\cb@odd@left=\dimen321
-\cb@odd@right=\dimen322
-\cb@even@left=\dimen323
-\cb@even@right=\dimen324
+\cb@nextpoint=\count357
+\cb@topleft=\count358
+\cb@topright=\count359
+\cb@botleft=\count360
+\cb@botright=\count361
+\cb@cnta=\count362
+\cb@cntb=\count363
+\cb@dima=\dimen321
+\cb@curbarwd=\dimen322
+\cb@page=\count364
+\cb@pagecount=\count365
+\cb@odd@left=\dimen323
+\cb@odd@right=\dimen324
+\cb@even@left=\dimen325
+\cb@even@right=\dimen326
 \cb@writexy=\write4
 \cb@readxy=\read3
 \openout4 = `SS_AS_MDPI_ASC.cb2'.
 
-\changebarwidth=\skip85
-\deletebarwidth=\skip86
-\changebarsep=\skip87
-\c@changebargrey=\count362
+\changebarwidth=\skip91
+\deletebarwidth=\skip92
+\changebarsep=\skip93
+\c@changebargrey=\count366
 \cb@write=\write5
 \cb@read=\read4
 \openout5 = `SS_AS_MDPI_ASC.cb'.
@@ -1120,7 +1140,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks55
 \XKV@tempa@toks=\toks56
 )
-\XKV@depth=\count363
+\XKV@depth=\count367
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
@@ -1139,7 +1159,7 @@ File: tikzlibraryfadings.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 x
 File: pgflibraryfadings.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 )))
-\c@@todonotes@numberoftodonotes=\count364
+\c@@todonotes@numberoftodonotes=\count368
 ) (c:/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2019/09/19 version 4.21 text color boxes
 
@@ -1159,9 +1179,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box75
 \tcb@lowerbox=\box76
 \tcb@phantombox=\box77
-\c@tcbbreakpart=\count365
-\c@tcblayer=\count366
-\tcolorbox@number=\count367
+\c@tcbbreakpart=\count369
+\c@tcblayer=\count370
+\tcolorbox@number=\count371
 \tcb@temp=\box78
 \tcb@temp=\box79
 \tcb@temp=\box80
@@ -1171,9 +1191,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 
 (c:/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '4.21'
-\c@tcbrastercolumn=\count368
-\c@tcbrasterrow=\count369
-\c@tcbraster=\count370
+\c@tcbrastercolumn=\count372
+\c@tcbrasterrow=\count373
+\c@tcbraster=\count374
 ) (c:/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '4.21'
 \tcb@waterbox=\box82
@@ -1190,10 +1210,10 @@ Library (tcolorbox): 'tcbhooks.code.tex' version '4.21'
 Library (tcolorbox): 'tcbtheorems.code.tex' version '4.21'
 ) (c:/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '4.21'
-\tcbfitdim=\dimen325
-\tcb@lowerfitdim=\dimen326
-\tcb@upperfitdim=\dimen327
-\tcb@cur@hbadness=\count371
+\tcbfitdim=\dimen327
+\tcb@lowerfitdim=\dimen328
+\tcb@upperfitdim=\dimen329
+\tcb@cur@hbadness=\count375
 ) (c:/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
 Library (tcolorbox): 'tcbxparse.code.tex' version '4.21'
 ) (c:/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
@@ -1202,23 +1222,23 @@ Library (tcolorbox): 'tcblistingsutf8.code.tex' version '4.21'
 Package: listingsutf8 2016/05/16 v1.3 Allow UTF-8 in listings input (HO)
 
 (c:/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count372
+\lst@mode=\count376
 \lst@gtempboxa=\box86
 \lst@token=\toks59
-\lst@length=\count373
-\lst@currlwidth=\dimen328
-\lst@column=\count374
-\lst@pos=\count375
-\lst@lostspace=\dimen329
-\lst@width=\dimen330
-\lst@newlines=\count376
-\lst@lineno=\count377
-\lst@maxwidth=\dimen331
+\lst@length=\count377
+\lst@currlwidth=\dimen330
+\lst@column=\count378
+\lst@pos=\count379
+\lst@lostspace=\dimen331
+\lst@width=\dimen332
+\lst@newlines=\count380
+\lst@lineno=\count381
+\lst@maxwidth=\dimen333
 
 (c:/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count378
-\lst@skipnumbers=\count379
+\c@lstnumber=\count382
+\lst@skipnumbers=\count383
 \lst@framebox=\box87
 )
 (c:/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
@@ -1240,7 +1260,7 @@ Library (tcolorbox): 'tcbprocessing.code.tex' version '4.21'
 Package: shellesc 2016/06/07 v0.02b unified shell escape interface for LaTeX
 Package shellesc Info: Unrestricted shell escape enabled on input line 70.
 ))
-\c@tcblisting=\count380
+\c@tcblisting=\count384
 )))
 (c:/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
 Library (tcolorbox): 'tcbexternal.code.tex' version '4.21'
@@ -1262,53 +1282,53 @@ Package zref Info: New property list: main on input line 759.
 Package zref Info: New property: default on input line 760.
 Package zref Info: New property: page on input line 761.
 )
-\c@abspage=\count381
+\c@abspage=\count385
 Package zref Info: New property: abspage on input line 62.
 )
 (c:/texlive/2019/texmf-dist/tex/latex/needspace/needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
-\mdf@templength=\skip88
-\c@mdf@globalstyle@cnt=\count382
-\mdf@skipabove@length=\skip89
-\mdf@skipbelow@length=\skip90
-\mdf@leftmargin@length=\skip91
-\mdf@rightmargin@length=\skip92
-\mdf@innerleftmargin@length=\skip93
-\mdf@innerrightmargin@length=\skip94
-\mdf@innertopmargin@length=\skip95
-\mdf@innerbottommargin@length=\skip96
-\mdf@splittopskip@length=\skip97
-\mdf@splitbottomskip@length=\skip98
-\mdf@outermargin@length=\skip99
-\mdf@innermargin@length=\skip100
-\mdf@linewidth@length=\skip101
-\mdf@innerlinewidth@length=\skip102
-\mdf@middlelinewidth@length=\skip103
-\mdf@outerlinewidth@length=\skip104
-\mdf@roundcorner@length=\skip105
-\mdf@footenotedistance@length=\skip106
-\mdf@userdefinedwidth@length=\skip107
-\mdf@needspace@length=\skip108
-\mdf@frametitleaboveskip@length=\skip109
-\mdf@frametitlebelowskip@length=\skip110
-\mdf@frametitlerulewidth@length=\skip111
-\mdf@frametitleleftmargin@length=\skip112
-\mdf@frametitlerightmargin@length=\skip113
-\mdf@shadowsize@length=\skip114
-\mdf@extratopheight@length=\skip115
-\mdf@subtitleabovelinewidth@length=\skip116
-\mdf@subtitlebelowlinewidth@length=\skip117
-\mdf@subtitleaboveskip@length=\skip118
-\mdf@subtitlebelowskip@length=\skip119
-\mdf@subtitleinneraboveskip@length=\skip120
-\mdf@subtitleinnerbelowskip@length=\skip121
-\mdf@subsubtitleabovelinewidth@length=\skip122
-\mdf@subsubtitlebelowlinewidth@length=\skip123
-\mdf@subsubtitleaboveskip@length=\skip124
-\mdf@subsubtitlebelowskip@length=\skip125
-\mdf@subsubtitleinneraboveskip@length=\skip126
-\mdf@subsubtitleinnerbelowskip@length=\skip127
+\mdf@templength=\skip94
+\c@mdf@globalstyle@cnt=\count386
+\mdf@skipabove@length=\skip95
+\mdf@skipbelow@length=\skip96
+\mdf@leftmargin@length=\skip97
+\mdf@rightmargin@length=\skip98
+\mdf@innerleftmargin@length=\skip99
+\mdf@innerrightmargin@length=\skip100
+\mdf@innertopmargin@length=\skip101
+\mdf@innerbottommargin@length=\skip102
+\mdf@splittopskip@length=\skip103
+\mdf@splitbottomskip@length=\skip104
+\mdf@outermargin@length=\skip105
+\mdf@innermargin@length=\skip106
+\mdf@linewidth@length=\skip107
+\mdf@innerlinewidth@length=\skip108
+\mdf@middlelinewidth@length=\skip109
+\mdf@outerlinewidth@length=\skip110
+\mdf@roundcorner@length=\skip111
+\mdf@footenotedistance@length=\skip112
+\mdf@userdefinedwidth@length=\skip113
+\mdf@needspace@length=\skip114
+\mdf@frametitleaboveskip@length=\skip115
+\mdf@frametitlebelowskip@length=\skip116
+\mdf@frametitlerulewidth@length=\skip117
+\mdf@frametitleleftmargin@length=\skip118
+\mdf@frametitlerightmargin@length=\skip119
+\mdf@shadowsize@length=\skip120
+\mdf@extratopheight@length=\skip121
+\mdf@subtitleabovelinewidth@length=\skip122
+\mdf@subtitlebelowlinewidth@length=\skip123
+\mdf@subtitleaboveskip@length=\skip124
+\mdf@subtitlebelowskip@length=\skip125
+\mdf@subtitleinneraboveskip@length=\skip126
+\mdf@subtitleinnerbelowskip@length=\skip127
+\mdf@subsubtitleabovelinewidth@length=\skip128
+\mdf@subsubtitlebelowlinewidth@length=\skip129
+\mdf@subsubtitleaboveskip@length=\skip130
+\mdf@subsubtitlebelowskip@length=\skip131
+\mdf@subsubtitleinneraboveskip@length=\skip132
+\mdf@subsubtitleinnerbelowskip@length=\skip133
 
 (c:/texlive/2019/texmf-dist/tex/latex/mdframed/md-frame-1.mdf
 File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
@@ -1318,43 +1338,43 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \mdf@splitbox@one=\box90
 \mdf@splitbox@two=\box91
 \mdf@splitbox@save=\box92
-\mdfsplitboxwidth=\skip128
-\mdfsplitboxtotalwidth=\skip129
-\mdfsplitboxheight=\skip130
-\mdfsplitboxdepth=\skip131
-\mdfsplitboxtotalheight=\skip132
-\mdfframetitleboxwidth=\skip133
-\mdfframetitleboxtotalwidth=\skip134
-\mdfframetitleboxheight=\skip135
-\mdfframetitleboxdepth=\skip136
-\mdfframetitleboxtotalheight=\skip137
-\mdffootnoteboxwidth=\skip138
-\mdffootnoteboxtotalwidth=\skip139
-\mdffootnoteboxheight=\skip140
-\mdffootnoteboxdepth=\skip141
-\mdffootnoteboxtotalheight=\skip142
-\mdftotallinewidth=\skip143
-\mdfboundingboxwidth=\skip144
-\mdfboundingboxtotalwidth=\skip145
-\mdfboundingboxheight=\skip146
-\mdfboundingboxdepth=\skip147
-\mdfboundingboxtotalheight=\skip148
-\mdf@freevspace@length=\skip149
-\mdf@horizontalwidthofbox@length=\skip150
-\mdf@verticalmarginwhole@length=\skip151
-\mdf@horizontalspaceofbox=\skip152
-\mdfsubtitleheight=\skip153
-\mdfsubsubtitleheight=\skip154
-\c@mdfcountframes=\count383
+\mdfsplitboxwidth=\skip134
+\mdfsplitboxtotalwidth=\skip135
+\mdfsplitboxheight=\skip136
+\mdfsplitboxdepth=\skip137
+\mdfsplitboxtotalheight=\skip138
+\mdfframetitleboxwidth=\skip139
+\mdfframetitleboxtotalwidth=\skip140
+\mdfframetitleboxheight=\skip141
+\mdfframetitleboxdepth=\skip142
+\mdfframetitleboxtotalheight=\skip143
+\mdffootnoteboxwidth=\skip144
+\mdffootnoteboxtotalwidth=\skip145
+\mdffootnoteboxheight=\skip146
+\mdffootnoteboxdepth=\skip147
+\mdffootnoteboxtotalheight=\skip148
+\mdftotallinewidth=\skip149
+\mdfboundingboxwidth=\skip150
+\mdfboundingboxtotalwidth=\skip151
+\mdfboundingboxheight=\skip152
+\mdfboundingboxdepth=\skip153
+\mdfboundingboxtotalheight=\skip154
+\mdf@freevspace@length=\skip155
+\mdf@horizontalwidthofbox@length=\skip156
+\mdf@verticalmarginwhole@length=\skip157
+\mdf@horizontalspaceofbox=\skip158
+\mdfsubtitleheight=\skip159
+\mdfsubsubtitleheight=\skip160
+\c@mdfcountframes=\count387
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count384
-\c@mdf@env@i=\count385
-\c@mdf@env@ii=\count386
-\c@mdf@zref@counter=\count387
+\mdf@envdepth=\count388
+\c@mdf@env@i=\count389
+\c@mdf@env@ii=\count390
+\c@mdf@zref@counter=\count391
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 (c:/texlive/2019/texmf-dist/tex/generic/genmisc/nth.sty
@@ -1362,52 +1382,52 @@ Package: nth 2002/02/27
 )) (./SS_AS_MDPI_ASC.aux)
 \openout1 = `SS_AS_MDPI_ASC.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 10
-7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 11
+1.
  (c:/texlive/2019/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count388
-\scratchdimen=\dimen332
+\scratchcounter=\count392
+\scratchdimen=\dimen334
 \scratchbox=\box93
-\nofMPsegments=\count389
-\nofMParguments=\count390
+\nofMPsegments=\count393
+\nofMParguments=\count394
 \everyMPshowfont=\toks60
-\MPscratchCnt=\count391
-\MPscratchDim=\dimen333
-\MPnumerator=\count392
-\makeMPintoPDFobject=\count393
+\MPscratchCnt=\count395
+\MPscratchDim=\dimen335
+\MPnumerator=\count396
+\makeMPintoPDFobject=\count397
 \everyMPtoPDFconversion=\toks61
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 107.
-LaTeX Info: Redefining \microtypecontext on input line 107.
+(lastpage)             ! on input line 111.
+LaTeX Info: Redefining \microtypecontext on input line 111.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 107.
+LaTeX Info: Redefining \showhyphens on input line 111.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1416,7 +1436,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box94
-Package hyperref Info: Link coloring ON on input line 107.
+Package hyperref Info: Link coloring ON on input line 111.
 
 (c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1424,11 +1444,11 @@ Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count394
+\c@section@level=\count398
 )
-LaTeX Info: Redefining \ref on input line 107.
-LaTeX Info: Redefining \pageref on input line 107.
-LaTeX Info: Redefining \nameref on input line 107.
+LaTeX Info: Redefining \ref on input line 111.
+LaTeX Info: Redefining \pageref on input line 111.
+LaTeX Info: Redefining \nameref on input line 111.
 
 (./SS_AS_MDPI_ASC.out) (./SS_AS_MDPI_ASC.out)
 \@outlinefile=\write8
@@ -1471,6 +1491,7 @@ LaTeX Info: Redefining \nameref on input line 107.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
+Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
@@ -1556,7 +1577,7 @@ Dictionary: translator-basic-dictionary, Language: English
 (c:/texlive/2019/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
-\c@lstlisting=\count395
+\c@lstlisting=\count399
 Package epstopdf Info: Source file: <Definitions/logo-mdpi.eps>
 (epstopdf)                    date: 2020-06-04 12:11:51
 (epstopdf)                    size: 736802 bytes
@@ -1566,42 +1587,42 @@ Package epstopdf Info: Source file: <Definitions/logo-mdpi.eps>
 (epstopdf)                    size: 43952 bytes
 (epstopdf)             Command: <epstopdf --outfile=Definitions/logo-mdpi-eps-c
 onverted-to.pdf Definitions/logo-mdpi.eps>
-(epstopdf)             \includegraphics on input line 107.
+(epstopdf)             \includegraphics on input line 111.
 Package epstopdf Info: Output file is already uptodate.
-<Definitions/logo-mdpi-eps-converted-to.pdf, id=220, 88.33pt x 58.2175pt>
+<Definitions/logo-mdpi-eps-converted-to.pdf, id=203, 88.33pt x 58.2175pt>
 File: Definitions/logo-mdpi-eps-converted-to.pdf Graphic file (type pdf)
 <use Definitions/logo-mdpi-eps-converted-to.pdf>
 Package pdftex.def Info: Definitions/logo-mdpi-eps-converted-to.pdf  used on in
-put line 107.
+put line 111.
 (pdftex.def)             Requested size: 43.16885pt x 28.45274pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <18> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 107.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 111.
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 1
-07.
+11.
 
 (c:/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-107.
+111.
 
 (c:/texlive/2019/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-107.
+111.
 
 (c:/texlive/2019/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-107.
+111.
 
 (c:/texlive/2019/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-107.
+111.
 
 (c:/texlive/2019/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -1611,62 +1632,27 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 107.
+(Font)              scaled to size 10.42007pt on input line 111.
 
 (c:/texlive/2019/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 107.
+(Font)              scaled to size 7.91925pt on input line 111.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 107.
+(Font)              scaled to size 6.25204pt on input line 111.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 107.
-Package epstopdf Info: Source file: <Definitions/logo-orcid.eps>
-(epstopdf)                    date: 2020-06-04 12:11:51
-(epstopdf)                    size: 284378 bytes
-(epstopdf)             Output file: <Definitions/logo-orcid-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2020-06-04 12:16:33
-(epstopdf)                    size: 12397 bytes
-(epstopdf)             Command: <epstopdf --outfile=Definitions/logo-orcid-eps-
-converted-to.pdf Definitions/logo-orcid.eps>
-(epstopdf)             \includegraphics on input line 107.
-Package epstopdf Info: Output file is already uptodate.
-<Definitions/logo-orcid-eps-converted-to.pdf, id=222, 102.3825pt x 102.3825pt>
-File: Definitions/logo-orcid-eps-converted-to.pdf Graphic file (type pdf)
-<use Definitions/logo-orcid-eps-converted-to.pdf>
-Package pdftex.def Info: Definitions/logo-orcid-eps-converted-to.pdf  used on i
-nput line 107.
-(pdftex.def)             Requested size: 9.10509pt x 9.10466pt.
-Package epstopdf Info: Source file: <Definitions/logo-homepage.eps>
-(epstopdf)                    date: 2020-06-04 12:11:51
-(epstopdf)                    size: 372358 bytes
-(epstopdf)             Output file: <Definitions/logo-homepage-eps-converted-to
-.pdf>
-(epstopdf)                    date: 2020-06-04 12:16:34
-(epstopdf)                    size: 14004 bytes
-(epstopdf)             Command: <epstopdf --outfile=Definitions/logo-homepage-e
-ps-converted-to.pdf Definitions/logo-homepage.eps>
-(epstopdf)             \includegraphics on input line 107.
-Package epstopdf Info: Output file is already uptodate.
-<Definitions/logo-homepage-eps-converted-to.pdf, id=224, 55.20625pt x 50.1875pt
->
-File: Definitions/logo-homepage-eps-converted-to.pdf Graphic file (type pdf)
-<use Definitions/logo-homepage-eps-converted-to.pdf>
-Package pdftex.def Info: Definitions/logo-homepage-eps-converted-to.pdf  used o
-n input line 107.
-(pdftex.def)             Requested size: 9.10509pt x 8.27675pt.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 111.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 107.
+(Font)              scaled to size 9.37807pt on input line 111.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 107.
+(Font)              scaled to size 7.29405pt on input line 111.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 107.
+(Font)              scaled to size 5.21004pt on input line 111.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 107.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 111.
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-07.
+11.
 
 (c:/texlive/2019/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1684,43 +1670,43 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 1831) in paragraph at lines 117--118
+Underfull \hbox (badness 1831) in paragraph at lines 121--122
 []\T1/ppl/m/n/10 (+20) Sound source lo-cal-iza-tion is an in-creas-ingly im-por
 -tant com-po-nent in tele-con-fer-enc-ing,
  []
 
+
+Package natbib Warning: Citation `dibiaseHighaccuracyLowlatencyTechnique2000' o
+n page 1 undefined on input line 135.
+
 [1
 
 {c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Definitions/l
-ogo-mdpi-eps-converted-to.pdf> <./Definitions/logo-orcid-eps-converted-to.pdf> 
-<./Definitions/logo-homepage-eps-converted-to.pdf>]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 160.
- [2]
+ogo-mdpi-eps-converted-to.pdf>] [2]
 
 Package natbib Warning: Citation `dibiaseHighaccuracyLowlatencyTechnique2000' o
-n page 3 undefined on input line 244.
+n page 3 undefined on input line 202.
 
 [3] [4] [5]
-<img/network_training.pdf, id=298, 529.8734pt x 282.48615pt>
+<img/network_training.pdf, id=276, 529.8734pt x 282.48615pt>
 File: img/network_training.pdf Graphic file (type pdf)
 <use img/network_training.pdf>
-Package pdftex.def Info: img/network_training.pdf  used on input line 350.
+Package pdftex.def Info: img/network_training.pdf  used on input line 308.
 (pdftex.def)             Requested size: 221.9316pt x 118.31577pt.
-
+ [6]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 363.
+               Default added (so using `tbp') on input line 321.
 
-[6] [7 <./img/network_training.pdf>]
-<img/room_src_pos.pdf, id=314, 462.52798pt x 345.4506pt>
+[7 <./img/network_training.pdf>]
+<img/room_src_pos.pdf, id=294, 462.52798pt x 345.4506pt>
 File: img/room_src_pos.pdf Graphic file (type pdf)
 <use img/room_src_pos.pdf>
-Package pdftex.def Info: img/room_src_pos.pdf  used on input line 428.
-(pdftex.def)             Requested size: 323.76736pt x 241.81377pt.
+Package pdftex.def Info: img/room_src_pos.pdf  used on input line 386.
+(pdftex.def)             Requested size: 231.26341pt x 172.72487pt.
  [8 <./img/room_src_pos.pdf>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
-57.
+15.
 
 (c:/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1732,60 +1718,281 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 Package natbib Warning: Citation `dibiaseHighaccuracyLowlatencyTechnique2000' o
-n page 9 undefined on input line 457.
+n page 9 undefined on input line 415.
 
 
-Underfull \hbox (badness 2351) in paragraph at lines 457--458
+Underfull \hbox (badness 2351) in paragraph at lines 415--416
 \T1/ppl/m/n/10 (+20) cov-er-ing $[]$ of [][] (1 de-gree res-o-lu-tion) was cal-
 cu-lated us-ing \T1/cmtt/m/n/10 pyroomaoustics \T1/ppl/m/it/10 (+20) Python
  []
 
-[9]
-Underfull \hbox (badness 3138) in paragraph at lines 464--468
+
+Underfull \hbox (badness 3138) in paragraph at lines 422--426
 []\T1/ppl/m/n/10 (+20) Acoustic fea-ture man-i-fold em-bed-dings were found us-
 ing $[]$ NLDR al-go-rithm,
  []
 
-<example-image-a.pdf, id=374, 321.2pt x 240.9pt>
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 471.
-(pdftex.def)             Requested size: 221.9316pt x 166.45274pt.
 
-Underfull \hbox (badness 1117) in paragraph at lines 477--478
+Underfull \hbox (badness 1117) in paragraph at lines 435--436
 \T1/ppl/m/n/10 (+20) of near-est graph neigh-bors con-sid-ered for each sam-ple
  $\OT1/ppl/m/n/10 (+20) k[]$ \T1/ppl/m/n/10 (+20) was se-lected from a set $\OT
 1/ppl/m/n/10 (+20) k[][] \OMS/zplm/m/n/10 2
  []
 
+[9]
+<img/results/RMSE_err_spos_thr_mean_lvl.png, id=351, 462.528pt x 346.896pt>
+File: img/results/RMSE_err_spos_thr_mean_lvl.png Graphic file (type png)
+<use img/results/RMSE_err_spos_thr_mean_lvl.png>
+Package pdftex.def Info: img/results/RMSE_err_spos_thr_mean_lvl.png  used on in
+put line 458.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
+<img/results/RMSE_err_polar_thr_mean_lvl.png, id=353, 462.528pt x 346.896pt>
+File: img/results/RMSE_err_polar_thr_mean_lvl.png Graphic file (type png)
+<use img/results/RMSE_err_polar_thr_mean_lvl.png>
+Package pdftex.def Info: img/results/RMSE_err_polar_thr_mean_lvl.png  used on i
+nput line 459.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
+<img/results/RMSE_err_polar_r_ratio_thr_mean_lvl.png, id=354, 462.528pt x 346.8
+96pt>
+File: img/results/RMSE_err_polar_r_ratio_thr_mean_lvl.png Graphic file (type pn
+g)
+<use img/results/RMSE_err_polar_r_ratio_thr_mean_lvl.png>
+Package pdftex.def Info: img/results/RMSE_err_polar_r_ratio_thr_mean_lvl.png  u
+sed on input line 460.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
+<img/results/RMSE_err_spos_n_neighbors.png, id=355, 462.528pt x 346.896pt>
+File: img/results/RMSE_err_spos_n_neighbors.png Graphic file (type png)
+<use img/results/RMSE_err_spos_n_neighbors.png>
+Package pdftex.def Info: img/results/RMSE_err_spos_n_neighbors.png  used on inp
+ut line 470.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
+<img/results/RMSE_err_polar_n_neighbors.png, id=356, 462.528pt x 346.896pt>
+File: img/results/RMSE_err_polar_n_neighbors.png Graphic file (type png)
+<use img/results/RMSE_err_polar_n_neighbors.png>
+Package pdftex.def Info: img/results/RMSE_err_polar_n_neighbors.png  used on in
+put line 471.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
+<img/results/RMSE_err_polar_r_ratio_n_neighbors.png, id=357, 462.528pt x 346.89
+6pt>
+File: img/results/RMSE_err_polar_r_ratio_n_neighbors.png Graphic file (type png
+)
+<use img/results/RMSE_err_polar_r_ratio_n_neighbors.png>
+Package pdftex.def Info: img/results/RMSE_err_polar_r_ratio_n_neighbors.png  us
+ed on input line 472.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
+<img/results/RMSE_err_spos_gnbrs.png, id=358, 462.528pt x 346.896pt>
+File: img/results/RMSE_err_spos_gnbrs.png Graphic file (type png)
+<use img/results/RMSE_err_spos_gnbrs.png>
+Package pdftex.def Info: img/results/RMSE_err_spos_gnbrs.png  used on input lin
+e 479.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
+<img/results/RMSE_err_polar_gnbrs.png, id=359, 462.528pt x 346.896pt>
+File: img/results/RMSE_err_polar_gnbrs.png Graphic file (type png)
+<use img/results/RMSE_err_polar_gnbrs.png>
+Package pdftex.def Info: img/results/RMSE_err_polar_gnbrs.png  used on input li
+ne 480.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
+<img/results/RMSE_err_polar_r_ratio_gnbrs.png, id=360, 462.528pt x 346.896pt>
+File: img/results/RMSE_err_polar_r_ratio_gnbrs.png Graphic file (type png)
+<use img/results/RMSE_err_polar_r_ratio_gnbrs.png>
+Package pdftex.def Info: img/results/RMSE_err_polar_r_ratio_gnbrs.png  used on 
+input line 481.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
+<img/results/RMSE_err_spos_k_rep.png, id=361, 462.528pt x 346.896pt>
+File: img/results/RMSE_err_spos_k_rep.png Graphic file (type png)
+<use img/results/RMSE_err_spos_k_rep.png>
+Package pdftex.def Info: img/results/RMSE_err_spos_k_rep.png  used on input lin
+e 488.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
+<img/results/RMSE_err_polar_k_rep.png, id=362, 462.528pt x 346.896pt>
+File: img/results/RMSE_err_polar_k_rep.png Graphic file (type png)
+<use img/results/RMSE_err_polar_k_rep.png>
+Package pdftex.def Info: img/results/RMSE_err_polar_k_rep.png  used on input li
+ne 489.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
+<img/results/RMSE_err_polar_r_ratio_k_rep.png, id=363, 462.528pt x 346.896pt>
+File: img/results/RMSE_err_polar_r_ratio_k_rep.png Graphic file (type png)
+<use img/results/RMSE_err_polar_r_ratio_k_rep.png>
+Package pdftex.def Info: img/results/RMSE_err_polar_r_ratio_k_rep.png  used on 
+input line 490.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 532--532
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/results/RMSE_err_spos_mu.png, id=364, 462.528pt x 346.896pt>
+File: img/results/RMSE_err_spos_mu.png Graphic file (type png)
+<use img/results/RMSE_err_spos_mu.png>
+Package pdftex.def Info: img/results/RMSE_err_spos_mu.png  used on input line 4
+97.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
+<img/results/RMSE_err_polar_mu.png, id=365, 462.528pt x 346.896pt>
+File: img/results/RMSE_err_polar_mu.png Graphic file (type png)
+<use img/results/RMSE_err_polar_mu.png>
+Package pdftex.def Info: img/results/RMSE_err_polar_mu.png  used on input line 
+498.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
+File: img/results/RMSE_err_polar_mu.png Graphic file (type png)
+<use img/results/RMSE_err_polar_mu.png>
+Package pdftex.def Info: img/results/RMSE_err_polar_mu.png  used on input line 
+499.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/results/RMSE_err_spos_batch_size.png, id=366, 462.528pt x 346.896pt>
+File: img/results/RMSE_err_spos_batch_size.png Graphic file (type png)
+<use img/results/RMSE_err_spos_batch_size.png>
+Package pdftex.def Info: img/results/RMSE_err_spos_batch_size.png  used on inpu
+t line 506.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
+<img/results/RMSE_err_polar_batch_size.png, id=367, 462.528pt x 346.896pt>
+File: img/results/RMSE_err_polar_batch_size.png Graphic file (type png)
+<use img/results/RMSE_err_polar_batch_size.png>
+Package pdftex.def Info: img/results/RMSE_err_polar_batch_size.png  used on inp
+ut line 507.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
+File: img/results/RMSE_err_polar_batch_size.png Graphic file (type png)
+<use img/results/RMSE_err_polar_batch_size.png>
+Package pdftex.def Info: img/results/RMSE_err_polar_batch_size.png  used on inp
+ut line 508.
+(pdftex.def)             Requested size: 142.03946pt x 106.53093pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/from_diser/tri_real_speech_srp_doa_thr_rms_1p02_framedur_0p05.pdf, id=370,
+ 462.52798pt x 345.4506pt>
+File: img/from_diser/tri_real_speech_srp_doa_thr_rms_1p02_framedur_0p05.pdf Gra
+phic file (type pdf)
+<use img/from_diser/tri_real_speech_srp_doa_thr_rms_1p02_framedur_0p05.pdf>
+Package pdftex.def Info: img/from_diser/tri_real_speech_srp_doa_thr_rms_1p02_fr
+amedur_0p05.pdf  used on input line 522.
+(pdftex.def)             Requested size: 142.03946pt x 168.15479pt.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 522.
+<img/from_diser/tri_real_speech_srp_doa_thr_rms_1p02_framedur_0p05_err.pdf, id=
+372, 462.52798pt x 345.4506pt>
+File: img/from_diser/tri_real_speech_srp_doa_thr_rms_1p02_framedur_0p05_err.pdf
+ Graphic file (type pdf)
+<use img/from_diser/tri_real_speech_srp_doa_thr_rms_1p02_framedur_0p05_err.pdf>
+
+Package pdftex.def Info: img/from_diser/tri_real_speech_srp_doa_thr_rms_1p02_fr
+amedur_0p05_err.pdf  used on input line 526.
+(pdftex.def)             Requested size: 142.03946pt x 168.15479pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/from_diser/im_prediction.pdf, id=375, 462.52798pt x 345.4506pt>
+File: img/from_diser/im_prediction.pdf Graphic file (type pdf)
+<use img/from_diser/im_prediction.pdf>
+Package pdftex.def Info: img/from_diser/im_prediction.pdf  used on input line 5
+39.
+(pdftex.def)             Requested size: 142.03946pt x 168.15479pt.
+<img/from_diser/im_prediction_peak_local_max.pdf, id=377, 462.52798pt x 345.450
+6pt>
+File: img/from_diser/im_prediction_peak_local_max.pdf Graphic file (type pdf)
+<use img/from_diser/im_prediction_peak_local_max.pdf>
+Package pdftex.def Info: img/from_diser/im_prediction_peak_local_max.pdf  used 
+on input line 540.
+(pdftex.def)             Requested size: 142.03946pt x 168.15479pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/from_diser/real_speech_isomap_framedur_0p05.pdf, id=379, 462.52798pt x 345
+.4506pt>
+File: img/from_diser/real_speech_isomap_framedur_0p05.pdf Graphic file (type pd
+f)
+<use img/from_diser/real_speech_isomap_framedur_0p05.pdf>
+Package pdftex.def Info: img/from_diser/real_speech_isomap_framedur_0p05.pdf  u
+sed on input line 555.
+(pdftex.def)             Requested size: 221.9316pt x 165.75641pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10 <./img/results/RMSE_err_spos_thr_mean_lvl.png> <./img/results/RMSE_err_pola
+r_thr_mean_lvl.png> <./img/results/RMSE_err_polar_r_ratio_thr_mean_lvl.png> <./
+img/results/RMSE_err_spos_n_neighbors.png> <./img/results/RMSE_err_polar_n_neig
+hbors.png> <./img/results/RMSE_err_polar_r_ratio_n_neighbors.png> <./img/result
+s/RMSE_err_spos_gnbrs.png> <./img/results/RMSE_err_polar_gnbrs.png> <./img/resu
+lts/RMSE_err_polar_r_ratio_gnbrs.png>]
+<img/from_diser/grnn_predictions_real_speech_arch3_50epochs_framedur_0p05.pdf, 
+id=410, 462.52798pt x 345.4506pt>
+File: img/from_diser/grnn_predictions_real_speech_arch3_50epochs_framedur_0p05.
+pdf Graphic file (type pdf)
+<use img/from_diser/grnn_predictions_real_speech_arch3_50epochs_framedur_0p05.p
+df>
+Package pdftex.def Info: img/from_diser/grnn_predictions_real_speech_arch3_50ep
+ochs_framedur_0p05.pdf  used on input line 566.
+(pdftex.def)             Requested size: 142.03946pt x 168.15479pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/from_diser/1pred_err_distribution.pdf, id=413, 462.52798pt x 346.89601pt>
+File: img/from_diser/1pred_err_distribution.pdf Graphic file (type pdf)
+<use img/from_diser/1pred_err_distribution.pdf>
+Package pdftex.def Info: img/from_diser/1pred_err_distribution.pdf  used on inp
+ut line 603.
+(pdftex.def)             Requested size: 221.9316pt x 166.44997pt.
+[11 <./img/results/RMSE_err_spos_k_rep.png> <./img/results/RMSE_err_polar_k_rep
+.png> <./img/results/RMSE_err_polar_r_ratio_k_rep.png> <./img/results/RMSE_err_
+spos_mu.png> <./img/results/RMSE_err_polar_mu.png> <./img/results/RMSE_err_spos
+_batch_size.png> <./img/results/RMSE_err_polar_batch_size.png>]
+
+LaTeX Warning: Text page 12 contains only floats.
+
+[12 <./img/from_diser/tri_real_speech_srp_doa_thr_rms_1p02_framedur_0p05.pdf> <
+./img/from_diser/tri_real_speech_srp_doa_thr_rms_1p02_framedur_0p05_err.pdf> <.
+/img/from_diser/im_prediction.pdf> <./img/from_diser/im_prediction_peak_local_m
+ax.pdf> <./img/from_diser/real_speech_isomap_framedur_0p05.pdf
+
+pdfTeX warning: pdflatex.exe (file ./img/from_diser/real_speech_isomap_framedur
+_0p05.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+>] [13 <./img/from_diser/grnn_predictions_real_speech_arch3_50epochs_framedur_0
+p05.pdf> <./img/from_diser/1pred_err_distribution.pdf
+
+pdfTeX warning: pdflatex.exe (file ./img/from_diser/1pred_err_distribution.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 681--681
 
  []
 
-[10 <c:/texlive/2019/texmf-dist/tex/latex/mwe/example-image-a.pdf>]
-(./SS_AS_MDPI_ASC.bbl)
-LaTeX Font Info:    Trying to load font information for OMS+ppl on input line 5
-87.
+(./SS_AS_MDPI_ASC.bbl [14]
+Underfull \hbox (badness 2119) in paragraph at lines 52--58
+[]\T1/ppl/m/n/9 (+20) Awad-Alla, M.A.; Hamdy, A.; Tol-bah, F.A.; Shahin, M.A.; 
+Ab-de-laziz, M.A.  A Two-Stage
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 71--78
+\T1/ppl/m/n/9 (+20) 2009 IEEE In-ter-na-tional Con-fer-ence on Acous-tics, Spee
+ch and Sig-nal Pro-cess-ing, pp. 233--236.
+ []
+
+)
+LaTeX Font Info:    Trying to load font information for OMS+ppl on input line 7
+36.
  (c:/texlive/2019/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 587.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 736.
 
 
 AED: lastpage setting LastPage
-[11]
+[15]
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 587.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 587.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 736.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 736.
 (./SS_AS_MDPI_ASC.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 587.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 587.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 736.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 736.
 Package rerunfilecheck Info: File `SS_AS_MDPI_ASC.out' has not changed.
-(rerunfilecheck)             Checksum: 54F6E545BD697692F919546A7F9E4776;7322.
+(rerunfilecheck)             Checksum: 8753989A61379FE7E30F20151CC195D5;7043.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1793,13 +2000,13 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 46555 strings out of 492167
- 900988 string characters out of 6129158
- 1035911 words of memory out of 5000000
- 49932 multiletter control sequences out of 15000+600000
- 608947 words of font info for 316 fonts, out of 8000000 for 9000
+ 46785 strings out of 492167
+ 908698 string characters out of 6129158
+ 1026183 words of memory out of 5000000
+ 50056 multiletter control sequences out of 15000+600000
+ 613514 words of font info for 352 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,16n,105p,866b,1228s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,19n,105p,869b,1220s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
 ive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2019/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/
@@ -1808,15 +2015,14 @@ sfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
 ><c:/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><c:/texlive/
 2019/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb><c:/texlive/2019/texmf-d
-ist/fonts/type1/public/lm/lmss17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pu
-blic/cm-super/sfss0500.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/cm-su
-per/sftt1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pf
-b><c:/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2
-019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on SS_AS_MDPI_ASC.pdf (11 pages, 339727 bytes).
+ist/fonts/type1/public/cm-super/sfss0500.pfb><c:/texlive/2019/texmf-dist/fonts/
+type1/public/cm-super/sftt1000.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/
+palatino/uplb8a.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a
+.pfb><c:/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on SS_AS_MDPI_ASC.pdf (15 pages, 1228541 bytes).
 PDF statistics:
- 463 PDF objects out of 1000 (max. 8388607)
- 365 compressed objects within 4 object streams
- 86 named destinations out of 1000 (max. 500000)
- 62491 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 707 PDF objects out of 1000 (max. 8388607)
+ 461 compressed objects within 5 object streams
+ 118 named destinations out of 1000 (max. 500000)
+ 65661 words of extra memory for PDF output out of 74296 (max. 10000000)
 

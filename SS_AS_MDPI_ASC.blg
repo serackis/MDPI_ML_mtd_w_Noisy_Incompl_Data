@@ -4,54 +4,63 @@ The top-level auxiliary file: SS_AS_MDPI_ASC.aux
 The style file: Definitions/mdpi.bst
 Database file #1: SS_AS_MDPI_ASC.bib
 Warning--entry type for "dibiaseHighaccuracyLowlatencyTechnique2000" isn't style-file defined
---line 41 of file SS_AS_MDPI_ASC.bib
+--line 115 of file SS_AS_MDPI_ASC.bib
 Warning--I didn't find a database entry for ""
 Warning--empty journal in martiSpeakerLocalizationDetection2011
+Warning--empty journal in lopatka_detection_2016
+Warning--empty journal in valinLocalizationSimultaneousMoving2004
+Warning--empty year in bruttiComparisonDifferentSound2008
+Warning--empty journal in wengThreedimensionalSoundLocalization2001
+Warning--empty journal in awad-allaTwostageApproachPassive2020
+Warning--empty year in valinRobust3DLocalization2006
+Warning--empty year in 4959563
+Warning--empty journal in silvermanPerformanceRealtimeSourcelocation2005a
 Warning--empty journal in laufer-goldshteinSemiSupervisedSoundSource2016
 Warning--empty year in heDeepNeuralNetworks2018b
 Warning--empty year in heAdaptationMultipleSound2019
+Warning--empty journal in adavanneDirectionArrivalEstimation2017
 Warning--empty year in scheiblerPyroomacousticsPythonPackage2018a
 Warning--empty journal in pedregosaScikitlearnMachineLearning2011
 Warning--empty year in carlettaAMIMeetingCorpus2006
-You've used 8 entries,
+You've used 17 entries,
             2865 wiz_defined-function locations,
-            623 strings with 6800 characters,
-and the built_in function-call counts, 3682 in all, are:
-= -- 306
-> -- 232
-< -- 6
-+ -- 87
-- -- 70
-* -- 323
-:= -- 577
-add.period$ -- 28
-call.type$ -- 8
-change.case$ -- 8
-chr.to.int$ -- 7
-cite$ -- 14
-duplicate$ -- 162
-empty$ -- 289
-format.name$ -- 78
-if$ -- 789
+            697 strings with 9967 characters,
+and the built_in function-call counts, 7798 in all, are:
+= -- 666
+> -- 445
+< -- 12
++ -- 167
+- -- 132
+* -- 703
+:= -- 1189
+add.period$ -- 64
+call.type$ -- 17
+change.case$ -- 17
+chr.to.int$ -- 16
+cite$ -- 32
+duplicate$ -- 351
+empty$ -- 636
+format.name$ -- 151
+if$ -- 1678
 int.to.chr$ -- 2
-int.to.str$ -- 8
-missing$ -- 7
-newline$ -- 44
-num.names$ -- 22
-pop$ -- 72
+int.to.str$ -- 17
+missing$ -- 16
+newline$ -- 97
+num.names$ -- 49
+pop$ -- 154
 preamble$ -- 0
-purify$ -- 8
+purify$ -- 17
 quote$ -- 0
-skip$ -- 99
+skip$ -- 214
 stack$ -- 0
-substring$ -- 192
-swap$ -- 51
-text.length$ -- 5
+substring$ -- 427
+swap$ -- 103
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 53
-warning$ -- 7
-while$ -- 31
+type$ -- 116
+warning$ -- 16
+while$ -- 65
 width$ -- 0
-write$ -- 97
-(There were 9 warnings)
+write$ -- 219
+(There were 18 warnings)

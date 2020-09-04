@@ -8,6 +8,83 @@ Marti, A.; Cobos, M.; Aguilera, E.; Lopez, J.J.
   Environments Using}} a {{Modified SRP}}-{{PHAT Algorithm}}.
 \newblock p.~8.
 
+\bibitem[Lopatka \em{et~al.}()Lopatka, Kotus, and
+  Czyzewski]{lopatka_detection_2016}
+Lopatka, K.; Kotus, J.; Czyzewski, A.
+\newblock Detection, Classification and Localization of Acoustic Events in the
+  Presence of Background Noise for Acoustic Surveillance of Hazardous
+  Situations.
+\newblock {\em 75},~10407--10439.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1007/s11042-015-3105-4}{\detokenize{10.1007/s11042-015-3105-4}}}.
+
+\bibitem[Valin \em{et~al.}()Valin, Michaud, Hadjou, and
+  Rouat]{valinLocalizationSimultaneousMoving2004}
+Valin, J.M.; Michaud, F.; Hadjou, B.; Rouat, J.
+\newblock Localization of {{Simultaneous Moving Sound Sources}} for {{Mobile
+  Robot Using}} a {{Frequency}}-{{Domain Steered Beamformer Approach}}.
+\newblock pp. 1033--1038 Vol.1,
+  \href{http://xxx.lanl.gov/abs/1602.08629}{{\normalfont [1602.08629]}}.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1109/ROBOT.2004.1307286}{\detokenize{10.1109/ROBOT.2004.1307286}}}.
+
+\bibitem[Brutti \em{et~al.}()Brutti, Omologo, and
+  Svaizer]{bruttiComparisonDifferentSound2008}
+Brutti, A.; Omologo, M.; Svaizer, P.
+\newblock Comparison {{Between Different Sound Source Localization Techniques
+  Based}} on a {{Real Data Collection}}.
+\newblock  2008 {{Hands}}-{{Free Speech Communication}} and {{Microphone
+  Arrays}}. {IEEE}, pp. 69--72.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1109/HSCMA.2008.4538690}{\detokenize{10.1109/HSCMA.2008.4538690}}}.
+
+\bibitem[Weng and Guentchev()]{wengThreedimensionalSoundLocalization2001}
+Weng, J.; Guentchev, K.Y.
+\newblock Three-Dimensional Sound Localization from a Compact Non-Coplanar
+  Array of Microphones Using Tree-Based Learning.
+\newblock {\em 110},~310--323,
+  \href{http://xxx.lanl.gov/abs/11508957}{{\normalfont [11508957]}}.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1121/1.1377290}{\detokenize{10.1121/1.1377290}}}.
+
+\bibitem[Awad-Alla \em{et~al.}(2020/ed)Awad-Alla, Hamdy, Tolbah, Shahin, and
+  Abdelaziz]{awad-allaTwostageApproachPassive2020}
+Awad-Alla, M.A.; Hamdy, A.; Tolbah, F.A.; Shahin, M.A.; Abdelaziz, M.A.
+\newblock A Two-Stage Approach for Passive Sound Source Localization Based on
+  the {{SRP}}-{{PHAT}} Algorithm {\bf 2020/ed}.
+\newblock {\em 9}.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1017/ATSIP.2020.6}{\detokenize{10.1017/ATSIP.2020.6}}}.
+
+\bibitem[Valin \em{et~al.}()Valin, Michaud, and
+  Rouat]{valinRobust3DLocalization2006}
+Valin, J.M.; Michaud, F.; Rouat, J.
+\newblock Robust {{3D Localization}} and {{Tracking}} of {{Sound Sources Using
+  Beamforming}} and {{Particle Filtering}}.
+\newblock  2006 {{IEEE International Conference}} on {{Acoustics Speech}} and
+  {{Signal Processing Proceedings}}, Vol.~4, pp. IV--IV.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1109/ICASSP.2006.1661100}{\detokenize{10.1109/ICASSP.2006.1661100}}}.
+
+\bibitem[Lombard \em{et~al.}()Lombard, Rosenkranz, Buchner, and
+  Kellermann]{4959563}
+Lombard, A.; Rosenkranz, T.; Buchner, H.; Kellermann, W.
+\newblock Multidimensional Localization of Multiple Sound Sources Using
+  Averaged Directivity Patterns of {{Blind Source Separation}} Systems.
+\newblock  2009 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}}
+  and {{Signal Processing}}, pp. 233--236.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1109/ICASSP.2009.4959563}{\detokenize{10.1109/ICASSP.2009.4959563}}}.
+
+\bibitem[Silverman \em{et~al.}()Silverman, Yu, Sachar, and
+  Patterson]{silvermanPerformanceRealtimeSourcelocation2005a}
+Silverman, H.F.; Yu, Y.; Sachar, J.M.; Patterson, W.R.
+\newblock Performance of Real-Time Source-Location Estimators for a
+  Large-Aperture Microphone Array.
+\newblock {\em 13},~593--606.
+\newblock
+  doi:{\changeurlcolor{black}\href{https://doi.org/10.1109/TSA.2005.848875}{\detokenize{10.1109/TSA.2005.848875}}}.
+
 \bibitem[Laufer-Goldshtein \em{et~al.}()Laufer-Goldshtein, Talmon, and
   Gannot]{laufer-goldshteinSemiSupervisedSoundSource2016}
 Laufer-Goldshtein, B.; Talmon, R.; Gannot, S.
@@ -37,6 +114,14 @@ He, W.; Motlicek, P.; Odobez, J.M.
   770--774.
 \newblock
   doi:{\changeurlcolor{black}\href{https://doi.org/10.1109/ICASSP.2019.8682655}{\detokenize{10.1109/ICASSP.2019.8682655}}}.
+
+\bibitem[Adavanne \em{et~al.}()Adavanne, Politis, and
+  Virtanen]{adavanneDirectionArrivalEstimation2017}
+Adavanne, S.; Politis, A.; Virtanen, T.
+\newblock Direction of Arrival Estimation for Multiple Sound Sources Using
+  Convolutional Recurrent Neural Network.
+\newblock  \href{http://xxx.lanl.gov/abs/1710.10059}{{\normalfont [arXiv:cs,
+  eess/1710.10059]}}.
 
 \bibitem[Scheibler \em{et~al.}()Scheibler, Bezzam, and
   Dokmanić]{scheiblerPyroomacousticsPythonPackage2018a}
