@@ -28,7 +28,7 @@
 %=================================================================
 % Add packages and commands here. The following packages are loaded in our class file: fontenc, inputenc, calc, indentfirst, fancyhdr, graphicx,epstopdf, lastpage, ifthen, lineno, float, amsmath, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, tabto, xcolor, soul, multirow, microtype, tikz, totcount, amsthm, hyphenat, natbib, hyperref, footmisc, url, geometry, newfloat, caption
 \usepackage{subfigure}
-
+\usepackage{nth}
 %=================================================================
 %% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition, Notation, Assumption
 %% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
@@ -314,12 +314,12 @@ A general architecture (one of possibilities) of a \grnn model is provided in \f
 \subsubsection{Architecture}
 Apart from the introduction of additional inputs (neighbor features, weights and flags), the actual neural network is just a multilayer perceptron. During prediction phase, only the main input contributes to the prediction.
 
-In this experiment, a several multilayer perceptron architectures were used. The summary of the architectures are presented in \tablename 
+In this experiment, a several multilayer perceptron architectures were used. The summary of the architectures are presented in \tablename \ref{table:nnarch}.
 
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
 \begin{table}[]
-	\caption{Table of neural network architectures used in for the experimentation}
+	\caption{Table of neural network architectures used in for the experimentation\label{table:nnarch}}
 	\centering
 	\small\setlength{\tabcolsep}{2pt}
 	\begin{tabular}{cc|cc|cc|cc|cc|cc|cc}
@@ -383,8 +383,9 @@ All audio data used for the experimentation was collected in an irregular shaped
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.5]{img/room_src_pos.pdf}
-	\caption{The geometry of the acoustic enclosure used for \realworld{} dataset collection and labeled sound source positions; height of the enclosure was \SI{3.75}{\m}}\label{fig:room_src_pos}
+	\subfigure[\nth{1} dataset]{\includegraphics[scale=0.45]{img/room_src_pos.pdf}}
+	\subfigure[\nth{2} dataset]{\includegraphics[scale=0.45]{img/room_src_pos_2nd_dataset.pdf}}
+	\caption{The geometry of the acoustic enclosure used for \realworld{} dataset collection and labeled sound source positions (\nth{1} and \nth{2} datasets); height of the enclosure was \SI{3.75}{\m}}\label{fig:room_src_pos}
 \end{figure}
 
 \subsubsection{Sound source}
@@ -393,13 +394,19 @@ The signal of the sound source was a \SI{1}{\minute} excerpt from the AMI Corpus
 
 Sound source signal was reproduced using a compact battery powered loudspeaker that was mounted on an adjustable height stand.
 
+Two sets of labeled and unlabeled array audio recordings were recorded. \footnote{The sets were recorded on different days and a slight shift in microphone array positions might have had occurred. The first set have more labeled recordings (34), but the unlabeled recording is only around 8.5 minutes long, while the second recording has less labeled recordings (23), and source positions does not cover the entire area of the enclosure, but the unlabeled recording is around 40 minutes long.}
+
 \paragraph{Source positions}
-A set of 34 array audio recordings was obtained with the sound source held stationary for \SI{1}{\minute} in one of 34 positions within the enclosure. The coordinates of the sound source were measured using a handheld laser distance measurement tool with accuracy of \SI{1}{\mm}. The locations of the known source positions are presented in \figurename{} \ref{fig:room_src_pos} as colored circles. The values of the red, green and blue components of each circle color are proportional to the $ x_{\src} $, $ y_{\src} $ and $ z_{\src} $ coordinates of the sound source position.
+
+The first set of 34 array audio recordings was obtained with the sound source held stationary for \SI{1}{\minute} in one of 34 positions within the enclosure. 
+The second set of 23 array audio recordings was obtained in the same fashion as the first set.
+
+The coordinates of the sound source were measured using a handheld laser distance measurement tool with accuracy of \SI{1}{\mm}. The locations of the known source positions are presented in \figurename{} \ref{fig:room_src_pos} as colored circles. The values of the red, green and blue components of each circle color are proportional to the $ x_{\src} $, $ y_{\src} $ and $ z_{\src} $ coordinates of the sound source position.
 The vertical coordinate, $ z_{\src} = \SI{1.9}{\m} $, was constant for all source positions.
 
 \subsubsection{Unlabeled audio dataset}
-The unlabeled audio dataset was collected using the same microphone array setup and the same audio source and signal. The loudspeaker was moved manually at a reasonably constant speed of approximately \SI{0.1}{\m\per\s}, scanning the entire floor area of the enclosure \todo[inline]{by moving along $ y $ axis and then along $ y $ axis -- kaip aprašyti?}. The vertical coordinate of the sound source, $ z = \SI{1.9}{\m} $, was held constant during the entire collection of the unlabeled dataset. 
-The total duration of the recording was \SI{511}{\s} \todo{SMF3; SMF4 was 40 minutes long; unused}.
+The unlabeled audio dataset was collected using the same microphone array setup and the same audio source and signal. The loudspeaker was moved manually at a reasonably constant speed of approximately \SI{0.1}{\m\per\s}, scanning the entire floor area of the enclosure \todo[inline]{by moving along $ y $ axis and then along $ y $ axis --how to describe this movement?}. The vertical coordinate of the sound source, $ z = \SI{1.9}{\m} $, was held constant during the entire collection of the unlabeled dataset. 
+The total duration of the recording in the first dataset was \SI{511}{\s} \todo{SMF3; SMF4 was 40 minutes long; unused}. In the second dataset, the duration of the unlabeled audio recording was \SI{2420}{\second}.
 
 \subsubsection{Microphone arrays}
 In our experimentation we have used $ \numel_{\arr} = 2 $ radial microphone arrays with radius $ \radius_{\arr} = \SI{0.045}{\m} $, each consisting of $ \numel_{\mic} = 4 $ microphone elements spaced at equal angles $ \phi_{\mic} = \ang{90} $. The centers of the microphone arrays were placed at coordinates $ \mathbf{M}_{C,1}^{(x,y,z)} = [2.913, 3.699, 1.313]~\si{\m} $\todo{kaip tinkamai uzrasyti koordinaciu rinkini?} and $ \mathbf{M}_{C,2}^{(x,y,z)} = [2.960, 2.512, 1.309]~\si{\m} $.
