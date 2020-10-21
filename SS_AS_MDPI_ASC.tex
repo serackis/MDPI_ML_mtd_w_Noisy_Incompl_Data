@@ -1,4 +1,4 @@
-%  LaTeX support: latex@mdpi.com 
+  %  LaTeX support: latex@mdpi.com 
 %  In case you need support, please attach all files that are necessary for compiling as well as the log file, and specify the details of your LaTeX setup (which operating system and LaTeX version / tools you are using).
 
 %=================================================================
@@ -46,10 +46,10 @@
 %\newcommand{\homepageauthorB}{https://www.mdpi.com/} % Add \homepageB{} behind the author's name
 
 % Authors, for the paper (add full first names)
-\Author{Saulius Sakavičius$^{1,}$*, Andreas Brendel$^{2}$, Artūras Serackis$^{1}$ and Walter Kellerman$^{2}$}
+\Author{Saulius Sakavičius$^{1,}$*, Andreas Brendel$^{2}$, Artūras Serackis$^{1}$ and Walter Kellermann$^{2}$}
 
 % Authors, for metadata in PDF
-\AuthorNames{Saulius Sakavičius, Andreas Brendel, Artūras Serackis and Walter Kellerman}
+\AuthorNames{Saulius Sakavičius, Andreas Brendel, Artūras Serackis and Walter Kellermann}
 
 % Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
 \address{%
@@ -120,11 +120,11 @@ sound source localization; array signal processing; manifold learning; graph reg
 \section{Introduction}
 Sound source localization is an increasingly important component in teleconferencing, autonomous driving, security and human-computer interaction systems \cite{martiSpeakerLocalizationDetection2011,lopatka_detection_2016,valinLocalizationSimultaneousMoving2004}.
 
-Camera aiming can be inaccurate due to the parallax error if the camera and the microphone array are not rotating on the same axis. To accurately steer the camera to a certain point in space in such setup, a complete set of coordinates, either Cartesian or polar, of the target point is needed.
+\emph{Here could be added a list/few examples of common/typical problems in particular situations/applications, that motivates us to keep investigating this field.}
+
+\emph{Do "camera aiming" is one of the classical tasks that has such name?} Camera aiming can be inaccurate due to the parallax error \emph{citation is needed here} if the camera and the microphone array are not rotating on the same axis. To accurately steer the camera to a certain point in space in such setup, a complete set of coordinates, either Cartesian or polar, of the target point is needed.
 Thus, knowing only the direction of arrival (\doa{}) of the sound source would not be sufficient. At least two \doa{}s are needed to describe the source position on a plane.
-There are plenty of source direction of arrival estimation methods utilizing such compact arrays \cite{bruttiComparisonDifferentSound2008,wengThreedimensionalSoundLocalization2001,awad-allaTwostageApproachPassive2020}, but only a few methods are offered for 2D or 3D source localization that can estimate both DoA and the distance or the Cartesian coordinates of the sound source, involving  
-beamforming and particle filtering \cite{valinRobust3DLocalization2006}
-averaged directivity patterns of blind source separation systems \cite{4959563}.
+There are plenty of source direction of arrival estimation methods utilizing such compact arrays \cite{bruttiComparisonDifferentSound2008,wengThreedimensionalSoundLocalization2001,awad-allaTwostageApproachPassive2020}, but only a few methods are offered for 2D or 3D source localization that can estimate both DoA and the distance or the Cartesian coordinates of the sound source, involving beamforming and particle filtering \cite{valinRobust3DLocalization2006} averaged directivity patterns of blind source separation systems \cite{4959563}.
 
 It might be desired to use compact microphone arrays that have as few microphone elements as possible. By ``compact'' we here imply that the dimensions of the microphone array are much smaller than the dimensions of the source localization space.
 
@@ -449,9 +449,7 @@ We have trained the \grnn{} for $ \numel_{\epochs} = 15 $ epochs with each set o
 %This section may be divided by subheadings. It should provide a concise and precise description of the experimental results, their interpretation as well as the experimental conclusions that can be drawn.
 %\end{quote}
 
-After performing a Bayesian hyperparameter optimization for 169 iterations, source position estimation MSE, MAE and RMSE errors were obtained. 
-
-The relation between the estimated prediction error and the parameters are presented \figurename{}
+We have investigated the influence of each of the parameters on the sound source localization error.
 
 \begin{figure}[h!]
 	\centering
