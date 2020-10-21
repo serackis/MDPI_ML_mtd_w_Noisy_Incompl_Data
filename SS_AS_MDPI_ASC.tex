@@ -72,7 +72,7 @@ $^{2}$ \quad Friedrich–Alexander University Erlangen–Nürnberg}
 \abstract{
 %	A single paragraph of about 200 words maximum. For research articles, abstracts should give a pertinent overview of the work. We strongly encourage authors to use the following style of structured abstracts, but without headings: (1) Background: Place the question addressed in a broad context and highlight the purpose of the study; (2) Methods: Describe briefly the main methods or treatments applied; (3) Results: Summarize the article's main findings; and (4) Conclusion: Indicate the main conclusions or interpretations. The abstract should be an objective representation of the article, it must not contain results which are not presented and substantiated in the main text and should not exaggerate the main conclusions.
 	In this article we present a data-driven approach for a single speech source localization within an acoustic enclosure. 
-	Our method consist of high-dimensional acoustic feature extraction, selection based on a fitness criterion, feature manifold learning and low-dimensional embedding, graph dataset construction and an application of a graph-regularized neural network (GRNN) to learn the mapping between the embedded feature coordinates and the Cartesian coordinates of the sound source. Our method relies on the assumption of the feature space spatial smoothness. We present the experimental results of the speech source localization in real acoustic enclosures using two compact circular microphone arrays. We compare the performance of the GRNN for single speech sound source localization to the performance of two baseline algorithms. 
+	Our method consists of high-dimensional acoustic feature extraction, selection based on a fitness criterion, feature manifold learning and low-dimensional embedding, graph dataset construction and an application of a graph-regularized neural network (GRNN) to learn the mapping between the embedded feature coordinates and the Cartesian coordinates of the sound source. Our method relies on the assumption of the feature space spatial smoothness. We present the experimental results of the speech source localization in real acoustic enclosures using two compact circular microphone arrays. We compare the performance of the GRNN for single speech sound source localization to the performance of two baseline algorithms. 
 }
 
 % Keywords
@@ -123,7 +123,7 @@ Sound source localization is an increasingly important component in teleconferen
 \emph{Here could be added a list/few examples of common/typical problems in particular situations/applications, that motivates us to keep investigating this field.}
 
 \emph{Do "camera aiming" is one of the classical tasks that has such name?} Camera aiming can be inaccurate due to the parallax error \emph{citation is needed here} if the camera and the microphone array are not rotating on the same axis. To accurately steer the camera to a certain point in space in such setup, a complete set of coordinates, either Cartesian or polar, of the target point is needed.
-Thus, knowing only the direction of arrival (\doa{}) of the sound source would not be sufficient. At least two \doa{}s are needed to describe the source position on a plane.
+Thus, knowing only the direction of arrival (\doa{}) of the sound source would not be sufficient, but at least two \doa{}s are needed to describe the source position on a plane.
 There are plenty of source direction of arrival estimation methods utilizing such compact arrays \cite{bruttiComparisonDifferentSound2008,wengThreedimensionalSoundLocalization2001,awad-allaTwostageApproachPassive2020}, but only a few methods are offered for 2D or 3D source localization that can estimate both DoA and the distance or the Cartesian coordinates of the sound source, involving beamforming and particle filtering \cite{valinRobust3DLocalization2006} averaged directivity patterns of blind source separation systems \cite{4959563}.
 
 It might be desired to use compact microphone arrays that have as few microphone elements as possible. By ``compact'' we here imply that the dimensions of the microphone array are much smaller than the dimensions of the source localization space.
@@ -135,7 +135,7 @@ It might be desired to use compact microphone arrays that have as few microphone
 The Steered Response Power - Phase Transform (SRP-PHAT) algorithm \cite{dibiaseHighaccuracyLowlatencyTechnique2000} has been shown \cite{silvermanPerformanceRealtimeSourcelocation2005a} to be one of the most robust sound source localization approaches operating in noisy and reverberant environments. However, its practical implementation is usually based on a costly fine grid-search procedure, making the computational cost of the method a real issue \cite{martiSpeakerLocalizationDetection2011}.   \todo{mention SVD-PHAT}
 
 %The performance of SRP-PHAT-based source localization algorithms deteriorate considerable when compact microphone arrays are used \cite{}.
-When invoking sound source localization algorithms, usually free-field and far-field assumptions are made which aren't always true, especially inside acoustic enclosures, in which the diffuse field is observed due to the acoustic reflections. 
+When invoking sound source localization algorithms, usually simplifying free-field and far-field assumptions are made which aren't always accurate, especially inside acoustic enclosures, in which the diffuse field is observed due to acoustic reflections. 
 For a particular acoustic enclosure, either of the assumptions might be too coarse and would not reflect the actual situation, which might be a particular combination of either of the acoustic models.
 This calls for a data-driven approach which can learn better models.
 Learning-based sound source localization methods might be further advantageous in such circumstances. 
@@ -145,7 +145,7 @@ There are several learning-based source localization approaches, based on either
 Labeled feature acquisition is very costly.
 On the other side, it is relatively easy to obtain a large dataset of unlabeled audio features. 
 %One might wish to employ an unsupervised or semi-supervised learning strategies. 
-Considering our setting, it is relatively easy to collect a large amount of acoustic features without labels, and it is very tedious to provide labels (in our case -- the coordinates of the sound source) for such data. Such learning-based strategy is promising as users spend most of our time in the same environments (living room, office, etc.), where such training data can be obtained and used.
+Considering our setting, it is relatively easy to collect a large amount of acoustic features without labels, and it is very tedious to provide labels (in our case -- the coordinates of the sound source) for such data. Such a learning-based strategy is promising as users spend most of their time in the same environments (living room, office, etc.), where such training data can be obtained and used.
 
 %\subsection*{Motivation}
 
@@ -160,23 +160,23 @@ In this section, we provide a theoretical background for our investigation.
 
 It can be assumed, that acoustic features are spatially smooth, that is, features obtained at spatially close source positions are also close in feature space. The relative distance or affinity of the features can be simply estimated by calculating the Euclidean distance between feature vectors. 
 
-It can be assumed, that high dimensional acoustic features lie on a low-dimensional manifold, embedded in a high-dimensional feature space. 
+It can be assumed, that high-dimensional acoustic features lie on a low-dimensional manifold, embedded in a high-dimensional feature space. 
 Since the acoustic features are only dependent on the coordinates of the sound source, it is expected that the manifold would represent the spatial relations between the nearby acoustic features. 
-We consider that that the affinity matrix of the low-dimensional embeddings of the acoustic manifold represent the \emph{graph} of the acoustic features.
+We consider that the affinity matrix of the low-dimensional embeddings of the acoustic manifold represent the \emph{graph} of the acoustic features.
 
 While the obtained embeddings of the acoustic manifold might represent the relative spatial relations between the acoustic features, it is not tied to physical properties and it also might be very non-linear. The translation of embedded space to physical space must be done in a separate step using a nonlinear regression method. 
 
-When \ann{} is utilized to obtain the sound source position via regression using acoustic features, it might be expected that the predictions of the \ann{} would also exhibit spatial smoothness. Feature manifold could be used during the training of the \ann{} to ensure that the \ann{} learns the relation between the acoustic features and the source positions while also retaining the spatial smoothness.
+When \ann{}s are utilized to obtain the sound source position via regression using acoustic features, it might be expected that the predictions of an \ann{} would also exhibit spatial smoothness. A feature manifold could be used during the training of the \ann{} to ensure that the \ann{} learns the relation between the acoustic features and the source positions while also retaining the spatial smoothness.
 This spatial smoothness as well as the awareness of the relative spatial positions of the acoustic features is especially important when a semi-supervised learning strategy is involved. Using a training dataset that contains both labeled and unlabeled samples, knowledge of the relative distances between unlabeled and labeled samples might help to train the regressor to predict source locations for the unlabeled samples based on their manifold distance to the labeled features.
 
 
-Our method is comprised of two stages.
+Our method is comprised of two stages:
 \begin{enumerate}
-	\item The low-dimensional embedding of an acoustic feature manifold is obtained from a combined dataset of labeled and unlabeled samples. This manifold represents relative distances between acoustic feature in a low-dimensional embedded space.
-	\item A neural network is trained on the combined dataset, using a loss function that consist  of a supervised loss (calculated only for labeled samples) and a graph loss (calculated for all samples, considering $ k $ nearest neighbors). Supervised loss ensures that the regressor is able to learn accurate relations between the acoustic features and the source positions. Graph loss ensures that the source position predictions remain spatially smooth.
+	\item The low-dimensional embedding of an acoustic feature manifold is obtained from a combined dataset of labeled and unlabeled samples. This manifold represents relative distances between acoustic features in a low-dimensional embedded space.
+	\item An \ann{} is trained on the combined dataset, using a loss function that consists of a supervised loss (calculated only for labeled samples) and a graph loss (calculated for all samples, considering $ k $ nearest neighbors). The supervised loss ensures that the regressor learns accurate relations between the acoustic features and the source positions. The graph loss ensures that the source position predictions remain spatially smooth.
 \end{enumerate}
 
-Considering that the combined dataset consist of relatively low number of labeled samples and vast amounts of unlabeled samples, the supervised loss acts as a mean to ``straighten'' the manifold while the graph loss is used to infer the labels for the unlabeled samples based on their distance in feature (or embedded) space to the labeled samples.
+Considering that the combined dataset consists of a relatively low number of labeled samples and a vast amount of unlabeled samples, the supervised loss acts as a mean to ``straighten'' the manifold while the graph loss is used to infer the labels for the unlabeled samples based on their distance in feature (or embedded) space to the labeled samples.
 
 
 \subsection{Acoustic Features}
