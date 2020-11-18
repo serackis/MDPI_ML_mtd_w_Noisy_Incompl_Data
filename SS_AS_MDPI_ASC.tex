@@ -154,9 +154,18 @@ In this article we present a method to localize a sound source in two dimensions
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Materials and Methods}
 
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+We assume a set of $ M $ sensor nodes, each equipped with two $ N_m $ microphones arranged in a circular array.
+The microphone signal $ x_{i,m}(t) $ at microphone $ m $ is modeled as the superposition of the anechoic signal $ s_{i,m}(t) $ and an additional reverberatio/noise signal $ n_{i,m}(t) $
+\begin{equation}
+    x_{i,m}(t) = s_{i,m}(t) + n_{i,m}(t), 
+\end{equation}
+
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
 In this section, we provide a theoretical background for our investigation.
 
-\ann{}-based sound source localization can be performed using various acoustic features that depend on the sound source, either relative to the microphone array(s) or the acoustic enclosure.
+\ann{}-based sound source localization can be performed using various acoustic features that depend on the position of the sound source, either relative to the microphone array(s) or the acoustic enclosure.
 
 It can be assumed, that acoustic features are spatially smooth, that is, features obtained at spatially close source positions are also close in feature space. The relative distance or affinity of the features can be simply estimated by calculating the Euclidean distance between feature vectors. 
 
